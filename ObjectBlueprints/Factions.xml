@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<factions>
+
+<faction
+	Name="Aric Ekuemekiyye"
+	DisplayName = "The Toxic Arboreta of Ekuemekiyye, the Holy City"
+    Visible="true"
+    InitialPlayerReputation="0" 
+	 PositiveSound="Sounds/Reputation/sfx_reputation_putusTemplar_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_putusTemplar_negative"
+	HistoricalSignificance="3"
+	
+	
+		EmblemTile="creatures/caste_1.bmp"
+    EmblemTileColor="Y"
+    EmblemDetailColor="g"
+>
+	<feeling About="Flowers" Value="100" />
+    <feeling About="Roots" Value="100" />
+    <feeling About="Fungi" Value="-50" />
+    <feeling About="Vines" Value="100" />
+    <feeling About="Trees" Value="100" />
+	<feeling About="Robots" Value="0" />
+	<feeling About="Naphtali" Value="-250"/>
+	<feeling About="Goatfolk" Value="-250" />
+	<feeling About="Insects" Value="-250" />
+	
+<waterritual
+      Skill="Physic_AmputateLimb"
+      
+    />
+	
+	 <interests>
+      <interest Tags="ruins,tech,historic" WillBuy="true" WillSell="false" MatchAny="true" Inverse="true" Description="the modern world" />
+      <interest Tags="settlement" />
+    </interests>
+    
+
+</faction>
+
+<faction
+	Name="Aric Ibul"
+	DisplayName = "The Ice-Sheathed Arcology of Ibul"
+    Visible="true"
+    InitialPlayerReputation="0" 
+	 PositiveSound="Sounds/Reputation/sfx_reputation_putusTemplar_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_putusTemplar_negative"
+	HistoricalSignificance="3"
+	
+	
+		EmblemTile="creatures/caste_6.bmp"
+    EmblemTileColor="Y"
+    EmblemDetailColor="c"
+>
+
+	<feeling About="Robots" Value="0" />
+	<feeling About="Goatfolk" Value="-250" />
+	<feeling About="Unshelled Reptiles" Value="-250" />
+	<feeling About="Naphtaali" Value="-250" />
+	 <feeling About="Insects" Value="-250" />
+	 <feeling About="Issachari" Value="-250" />
+
+<waterritual
+      Skill="Tactics"
+      
+    />
+	
+	
+      <interests>
+      <interest Tags="ruins,tech,historic" WillBuy="true" WillSell="false" MatchAny="true" Inverse="true" Description="the modern world" />
+      <interest Tags="cybernetics" WillBuy="false" WillSell="true" />
+      
+    </interests>
+    
+
+</faction>
+
+<faction
+	Name="Aric YawningMoon"
+	DisplayName = "The Crustal Mortars of Yawningmoon"
+    Visible="true"
+    InitialPlayerReputation="0" 
+	 PositiveSound="Sounds/Reputation/sfx_reputation_putusTemplar_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_putusTemplar_negative"
+	HistoricalSignificance="3"
+	
+	
+		EmblemTile="creatures/caste_12.bmp"
+    EmblemTileColor="b"
+    EmblemDetailColor="R"
+>
+
+	<feeling About="Robots" Value="0" />
+	<feeling About="Oozes" Value="-250" />
+	<feeling About="Cannibals" Value="-250" />
+	<feeling About= "Cragmensch" Value= "-500"/>
+	<feeling About="Worms" Value="-250" />
+<waterritual
+      Skill="HeavyWeapons"
+      
+    />
+	
+	
+      <interests>
+      <interest Tags="ruins,tech,historic" WillBuy="true" WillSell="false" MatchAny="true" Inverse="true" Description="the modern world" />
+      <interest Tags="cybernetics" WillBuy="false" WillSell="true" />
+      <interest Tags="artifact" />
+    </interests>
+    
+
+</faction>
+</factions>

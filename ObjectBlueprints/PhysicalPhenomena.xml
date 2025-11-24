@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<objects>
+
+
+<object Name="Aric PyroclasticAsh" Inherits="MiasmaticAsh">
+
+<part Name="Render" DisplayName="pyroclastic ash" />
+
+	<tag Name="DynamicObjectsTable:Aric AjiConch2" />
+	<tag Name="DynamicObjectsTable:Aric AjiConch3" />
+	<part Name="Description" Short="The fumes from beneath the earth are the fury of the gods. All light is lost inside." />
+	<tag Name="GasGenerationName" Value="Pyroclastic Ash Generation" />
+	
+</object>
+
+<object Name="PoisonGas" Load="Merge">
+
+	<tag Name="DynamicObjectsTable:Aric AjiConch2" />
+		
+</object>
+
+<object Name="Steam" Load="Merge">
+
+	<tag Name="DynamicObjectsTable:Aric AjiConch2" />
+	<tag Name="DynamicObjectsTable:Aric AjiConch3"/>
+</object>
+
+<object Name="StunGas" Load="Merge">
+
+	<tag Name="DynamicObjectsTable:Aric AjiConch2" />
+</object>
+		
+</objects>

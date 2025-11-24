@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--Templates -->
+<bodies>
+
+	 <bodyparttypevariants>
+
+		<bodyparttypevariant VariantOf="Missile Weapon" Type="Holster" LimbBlueprintProperty="SeveredHardpointBlueprint" LimbBlueprintDefault="SeveredHardpoint" RequiresType="" Category="Cloth" Abstract="true" Appendage="false" UsuallyOn="Body" Branching="Lateral,Vertical,Stratal,Longitudinal" />   
+
+	 </bodyparttypevariants>
+
+	<anatomies>
+	
+			<anatomy Name="AricHumanoidBelt">
+				  <part Type="Head">
+					<part Type="Face" />
+				  </part>
+				  <part Type="Back" />
+				  <part Type="Arm" Laterality="Right">
+					<part Type="Hand" Laterality="Right" SupportsDependent="Hands" />
+				  </part>
+				  <part Type="Arm" Laterality="Left">
+					<part Type="Hand" Laterality="Left" SupportsDependent="Hands" />
+				  </part>
+				  <part Type="Missile Weapon" Laterality="Right" />
+				  <part Type="Missile Weapon" Laterality="Left" />
+				  <part Type="Holster" Laterality="Right"/>
+				  <part Type="Holster" Laterality="Left"/>
+				  <part Type="Hands" DependsOn="Hands" />
+				  <part Type="Feet" />
+			  </anatomy>
+
+
+	</anatomies>
+</bodies>

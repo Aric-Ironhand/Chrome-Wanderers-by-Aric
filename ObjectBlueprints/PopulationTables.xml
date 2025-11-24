@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<populations>
+<!-- Yawningmoon -->
+
+  <population Name="Aric Child of the Hearth Kit">
+  
+		<group Name="Hammers" Style="pickone">
+
+			<object Blueprint="Cudgel4th" Weight="50" />
+			<group Name= "onehanders" Weight="50" Style="pickeach">
+				<object Blueprint="Cudgel4"/>
+				<object Blueprint="Carbide Shield"/>
+			</group>
+		  
+		</group>
+		
+		<group Name="Cannons" Style="pickone">
+
+			<object Blueprint="Chaingun" Weight="30" />
+			<object Blueprint="Flamethrower" Weight="30" />
+			<object Blueprint="Arc Cannon" Weight="30"/>
+		  
+		</group>
+		
+	</population>
+		  
+	<population Name="Aric Child of the Hearth Bulwark Kit">
+		<group Name="Hammers" Style="pickone">
+
+			<group Name= "onehanders" Weight="50" Style="pickeach">
+				<object Blueprint="Cudgel5"/>
+				<object Blueprint="Aric Praetorian Shield 2"/>
+			</group>
+			
+			<object Blueprint="Cudgel5th" Weight="50" />
+		  
+		</group>
+		
+		<group Name="Cannon" Style="pickone">
+
+			<object Blueprint="Chain Laser" Weight="80" />
+			<object Blueprint="Linear Cannon" Weight="20" />
+		  
+		</group>
+		
+	</population>
+	
+	<population Name="Aric Child of the Hearth Praesidium Kit">
+		<group Name="Hammers" Style="pickone">
+
+			<group Name= "onehanders" Weight="50" Style="pickeach">
+				<object Blueprint="Cudgel7"/>
+				<object Blueprint="Flawless Crysteel Shield"/>
+			</group>
+			
+			<object Blueprint="Cudgel7th" Weight="50" />
+		  
+		</group>
+		
+		<group Name="Cannon 1" Style="pickone">
+
+			<object Blueprint="Blast Cannon" Weight="50" />
+			<object Blueprint="Linear Cannon" Weight="50" />
+			
+					  
+		</group>
+		
+		<group Name="Cannon 2" Style="pickone">
+
+			<object Blueprint="Blast Cannon" Weight="50" />
+			<object Blueprint="Linear Cannon" Weight="50" />
+			
+					  
+		</group>
+		
+	</population>
+
+
+<!-- Ibul -->
+	  
+	  <population Name="Aric Artifex Kit">
+		<group Name="Pistol" Style="pickone">
+
+			<object Blueprint="Chain Pistol" Weight="50" />
+			<object Blueprint="Laser Pistol" Weight="50" />
+			  
+		</group>
+		
+		<group Name= "Gear" Style= "pickeach">
+			<object Blueprint="FireSupportGrenade1" Number="1-2" />
+			<object Blueprint="Telescopic Monocle" />
+			<object Blueprint="Stun Rod" />
+			<object Blueprint="Chem Cell" Number="2"/>
+			<object Blueprint="Lead Slug" Number="30" />
+	
+		</group>
+		
+	  </population>
+	  
+	  <population Name="Aric Artifex Savant Kit">
+		<group Name="Pistol" Style="pickone">
+
+			<object Blueprint="Arc Winder" Weight="50" />
+			<object Blueprint="Eigenpistol" Weight="50" />
+			  
+		</group>
+		
+		<group Name= "Gear" Style = "pickeach">
+			<object Blueprint="FireSupportGrenade2" Number = "2-3" />
+			<object Blueprint="Telescopic Monocle" />
+			<object Blueprint="Aric Advanced Stun Rod" />
+			<object Blueprint="Chem Cell" Number="2"/>
+		</group>
+		
+	  </population>
+	  
+	  <population Name="Aric Artifex Ingenium Kit">
+		<group Name="Pistol 1" Style="pickone">
+
+			<object Blueprint="High-Voltage Arc Winder" Weight="40"/>
+			<object Blueprint="Spaser Pistol" Weight="40" />
+			<object Blueprint="Hand Rail" Weight="20" />
+			
+			  
+		</group>
+		
+		<group Name="Floating Pistol 1" Style="pickone">
+
+			<object Blueprint="Aric Artifex Floating High-Voltage Arc Winder" Weight="40" />
+			<object Blueprint="Aric Artifex Floating Spaser Pistol" Weight="40" />
+			<object Blueprint="Aric Artifex Floating Hand Rail" Weight="20" />
+			  
+		</group>
+		
+		<group Name="Floating Pistol 2" Style="pickone">
+
+			<object Blueprint="Aric Artifex Floating High-Voltage Arc Winder" Weight="40" />
+			<object Blueprint="Aric Artifex Floating Spaser Pistol" Weight="40" />
+			<object Blueprint="Aric Artifex Floating Hand Rail" Weight="20" />
+			  
+		</group>
+		
+		<group Name="Gear" Style="pickeach">
+
+			<object Blueprint="FireSupportGrenade3" Number = "3" />
+			<object Blueprint="VISAGE" />
+			<object Blueprint="Aric Pacification Rod" />
+			<object Blueprint="Nuclear Cell" Number="3"/>
+			  
+		</group>
+		
+	  </population>
+	 
+	 <population Name="Aric Praetorian Rifle">
+		<group Name="Items" Style="pickone">
+
+			<object Blueprint="Carbine" Weight="50" />
+			<object Blueprint="Sniper Rifle" Weight="50" />
+			  
+		</group>
+	  </population>
+	  
+	  <population Name="Aric Praetorian Tribune Rifle">
+		<group Name="Items" Style="pickone">
+
+			<object Blueprint="Laser Rifle" Weight="70" />
+			<object Blueprint="Eigenrifle" Weight="30" />
+			  
+		</group>
+	  </population>
+	  
+	  <population Name="Aric Praetorian Prefect Rifle">
+		<group Name="Items" Style="pickone">
+
+			<object Blueprint="Spaser Rifle" Weight="50"  />
+			<object Blueprint="Light Rail" Weight="50"  />
+			  
+		</group>
+	  </population>
+	  
+	  <!-- Cybernetics -->
+	  
+	  <population Name="Aric YM Cybernetics">
+		<group Name="Items" Style="pickone">
+
+			<object Blueprint="Pentaceps" Number="1" Weight="25"  />
+			<object Blueprint="FireSuppressionSystem" Number="1" Weight="25"  />
+			<object Blueprint="ReactiveCranialPlating"  Number="1" Weight="25" />
+			<object Blueprint="ForceModulator" Number="1" Weight="25" />
+		  
+		</group>
+	  </population>
+	  
+	  <population Name="Aric Ekuemekiyye Cybernetics">
+		<group Name="Items" Style="pickone">
+
+			<object Blueprint="Pentaceps" Number="1" Weight="25"  />
+			<object Blueprint="TranslucentSkin" Number="1" Weight="25"  />
+			<object Blueprint="BionicArm" Number="1" Weight="25"  />
+			<object Blueprint="BionicLiver" Number="1" Weight="25"  />
+		  
+		</group>
+	  </population>
+	  
+	  <population Name="Aric Ibul Cybernetics">
+		<group Name="Items" Style="pickone">
+
+			<object Blueprint="BionicHands" Number="1" Weight="25"  />
+			<object Blueprint="DermalPlating" Number="1" Weight="25"  />
+			<object Blueprint="BionicHeart" Number="1" Weight="25"  />
+			<object Blueprint="FireSuppressionSystem" Number="1" Weight="25"  />
+		  
+		</group>
+	  </population>
+	  
+	  <!-- Entourages -->
+	  	  
+		<population Name="Aric Consul Bodyguard">
+		<group Name="Creatures" Style="pickone">
+
+				<object Blueprint ="Aric Praetorian" Number="1-2"/>
+		  
+		</group>
+	  </population>
+	  
+	  <population Name="Aric Magister Bodyguard">
+		<group Name="Creatures" Style="pickone">
+
+				<object Blueprint ="Aric Praetorian 2" Number="1-2"/>
+		  
+		</group>
+	  </population>
+	  
+	  <population Name="Aric Artifex Bodyguard">
+		<group Name="Creatures" Style="pickone">
+
+				<object Blueprint ="Aric Ibul Tinker Companion" Number="1"/>
+		  
+		</group>
+	  </population>
+	  
+	  <population Name="Aric Princeps Bodyguard">
+		<group Name="Creatures" Style="pickone">
+
+				<object Blueprint ="Aric Praetorian 3" Number="1-2"/>
+		  
+		</group>
+	  </population>
+	  
+	  <population Name="Aric Priest of all Suns Bodyguard1">
+		<group Name="Creatures" Style="pickone">
+
+				<object Blueprint ="Aric Syzgyrior" Number="1"/>
+		  
+		</group>
+	  </population>
+	  
+	  <population Name="Aric Priest of all Suns Bodyguard2">
+		<group Name="Creatures" Style="pickone">
+
+				<object Blueprint ="Aric Syzgyrior 2" Number="1"/>
+		  
+		</group>
+	  </population>
+	  <population Name="Aric Priest of all Suns Bodyguard3">
+		<group Name="Creatures" Style="pickone">
+
+				<object Blueprint ="Aric Syzgyrior 3" Number="1"/>
+		  
+		</group>
+	  </population>
+	  
+	  <!-- Spawning -->
+	  
+	  
+	  <population Name="EkuemekiyyeParty1">
+    
+      <group Name="Party" Style="pickeach">
+        <object Chance="100" Number="1" Blueprint="Aric Priest of All Suns" />
+        <object Chance="100" Number="1" Blueprint="Aric Priest of All Moons" />
+      
+        
+      </group>
+      
+   
+  </population>
+	  
+	  <population Name="JungleZoneGlobals" Load="Merge">
+  <group Name="Aric Ekuemekiyye Jungle" Style="pickone">
+    <object Weight="1" Name="Aric Syzgyrior" Number= "2" />
+	<object Weight="1" Blueprint="Aric Priest of All Suns" Number="1"  />
+	<object Weight="1" Blueprint="Aric Priest of All Moons" Number="1"  />
+	<object Weight="2" Blueprint="Aric Horticulturalist" Number="1-2"  />
+	<table Weight="196" Name="Nothing" />
+  </group>
+</population>
+
+<population Name="JunglePerSector" Load="Merge">
+    
+    <group Name="Creatures" Load= "Merge">
+      <table Weight="50" Name="EkuemekiyyeParty1" />
+          
+    </group>
+  </population> 
+  
+  <population Name="DeepJungleZoneGlobals-Creatures" Load= "Merge">
+    <object Chance="1" Name="Aric Syzgyrior 2" Number= "2" />
+	<object Chance="1" Blueprint="Aric Priest of All Suns 2" Number="1"  />
+	<object Chance="1" Blueprint="Aric Priest of All Moons 2" Number="1"  />
+	<object Chance="1" Blueprint="Aric Horticulturalist 2" Number="1-2"  />
+  </population>
+  
+  <population Name="BaroqueRuinsZoneGlobals-Creatures" Load= "Merge">
+    <object Chance="1" Name="Aric Syzgyrior 3" Number= "1" />
+	<object Chance="1" Blueprint="Aric Priest of All Suns 3" Number="1"  />
+	<object Chance="1" Blueprint="Aric Priest of All Moons 3" Number="1"  />
+	<object Chance="1" Blueprint="Aric Horticulturalist 3" Number="1-2"  />
+	
+	<object Chance="1" Name="Aric Artifex 3" Number= "1" />
+	<object Chance="1" Blueprint="Aric Consul 3" Number="1"  />
+	<object Chance="1" Blueprint="Aric Praetorian 3" Number="1"  />
+	<object Chance="1" Blueprint="Aric Eunuch 3" Number="1"  />
+	
+	<object Chance="1" Name="Aric Child of the Deep 3" Number= "1" />
+	<object Chance="1" Blueprint="Aric Child of the Wheel 3" Number="1"  />
+	<object Chance="1" Blueprint="Aric Child of the Hearth 3" Number="1"  />
+	<object Chance="1" Blueprint="Aric Fuming God-Child 3" Number="1"  />
+ </population>
+ 
+  <population Name="Tier5CaveCreatures" Load="Merge">
+    <group Name="Creatures" Load="Merge">
+
+		<object Weight="1" Number="1" Blueprint="Aric Child of the Hearth" />
+		<object Weight="1" Number="1" Blueprint="Aric Child of the Deep" />
+		<object Weight="1" Number="1" Blueprint="Aric Child of the Wheel" />
+		<object Weight="1" Number="1" Blueprint="Aric Fuming God-Child" />
+	</group>		
+  </population>
+  
+  <population Name="Tier6CavePopulation" Load="Merge">
+
+      <!--Groups-->
+      <group Name="Creatures" Load="Merge">
+        
+		<object Weight="1" Number="1-2" Blueprint="Aric Child of the Hearth" />
+		<object Weight="1" Number="1-2" Blueprint="Aric Child of the Deep" />
+		<object Weight="1" Number="1-2" Blueprint="Aric Child of the Wheel" />
+		<object Weight="1" Number="1-2" Blueprint="Aric Fuming God-Child" />
+		
+      </group>
+
+  </population>
+  
+    <population Name="Tier7CavePopulation" Load="Merge">
+
+      <!--Groups-->
+      <group Name="Creatures" Load="Merge">
+        
+		<object Weight="1" Number="1-2" Blueprint="Aric Child of the Hearth 2" />
+		<object Weight="1" Number="1-2" Blueprint="Aric Child of the Deep 2" />
+		<object Weight="1" Number="1-2" Blueprint="Aric Child of the Wheel 2" />
+		<object Weight="1" Number="1-2" Blueprint="Aric Fuming God-Child 2" />
+		
+      </group>
+
+  </population>
+  
+    <population Name="Tier8CavePopulation" Load="Merge">
+
+      <!--Groups-->
+      <group Name="Creatures" Load="Merge">
+        
+		<object Weight="1" Number="1-2" Blueprint="Aric Child of the Hearth 3" />
+		<object Weight="1" Number="1-2" Blueprint="Aric Child of the Deep 3" />
+		<object Weight="1" Number="1-2" Blueprint="Aric Child of the Wheel 3" />
+		<object Weight="1" Number="1-2" Blueprint="Aric Fuming God-Child 3" />
+		
+      </group>
+
+  </population>
+  
+   <population Name="LakeHinnomZoneGlobals" Load="Merge">
+    
+    <object Chance="5" Number="1" Blueprint="Aric Fuming God-Child 3" />
+    
+  </population>
+	  
+	  <population Name="TombCreatures" Load="Merge">
+    <group Name="Creatures" Load = "Merge">
+      <object Weight="1" Number="1" Blueprint="Aric Artifex 2" />
+	  <object Weight="1" Number="1" Blueprint="Aric Praetorian 2" />
+	  <object Weight="1" Number="1" Blueprint="Aric Eunuch 2" />
+      
+      </group>
+    
+  </population>
+  
+  <population Name="SaltDesertZoneGlobals" Load="Merge">
+    
+    <group Chance="1" Name="Aric Desert Praetorian" Style="pickeach">
+      <object Blueprint="Aric Praetorian"/>
+      <object Blueprint="Aric Praetorian Dog"/>
+
+    </group>
+    
+  </population>
+  
+ 
+	    
+	
+</populations>

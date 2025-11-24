@@ -1,0 +1,2225 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--Templates -->
+<objects>
+	<object Name= "AricBaseEkuemekiyye" Inherits= "BaseTrueKin">
+	
+	<part Name= "Render" DetailColor="W" ColorString="&amp;g" />
+	<part Name="Brain" Factions="Aric Ekuemekiyye-100" />
+	<part Name="Corpse" CorpseChance="100" CorpseBlueprint="Human Corpse" />
+	<part Name="CyberneticsHasImplants" Implants="NocturnalApex@head" />
+	<inventoryobject Blueprint="Ekuemekiyyen Greens" Number="3-4" />
+	<inventoryobject Blueprint="SalveTonic" Number="0-1" />
+	
+	<tag Name="BaseObject" Value="*noinherit" />
+	<property Name="NoLoot" Value="true" />
+	<part Name="RandomLoot" LootCreated="false" />
+	
+	</object>
+	
+	<object Name= "AricBaseIbul" Inherits= "BaseTrueKin">
+	<part Name= "Render" DetailColor="C" ColorString="&amp;c" />
+	<part Name="Brain" Factions="Aric Ibul-100" />
+	<part Name="Corpse" CorpseChance="100" CorpseBlueprint="Human Corpse" />
+	<part Name="CyberneticsHasImplants" Implants="CherubicVisage@face" />
+	
+	<inventoryobject Blueprint="SalveTonic" Number="0-1" />
+	
+	<tag Name="BaseObject" Value="*noinherit" />
+	<property Name="NoLoot" Value="true" />
+	<part Name="RandomLoot" LootCreated="false" />
+	
+	</object>
+	
+	<object Name= "AricBaseYawningMoon" Inherits= "BaseTrueKin">
+	
+	<part Name= "Render" DetailColor="R" ColorString="&amp;y" />
+	<part Name="Brain" Factions="Aric YawningMoon-100" />
+	<part Name="Corpse" CorpseChance="100" CorpseBlueprint="Human Corpse" />
+	<part Name="CyberneticsHasImplants" Implants="AirCurrentMicrosensor@head" />
+	<inventoryobject Blueprint="Smoldered Mushroom" Number= "1-2" />
+	<inventoryobject Blueprint="SalveTonic" Number="0-2" />
+	
+	<tag Name="BaseObject" Value="*noinherit" />
+	<property Name="NoLoot" Value="true" />
+	<part Name="RandomLoot" LootCreated="false" />
+	
+	</object>
+<!-- <anatomies>	
+	<anatomy Name= "HumanoidBelt">
+	 <part Type="Head">
+        <part Type="Face" />
+      </part>
+      <part Type="Back" />
+      <part Type="Arm" Laterality="Right">
+        <part Type="Hand" Laterality="Right" SupportsDependent="Hands" />
+      </part>
+      <part Type="Arm" Laterality="Left">
+        <part Type="Hand" Laterality="Left" SupportsDependent="Hands" />
+      </part>
+      <part Type="Missile Weapon" Laterality="Upper Right" />
+      <part Type="Missile Weapon" Laterality="Upper Left" />
+	  <part Type="Missile Weapon" Laterality="Lower Right" />
+      <part Type="Missile Weapon" Laterality="Lower Left" />
+      <part Type="Hands" DependsOn="Hands" />
+      <part Type="Feet" />
+	</anatomy>
+</anatomies>	 -->
+	
+	<!-- Ekuemekiyye Creatures -->
+	
+	<object Name="Aric Horticulturalist" Inherits= "AricBaseEkuemekiyye">
+
+<part Name= "Render" Tile="creatures/caste_1.bmp" DisplayName="Horticulturalist" />
+	<part Name = "Description" Short="The horticulturalists are responsible for the maintenance of the Toxic Arboretum they call home. Unique among the Truekin, they are known to consume the plants of Qud to temporarily manifest psychic powers of organic manipulation." />
+	
+	<stat Name="Level" Value="25" />
+    <stat Name="Hitpoints" Value="80" />
+    <stat Name="Strength" sValue="28" />
+    <stat Name="Toughness" sValue="26" />
+    <stat Name="Willpower" sValue="24" />
+	<stat Name="Ego" sValue= "20"/>
+	<stat Name="Agility" sValue= "32"/>
+	<stat Name= "Intelligence" sValue = "20"/>
+	<stat Name="Speed" Value="100" />
+	<stat Name="DV" Value="-7" />
+	<stat Name="AV" Value="5" />
+	
+	<tag Name="Tier" Value="5" />    
+	
+	<part Name="CyberneticsHasRandomImplants" ImplantChance="75" ImplantTable="Aric Ekuemekiyye Cybernetics" LicensesAtLeast="2" ChangeColor="false" />
+	<part Name="AIShootAndScoot" Duration="1d2" />
+	
+	<inventoryobject Blueprint="Grassy Yurtmat" />
+    <inventoryobject Blueprint="Aric Camoflauged Flexivest" />
+<!--     <inventoryobject Blueprint="Flexarmour Boots" />
+	<inventoryobject Blueprint="Flexarmour Gloves" />
+	<inventoryobject Blueprint="Flexarmour Cap" /> -->
+	
+	
+	<inventoryobject Blueprint="Aric Sunbird Bow" Number ="1" />
+	<inventoryobject Blueprint="Battle Axe4th" Number ="1" />
+	
+	<inventoryobject Blueprint="Aric Toxin Arrow1" Number="2d6"/>
+	<inventoryobject Blueprint="Aric Barbed Arrow1" Number="2d6"/>
+	<inventoryobject Blueprint="Aric Rusting Arrow1" Number="1d6"/>
+	
+	
+	<inventoryobject Blueprint="Horticulturalist Bio-Scanning Bracelet" />
+	<inventoryobject Blueprint="Gas Mask" />
+	<inventoryobject Blueprint="Crushed Grave Moss" Number="1-2"/>
+	
+	<mutation Name="Burgeoning" Level="4" />
+	
+		<skill Name="SingleWeaponFighting" />
+		<skill Name="SingleWeaponFighting_WeaponExpertise" />
+		<skill Name="SingleWeaponFighting_OpportuneAttacks"/>
+		
+		<skill Name="Axe" />
+		<skill Name="Axe_Expertise" />
+		<skill Name="Axe_Cleave" />
+				
+		<skill Name="Rifle_SteadyHands" />
+		<skill Name="Rifle_DrawABead" />
+		<skill Name="Rifle_SuppressiveFire" />
+		
+		<skill Name="Tactics_Charge" />
+		<skill Name="Acrobatics_SwiftReflexes"/>
+		
+		
+		<skill Name="Endurance_PoisonTolerance"/>
+		<skill Name="Discipline_IronMind"/>
+		
+		
+		
+    <stat Name="HeatResistance" Value="25" />
+    <stat Name="ColdResistance" Value="25" />
+    <stat Name="ElectricResistance" Value="25" />
+	
+	
+
+	</object>
+	
+	<object Name="Aric Horticulturalist 2" Inherits= "AricBaseEkuemekiyye">
+
+<part Name= "Render" Tile="creatures/caste_1.bmp" DisplayName="Horticulturalist Arborist" />
+	<part Name = "Description" Short="Arborists are responsible for maintaining the great trees that make up the toxic Ekuemekiyyen jungle, and discovering new specimens throughout the world. Unique among the Truekin, they are known to consume the plants of qud to temporarily manifest psychic powers of plant growth." />
+	
+	<stat Name="Level" Value="35" />
+    <stat Name="Hitpoints" Value="160" />
+    <stat Name="Strength" sValue="34" />
+    <stat Name="Toughness" sValue="30" />
+    <stat Name="Willpower" sValue="30" />
+	<stat Name="Ego" sValue= "20"/>
+	<stat Name="Agility" sValue= "38"/>
+	<stat Name= "Intelligence" sValue = "20"/>
+	<stat Name="Speed" Value="100" />
+	<stat Name="DV" Value="-4" />
+	<stat Name="AV" Value="6" />
+	<tag Name="Tier" Value="7" /> 
+	
+	<part Name="CyberneticsHasRandomImplants" ChangeColor="false" ImplantChance="100" ImplantTable="Aric Ekuemekiyye Cybernetics" LicensesAtLeast="2" />
+	<part Name="AIShootAndScoot" Duration="1d2" />
+	
+	<inventoryobject Blueprint="Grassy Yurtmat" />
+    <inventoryobject Blueprint="Aric Camoflauged Nanoweave Vest" />
+<!--     <inventoryobject Blueprint="Flexarmour Boots" />
+	<inventoryobject Blueprint="Flexarmour Gloves" />
+	<inventoryobject Blueprint="Flexarmour Cap" /> -->
+	
+	<inventoryobject Blueprint="Aric Sunbird Bow" Number ="1" />
+	<inventoryobject Blueprint="Battle Axe6th" Number ="1" />
+	
+	<inventoryobject Blueprint="Aric Toxin Arrow2" Number="2d6"/>
+	<inventoryobject Blueprint="Aric Barbed Arrow2" Number="2d6"/>
+	<inventoryobject Blueprint="Aric Rusting Arrow2" Number="1d6"/>
+	
+	<inventoryobject Blueprint="Horticulturalist Bio-Scanning Bracelet" />
+	<inventoryobject Blueprint="Gas Mask" />
+	
+	<inventoryobject Blueprint="Crushed Grave Moss" Number="1-3"/>
+	
+	<mutation Name="Burgeoning" Level="8" />
+	
+		<skill Name="SingleWeaponFighting" />
+		<skill Name="SingleWeaponFighting_WeaponExpertise" />
+		<skill Name="SingleWeaponFighting_OpportuneAttacks"/>
+		<skill Name="SingleWeaponFighting_PenetratingStrikes" />
+		
+		<skill Name="Rifles" />
+		<skill Name="Rifle_SteadyHands" />
+		<skill Name="Rifle_DrawABead" />
+		<skill Name="Rifle_SuppressiveFire" />
+		<skill Name="Rifle_FlatteningFire" />
+		<skill Name="Rifle_SureFire" />
+		<skill Name="Rifle_BeaconFire" />
+		
+		<skill Name="Axe" />
+		<skill Name="Axe_Expertise" />
+		<skill Name="Axe_Cleave" />
+		<skill Name="Cudgel_ChargingStrike" />
+		
+		
+		<skill Name="Tactics_Charge" />
+		<skill Name="Acrobatics_SwiftReflexes"/>
+		
+		
+		<skill Name="Endurance_PoisonTolerance"/>
+		<skill Name="Discipline_IronMind"/>
+		
+		
+		
+    <stat Name="HeatResistance" Value="40" />
+    <stat Name="ColdResistance" Value="40" />
+    <stat Name="ElectricResistance" Value="40" />
+
+	</object>
+	
+	<object Name="Aric Horticulturalist 3" Inherits= "AricBaseEkuemekiyye">
+
+<part Name= "Render" Tile="creatures/caste_1.bmp" DisplayName="Horticulturalist Jungleshaper" />
+	<part Name = "Description" Short="Jungleshapers gather, grow and protect the toxic Jungle that encompasses the River Null on both sides. Unique among the Truekin, they are known to consume the plants of qud to temporarily manifest psychic powers of plant growth." />
+	
+	<stat Name="Level" Value="45" />
+    <stat Name="Hitpoints" Value="220" />
+    <stat Name="Strength" sValue="38" />
+    <stat Name="Toughness" sValue="34" />
+    <stat Name="Willpower" sValue="34" />
+	<stat Name="Ego" sValue= "20"/>
+	<stat Name="Agility" sValue= "44"/>
+	<stat Name= "Intelligence" sValue = "20"/>
+	<stat Name="Speed" Value="100" />
+	<stat Name="DV" Value="-5" />
+	<stat Name="AV" Value="9" />
+	
+	<tag Name="Tier" Value="8" /> 
+	
+	
+	<part Name="CyberneticsHasRandomImplants" ChangeColor="false" ImplantChance="100" ImplantTable="Aric Ekuemekiyye Cybernetics" LicensesAtLeast="2" />
+	<part Name="AIShootAndScoot" Duration="1d2" />
+		
+	<inventoryobject Blueprint="Grassy Yurtmat" />
+    <inventoryobject Blueprint="Aric Camoflauged Nanoweave Vest" />
+
+	
+	<inventoryobject Blueprint="Aric Ibis Bow" Number ="1" />
+	<inventoryobject Blueprint="Battle Axe7th" Number ="1" />
+	
+	<inventoryobject Blueprint="Aric Toxin Arrow3" Number="2d6"/>
+	<inventoryobject Blueprint="Aric Barbed Arrow3" Number="2d6"/>
+	<inventoryobject Blueprint="Aric Rusting Arrow3" Number="1d6"/>
+	<inventoryobject Blueprint="Aric Mindrend Arrow" Number="1d6"/>
+	
+	<inventoryobject Blueprint="Horticulturalist Bio-Scanning Bracelet" />
+	<inventoryobject Blueprint="Gas Mask" />
+	
+	<inventoryobject Blueprint="Crushed Grave Moss" Number="2-5"/>
+	
+	<mutation Name="Burgeoning" Level="10" />
+	
+		<skill Name="Rifles" />
+		<skill Name="Rifle_SteadyHands" />
+		<skill Name="Rifle_DrawABead" />
+		<skill Name="Rifle_SuppressiveFire" />
+		<skill Name="Rifle_FlatteningFire" />
+		<skill Name="Rifle_SureFire" />
+		<skill Name="Rifle_BeaconFire" />
+		<skill Name="Rifle_OneShot" />
+		
+		<skill Name="SingleWeaponFighting" />
+		<skill Name="SingleWeaponFighting_WeaponExpertise" />
+		<skill Name="SingleWeaponFighting_OpportuneAttacks"/>
+		<skill Name="SingleWeaponFighting_PenetratingStrikes" />
+		<skill Name="SingleWeaponFighting_WeaponMastery" />
+		
+		<skill Name="Axe" />
+		<skill Name="Axe_Expertise" />
+		<skill Name="Axe_Cleave" />
+		<skill Name="Axe_Dismember" />
+		<skill Name="Cudgel_ChargingStrike" />
+
+		
+		
+		<skill Name="Tactics_Charge" />
+		<skill Name="Acrobatics_SwiftReflexes"/>
+		
+		
+		<skill Name="Endurance_PoisonTolerance"/>
+		<skill Name="Discipline_IronMind"/>
+		
+		
+		
+    <stat Name="HeatResistance" Value="60" />
+    <stat Name="ColdResistance" Value="60" />
+    <stat Name="ElectricResistance" Value="60" />
+
+	</object>
+	
+	<object Name="Aric Priest of All Suns" Inherits= "AricBaseEkuemekiyye">
+	<part Name= "Render" Tile="creatures/caste_2.bmp" DisplayName="Priest of All Suns" />
+	<part Name = "Description" Short="The priesthood of the Toxic Arboretum is a dual one- worshipping the dual aspects of the Syzgy. These priests lead during the peaceful day, when the Ekuemekiyyens rest, and prepare for the savagery of the Moon." />
+	
+	<stat Name="Level" Value="25" />
+    <stat Name="Hitpoints" Value="80" />
+    <stat Name="Strength" sValue="26" />
+    <stat Name="Toughness" sValue="20" />
+    <stat Name="Willpower" sValue="24" />
+	<stat Name="Ego" sValue= "28"/>
+	<stat Name="Agility" sValue= "26"/>
+	<stat Name= "Intelligence" sValue = "22"/>
+	<stat Name="Speed" Value="100" />
+	<stat Name= "AV" Value="7"/>
+	<stat Name="DV" Value="-6" />
+	<tag Name="Tier" Value="5" /> 
+	
+	<part Name="CyberneticsHasRandomImplants" ChangeColor="false" ImplantChance="75" ImplantTable="Aric Ekuemekiyye Cybernetics" LicensesAtLeast="2" />
+	<part Name="Leader" popTable="Aric Priest of all Suns Bodyguard1" />
+	
+    <inventoryobject Blueprint="Aric Mace of the Sun1" />
+	<inventoryobject Blueprint="Smiling Sun Mask"/>
+	
+	<skill Name="Cudgel" />
+	<skill Name="Cudgel_Bludgeon" />
+	<skill Name="Cudgel_Expertise" />
+	
+	<skill Name="SingleWeaponFighting" />
+	<skill Name="SingleWeaponFighting_WeaponExpertise" />
+	
+	<skill Name= "Persuasion"/>
+	<skill Name= "Persuasion_MenacingStare"/>
+	<skill Name= "Persuasion_Intimidate"/>
+	<skill Name= "Persuasion_Berate"/>
+	<skill Name= "Persuasion_InspiringPresence"/>
+
+	<stat Name="HeatResistance" Value="25" />
+    <stat Name="ColdResistance" Value="25" />
+    <stat Name="ElectricResistance" Value="25" />
+
+	</object>
+
+	<object Name="Aric Priest of All Suns 2" Inherits= "AricBaseEkuemekiyye">
+<part Name= "Render" Tile="creatures/caste_2.bmp" DisplayName="High Priest of All Suns" />
+	<part Name = "Description" Short="It is said that a willing sacrifice pleases the sun most highly. It is thus that the Priests of all Suns are extremely persuasive. One way or another." />
+	
+	<stat Name="Level" Value="35" />
+    <stat Name="Hitpoints" Value="175" />
+    <stat Name="Strength" sValue="30" />
+    <stat Name="Toughness" sValue="24" />
+    <stat Name="Willpower" sValue="28" />
+	<stat Name="Ego" sValue= "30"/>
+	<stat Name="Agility" sValue= "28"/>
+	<stat Name= "Intelligence" sValue = "26"/>
+	<stat Name="Speed" Value="100" />
+	<stat Name= "AV" Value="8"/>
+	<stat Name="DV" Value="-5" />
+	<tag Name="Tier" Value="7" /> 
+	
+	<part Name="CyberneticsHasRandomImplants" ChangeColor="false" ImplantChance="100" ImplantTable="Aric Ekuemekiyye Cybernetics" LicensesAtLeast="2" />
+	<part Name="Leader" popTable="Aric Priest of all Suns Bodyguard2" />
+	
+    <inventoryobject Blueprint="Aric Mace of the Sun2" />
+	<inventoryobject Blueprint="Smiling Sun Mask"/>
+	
+	<skill Name="Cudgel" />
+	<skill Name="Cudgel_Bludgeon" />
+	<skill Name="Cudgel_Expertise" />
+	<skill Name="Cudgel_Slam" />
+	
+	<skill Name="SingleWeaponFighting" />
+	<skill Name="SingleWeaponFighting_WeaponExpertise" />
+	<skill Name="SingleWeaponFighting_OpportuneAttacks"/>
+	
+	<skill Name= "Persuasion"/>
+	<skill Name= "Persuasion_MenacingStare"/>
+	<skill Name= "Persuasion_Intimidate"/>
+	<skill Name= "Persuasion_Berate"/>
+	<skill Name= "Persuasion_InspiringPresence"/>
+
+	<stat Name="HeatResistance" Value="40" />
+    <stat Name="ColdResistance" Value="40" />
+    <stat Name="ElectricResistance" Value="40" />
+	
+	
+	</object>
+	
+	<object Name="Aric Priest of All Suns 3" Inherits= "AricBaseEkuemekiyye">
+<part Name= "Render" Tile="creatures/caste_2.bmp" DisplayName="Arch Priest of All Suns" />
+	<part Name = "Description" Short="Archpriests are among the high leadership of Ekuemekiyye, responsible for the peaceful day, and the preparation of sacrifices for the priesthood of the Moon." />
+	
+	<stat Name="Level" Value="45" />
+    <stat Name="Hitpoints" Value="250" />
+    <stat Name="Strength" sValue="30" />
+    <stat Name="Toughness" sValue="24" />
+    <stat Name="Willpower" sValue="28" />
+	<stat Name="Ego" sValue= "36"/>
+	<stat Name="Agility" sValue= "30"/>
+	<stat Name= "Intelligence" sValue = "26"/>
+	<stat Name="Speed" Value="100" />
+	<stat Name= "AV" Value="11"/>
+	<stat Name="DV" Value="-6" />
+	<tag Name="Tier" Value="8" /> 
+	
+	<part Name="CyberneticsHasRandomImplants" ChangeColor="false"  ImplantChance="100" ImplantTable="Aric Ekuemekiyye Cybernetics" LicensesAtLeast="2" />
+	<part Name="Leader" popTable="Aric Priest of all Suns Bodyguard3" />
+	
+    <inventoryobject Blueprint="Aric Mace of the Sun3" />
+	<inventoryobject Blueprint="Smiling Sun Mask"/>
+	
+	<skill Name="Cudgel" />
+		<skill Name="Cudgel_Bludgeon" />
+		<skill Name="Cudgel_Expertise" />
+		<skill Name="Cudgel_Slam" />
+		<skill Name="Cudgel_ChargingStrike" />
+		<skill Name="Cudgel_Backswing"/>
+	
+	<skill Name="SingleWeaponFighting" />
+		<skill Name="SingleWeaponFighting_WeaponExpertise" />
+		<skill Name="SingleWeaponFighting_OpportuneAttacks"/>
+		<skill Name="SingleWeaponFighting_PenetratingStrikes" />
+		<skill Name="SingleWeaponFighting_WeaponMastery" />
+	
+	<skill Name= "Persuasion"/>
+	<skill Name= "Persuasion_MenacingStare"/>
+	<skill Name= "Persuasion_Intimidate"/>
+	<skill Name= "Persuasion_Berate"/>
+	<skill Name= "Persuasion_InspiringPresence"/>
+
+	<stat Name="HeatResistance" Value="60" />
+    <stat Name="ColdResistance" Value="60" />
+    <stat Name="ElectricResistance" Value="60" />
+	
+	</object>
+	
+	<object Name="Aric Priest of All Moons" Inherits= "AricBaseEkuemekiyye">
+	<part Name= "Render" Tile="creatures/caste_3.bmp" DetailColor="Y" DisplayName="Aric Priest of All Moons" />
+	<part Name = "Description" Short="The priesthood of the Toxic Arboretum is a dual one- worshipping the dual aspects of the Syzgy. These priests lead during the night, when the savage moon rules, and are responsible for the sacrificial rites that cause the new sun to be born with each coming dawn." />
+	
+	<stat Name="Level" Value="25" />
+    <stat Name="Hitpoints" Value="80" />
+    <stat Name="Strength" sValue="26" />
+    <stat Name="Toughness" sValue="20" />
+    <stat Name="Willpower" sValue="24" />
+	<stat Name="Ego" sValue= "28"/>
+	<stat Name="Agility" sValue= "26"/>
+	<stat Name= "Intelligence" sValue = "22"/>
+	<stat Name="Speed" Value="100" />
+	<stat Name= "AV" Value="5"/>
+	<stat Name="DV" Value="-6" />
+	
+	<tag Name="Tier" Value="5" /> 
+	
+	<part Name="CyberneticsHasRandomImplants" ChangeColor="false" ImplantChance="75" ImplantTable="Aric Ekuemekiyye Cybernetics" LicensesAtLeast="2" />
+	
+    <inventoryobject Blueprint="Aric Sickle of the Moon1" />
+	<inventoryobject Blueprint="Frowning Moon Mask"/>
+	
+	<skill Name="Axe" />
+		<skill Name="Axe_Expertise" />
+		<skill Name="Axe_Cleave" />
+		<skill Name="Axe_Dismember" />
+		
+	
+	<skill Name="SingleWeaponFighting" />
+	<skill Name="SingleWeaponFighting_WeaponExpertise" />
+	
+	<skill Name= "Discipline_IronMind"/>
+	<skill Name= "Discipline_Lionheart"/>
+
+	<stat Name="HeatResistance" Value="25" />
+    <stat Name="ColdResistance" Value="25" />
+    <stat Name="ElectricResistance" Value="25" />
+
+	
+	</object>
+	
+	<object Name="Aric Priest of All Moons 2" Inherits= "AricBaseEkuemekiyye">
+	<part Name= "Render" Tile="creatures/caste_3.bmp" DetailColor="Y" DisplayName="High Priest of All Moons" />
+	<part Name = "Description" Short="These warrior-priests lead hunting parties throughout the Arboretum and beyond. The responsibility of ensuring the Dawn is a great one." />
+	
+	<stat Name="Level" Value="35" />
+    <stat Name="Hitpoints" Value="175" />
+    <stat Name="Strength" sValue="30" />
+    <stat Name="Toughness" sValue="24" />
+    <stat Name="Willpower" sValue="28" />
+	<stat Name="Ego" sValue= "30"/>
+	<stat Name="Agility" sValue= "28"/>
+	<stat Name= "Intelligence" sValue = "26"/>
+	<stat Name="Speed" Value="100" />
+	<stat Name= "AV" Value="8"/>
+	<stat Name="DV" Value="-5" />
+	<tag Name="Tier" Value="7" /> 
+	<part Name="CyberneticsHasRandomImplants" ChangeColor="false" ImplantChance="100" ImplantTable="Aric Ekuemekiyye Cybernetics" LicensesAtLeast="2" />
+	
+    <inventoryobject Blueprint="Aric Sickle of the Moon2" />
+	<inventoryobject Blueprint="Frowning Moon Mask"/>
+	
+	<skill Name="Axe" />
+	<skill Name="Axe_Expertise" />
+	<skill Name="Axe_Cleave" />
+	<skill Name="Axe_Dismember" />
+	<skill Name="Axe_Decapitate" />
+	<skill Name="Axe_Berserk" />
+	
+	<skill Name="SingleWeaponFighting" />
+		<skill Name="SingleWeaponFighting_WeaponExpertise" />
+		<skill Name="SingleWeaponFighting_OpportuneAttacks"/>
+		<skill Name="SingleWeaponFighting_PenetratingStrikes" />
+	
+	<skill Name= "Discipline_IronMind"/>
+	<skill Name= "Discipline_Lionheart"/>
+
+	<stat Name="HeatResistance" Value="40" />
+    <stat Name="ColdResistance" Value="40" />
+    <stat Name="ElectricResistance" Value="40" />
+	</object>
+	
+	<object Name="Aric Priest of All Moons 3" Inherits= "AricBaseEkuemekiyye">
+	<part Name= "Render" Tile="creatures/caste_3.bmp" DetailColor="Y" DisplayName="Arch Priest of All Moons" />
+	<part Name = "Description" Short="Archpriests lead only the most savage hunts on the Night of the Black Moon, where none that are caught survive to the altar." />
+	
+	<stat Name="Level" Value="45" />
+    <stat Name="Hitpoints" Value="250" />
+    <stat Name="Strength" sValue="34" />
+    <stat Name="Toughness" sValue="24" />
+    <stat Name="Willpower" sValue="28" />
+	<stat Name="Ego" sValue= "36"/>
+	<stat Name="Agility" sValue= "30"/>
+	<stat Name="Intelligence" sValue = "26"/>
+	<stat Name="Speed" Value="100" />
+	<stat Name= "AV" Value="11"/>
+		<stat Name="DV" Value="-4" />
+	<tag Name="Tier" Value="8" /> 
+	
+	<part Name="CyberneticsHasRandomImplants" ChangeColor="false" ImplantChance="100" ImplantTable="Aric Ekuemekiyye Cybernetics" LicensesAtLeast="2" />
+	
+	<inventoryobject Blueprint="Aric Sickle of the Moon3" />
+	<inventoryobject Blueprint="Frowning Moon Mask"/>
+	
+	<skill Name="Axe" />
+	<skill Name="Axe_Expertise" />
+	<skill Name="Axe_Cleave" />
+	<skill Name="Axe_Dismember" />
+	<skill Name="Axe_Decapitate" />
+	<skill Name="Axe_Berserk" />
+	
+	<skill Name="SingleWeaponFighting" />
+	<skill Name="SingleWeaponFighting_WeaponExpertise" />
+	<skill Name="SingleWeaponFighting_OpportuneAttacks"/>
+	<skill Name="SingleWeaponFighting_PenetratingStrikes" />
+	
+	<skill Name= "Discipline_IronMind"/>
+	<skill Name= "Discipline_Lionheart"/>
+
+	<stat Name="HeatResistance" Value="60" />
+    <stat Name="ColdResistance" Value="60" />
+    <stat Name="ElectricResistance" Value="60" />
+
+	</object>
+	
+	<object Name="Aric Syzgyrior" Inherits= "AricBaseEkuemekiyye">
+	
+<part Name= "Render" Tile="creatures/caste_4.bmp" DisplayName="Syzgyrior" />
+	<part Name = "Description" Short="The pelt-caped Syzgyrior serve the dual priesthood of Ekuemekiyye as warriors, servants and hunters of sacrifice. Many are said to believe themselves to absorb the power of those they slay, and often keep grisly trophies." />
+	
+	<stat Name="Level" Value="25" />
+    <stat Name="Hitpoints" Value="80" />
+    <stat Name="Strength" sValue="28" />
+    <stat Name="Toughness" sValue="26" />
+    <stat Name="Willpower" sValue="24" />
+	<stat Name="Ego" sValue= "20"/>
+	<stat Name="Agility" sValue= "32"/>
+	<stat Name="Intelligence" sValue = "20"/>
+	<stat Name="Speed" Value="125" />
+	<stat Name="AV" Value="5"/>
+	<stat Name="DV" Value="-8" />
+	
+	<tag Name="Tier" Value="5" /> 
+	
+	
+	<part Name="CyberneticsHasRandomImplants" ChangeColor="false" ImplantChance="75" ImplantTable="Aric Ekuemekiyye Cybernetics" LicensesAtLeast="2" />
+	
+	<inventoryobject Blueprint="Panther's Cloak" />
+    <inventoryobject Blueprint="Aric Camoflauged Flexivest" />
+    
+	
+	<inventoryobject Blueprint="Aric Mace of the Sun1" />
+	<inventoryobject Blueprint="Aric Sickle of the Moon1" />
+	<inventoryobject Blueprint= "Aric Fanged Sun and Moon Mask"/>
+	
+	
+	<inventoryobject Blueprint="SkulkTonic"/>
+	
+	
+		<skill Name="ShortBlades" />
+		<skill Name="ShortBlades_Expertise" />
+		<skill Name="ShortBlades_Bloodletter" />
+				
+		<skill Name="Tactics_Charge" />
+				
+		<skill Name="Axe" />
+		<skill Name="Axe_Expertise" />
+		<skill Name="Axe_Cleave" />
+		
+		<skill Name="Cudgel" />
+		<skill Name="Cudgel_Bludgeon" />
+		<skill Name="Cudgel_Expertise" />
+		<skill Name="Cudgel_Slam" />
+		
+		<skill Name="Multiweapon_Fighting" />
+		<skill Name="Multiweapon_Flurry" />
+		<skill Name="Multiweapon_Proficiency"/>
+				
+    <stat Name="HeatResistance" Value="25" />
+    <stat Name="ColdResistance" Value="25" />
+    <stat Name="ElectricResistance" Value="25" />
+
+	</object>
+	
+	<object Name="Aric Syzgyrior 2" Inherits= "AricBaseEkuemekiyye">
+<part Name= "Render" Tile="creatures/caste_4.bmp" DisplayName="Syzgyrior Sacrifice Hunter" />
+	<part Name = "Description" Short="The twin souls of the Syzgyrior serve the sun and moon equally, prowling through the jungle for sacrifice, and guarding the cities through the day of rest." />
+	
+	<stat Name="Level" Value="35" />
+    <stat Name="Hitpoints" Value="160" />
+    <stat Name="Strength" sValue="34" />
+    <stat Name="Toughness" sValue="30" />
+    <stat Name="Willpower" sValue="30" />
+	<stat Name="Ego" sValue= "20"/>
+	<stat Name="Agility" sValue= "38"/>
+	<stat Name="Intelligence" sValue = "20"/>
+	<stat Name="Speed" Value="130" />
+	<stat Name="DV" Value="-7" />
+	<stat Name="AV" Value="1" />
+	
+	<tag Name="Tier" Value="7" /> 
+	
+	<part Name="CyberneticsHasRandomImplants" ChangeColor="false" ImplantChance="100" ImplantTable="Aric Ekuemekiyye Cybernetics" LicensesAtLeast="2" />
+	
+	
+	<inventoryobject Blueprint="Aric Slumberling Cloak" />
+    <inventoryobject Blueprint="Nanoweave Vest" />
+<!--     <inventoryobject Blueprint="Flexarmour Boots" />
+	<inventoryobject Blueprint="Nanoweave Gloves" />
+	<inventoryobject Blueprint="Flexarmour Cap" /> -->
+	
+	<inventoryobject Blueprint="Aric Toxic Fanged Sun and Moon Mask" />
+	<inventoryobject Blueprint="Aric Mace of the Sun2" />
+	<inventoryobject Blueprint="Aric Sickle of the Moon2" />
+	
+	<inventoryobject Blueprint="SkulkTonic" Number= "1-2"/>
+	
+	
+		<skill Name="ShortBlades" />
+		<skill Name="ShortBlades_Expertise" />
+		<skill Name="ShortBlades_Bloodletter" />
+		<skill Name="ShortBlades_Jab" />
+		<skill Name="ShortBlades_Rejoinder" />
+		
+		<skill Name="Tactics_Charge" />
+		
+		<skill Name="Axe" />
+		<skill Name="Axe_Expertise" />
+		<skill Name="Axe_Cleave" />
+		<skill Name="Axe_Dismember" />
+		<skill Name="Cudgel_ChargingStrike" />
+		
+		<skill Name="Cudgel" />
+		<skill Name="Cudgel_Bludgeon" />
+		<skill Name="Cudgel_Expertise" />
+		<skill Name="Cudgel_Slam" />
+		
+		
+		<skill Name="Multiweapon_Fighting" />
+		<skill Name="Multiweapon_Flurry" />
+		<skill Name="Multiweapon_Proficiency"/>
+		<skill Name="Multiweapon_Expertise"/>
+		<skill Name="Multiweapon_Mastery"/>
+		
+		<skill Name="Discipline_Lionheart"/>
+		
+		<skill Name="Acrobatics"/>
+		<skill Name="Acrobatics_SwiftReflexes"/>
+		<skill Name="Acrobatics_Dodge"/>
+		
+		
+	
+    <stat Name="HeatResistance" Value="40" />
+    <stat Name="ColdResistance" Value="40" />
+    <stat Name="ElectricResistance" Value="40" />
+	</object>
+	
+	
+	<object Name="Aric Syzgyrior 3" Inherits= "AricBaseEkuemekiyye">
+		<part Name= "Render" Tile="creatures/caste_4.bmp" DisplayName="Syzgyrior Arachnowarrior" />
+		<part Name="Description" Short="The greatest of the Syzgyrior eschew the cloaks of their brethren in favour of emulating a beast. Most terrifying of all is the arachnowarrior, the many blades and toxic fangs wearing down the defences of any foe."/>
+		<stat Name="Level" Value="45" />
+		<stat Name="Hitpoints" Value="220" />
+		<stat Name="Strength" sValue="38" />
+		<stat Name="Toughness" sValue="34" />
+		<stat Name="Willpower" sValue="34" />
+		<stat Name="Ego" sValue= "20"/>
+		<stat Name="Agility" sValue= "44"/>
+		<stat Name="Intelligence" sValue = "20"/>
+		<stat Name="Speed" Value="150" />
+		<stat Name="AV" Value= "9"/>
+		<stat Name="DV" Value= "-5"/>
+		
+		<tag Name="Tier" Value="8" /> 
+		
+		
+		<part Name="CyberneticsHasImplants" Implants="EquipmentRack@body,NocturnalApex@head" />
+		<part Name="CyberneticsHasRandomImplants" ChangeColor="false" ImplantChance="100" ImplantTable="Aric Ekuemekiyye Cybernetics" LicensesAtLeast="2"/>
+		<mutation Name="MultipleArms" Pairs="2" />
+		
+		<inventoryobject Blueprint="Helping Hands" Number="2" />
+		<inventoryobject Blueprint="Aric Camoflauged Nanoweave Vest" />
+<!-- 		<inventoryobject Blueprint="Nanoweave Boots" />
+		<inventoryobject Blueprint="Nanoweave Gloves" />
+		<inventoryobject Blueprint="Nanoweave Cap" /> -->
+		
+		<inventoryobject Blueprint="Aric Toxic Fanged Sun and Moon Mask"  />
+		<inventoryobject Blueprint="Aric Mace of the Sun3" IntProperties="AlwaysEquipAsWeapon:1" />
+		<inventoryobject Blueprint="Aric Mace of the Sun3" IntProperties="AlwaysEquipAsWeapon:2" />
+		<inventoryobject Blueprint="Aric Mace of the Sun3" IntProperties="AlwaysEquipAsWeapon:1" />
+		<inventoryobject Blueprint="Aric Sickle of the Moon3" IntProperties="AlwaysEquipAsWeapon:2" />
+		<inventoryobject Blueprint="Aric Sickle of the Moon3" IntProperties="AlwaysEquipAsWeapon:1" />
+		<inventoryobject Blueprint="Aric Sickle of the Moon3" IntProperties="AlwaysEquipAsWeapon:2" />
+		
+		<skill Name="ShortBlades" />
+		<skill Name="ShortBlades_Expertise" />
+		<skill Name="ShortBlades_Bloodletter" />
+		<skill Name="ShortBlades_Jab" />
+		<skill Name="ShortBlades_Hobble" />
+		<skill Name="ShortBlades_Rejoinder" />
+		<skill Name="ShortBlades_Shank" />
+		
+		<skill Name="Tactics_Charge" />
+		
+		<skill Name="Axe" />
+		<skill Name="Axe_Expertise" />
+		<skill Name="Axe_Cleave" />
+		<skill Name="Axe_Dismember" />
+		<skill Name="Cudgel_ChargingStrike" />
+		<skill Name="Axe_Decapitate" />
+		<skill Name="Axe_Berserk" />
+		
+		<skill Name="Cudgel" />
+		<skill Name="Cudgel_Bludgeon" />
+		<skill Name="Cudgel_Expertise" />
+		<skill Name="Cudgel_Slam" />
+		<skill Name="Cudgel_Backswing"/>
+		<skill Name= "Cudgel_SmashUp" />
+		
+		<skill Name="Multiweapon_Fighting" />
+		<skill Name="Multiweapon_Flurry" />
+		<skill Name="Multiweapon_Proficiency"/>
+		<skill Name="Multiweapon_Expertise"/>
+		<skill Name="Multiweapon_Mastery"/>
+		
+	</object>
+	
+	
+	<!-- Ibul creatures -->
+	<object Name="Aric Artifex" Inherits= "AricBaseIbul">
+	
+	<part Name= "Render" Tile="creatures/caste_5.bmp" DisplayName="Artifex" />
+	<part Name = "Description" Short="Claiming a line of descent of master to apprentice stretching back to the eaters, the Artifices construct all manner of wonders for their Consular Executors. " />
+	
+	<stat Name="Level" Value="25" />
+    <stat Name="Hitpoints" Value="100" />
+    <stat Name="Strength" sValue="24" />
+    <stat Name="Toughness" sValue="28" />
+    <stat Name="Willpower" sValue="24" />
+	<stat Name="Ego" sValue= "20"/>
+	<stat Name="Agility" sValue= "26"/>
+	<stat Name="Intelligence" sValue = "28"/>
+	<stat Name="Speed" Value="100" />
+	<stat Name= "AV" Value="7"/>
+	<stat Name="DV" Value="-5" />
+	<tag Name="Tier" Value="5" /> 
+	
+	<part Name="CyberneticsHasRandomImplants" ChangeColor="false" ImplantChance="75" ImplantTable="Aric Ibul Cybernetics" LicensesAtLeast="2" />
+	
+	
+	<tag Name="InventoryPopulationTable" Value="Aric Artifex Kit" />
+	<part Name="Leader" popTable="Aric Artifex Bodyguard" />
+	<part Name="AIShootAndScoot" Duration="1d2" />
+	
+	
+	<skill Name="Cudgel" />
+	<skill Name="Cudgel_Bludgeon" />
+	<skill Name="Cudgel_Expertise" />
+		
+	<skill Name="SingleWeaponFighting" />
+	<skill Name="SingleWeaponFighting_WeaponExpertise" />
+	
+	<skill Name="Pistol" />
+    <skill Name="Pistol_SteadyHands" />
+	
+	<skill Name="Tinkering_Repair" />
+    <skill Name="Tinkering_Tinker1" />
+    <skill Name="Tinkering_Disassemble" />
+    <skill Name="Tinkering_DeployTurret" />
+    <skill Name="Tinkering_LayMine" />
+    <skill Name="Tinkering_Tinker2" />
+    <skill Name="Tinkering_Scavenger" />
+	
+	<stat Name="HeatResistance" Value="25" />
+    <stat Name="ColdResistance" Value="50" />
+    <stat Name="ElectricResistance" Value="40" />
+
+	</object>
+	
+	<object Name="Aric Artifex 2" Inherits= "AricBaseIbul">
+
+<part Name= "Render" Tile="creatures/caste_5.bmp" DisplayName="Artifex Savant" />
+	<part Name = "Description" Short="Ibul Savants lead their studios in the manufacture of and development of new cybernetics, servitors and other such technology. On such wonders, is the military and economic might of the Ice Sheathed Arcology built. " />
+	
+	<stat Name="Level" Value="35" />
+    <stat Name="Hitpoints" Value="200" />
+    <stat Name="Strength" sValue="28" />
+    <stat Name="Toughness" sValue="32" />
+    <stat Name="Willpower" sValue="28" />
+	<stat Name="Ego" sValue= "26"/>
+	<stat Name="Agility" sValue= "30"/>
+	<stat Name="Intelligence" sValue = "34"/>
+	<stat Name="Speed" Value="90" />
+	<stat Name= "AV" Value="10"/>
+	
+	<tag Name="Tier" Value="7" /> 
+	
+	<part Name="CyberneticsHasRandomImplants" ChangeColor="false" ImplantChance="100" ImplantTable="Aric Ibul Cybernetics"  LicensesAtLeast="2"/>
+	
+
+	<part Name="Leader" popTable="Aric Artifex Bodyguard" />	
+	<tag Name="InventoryPopulationTable" Value="Aric Artifex Savant Kit" />
+	<part Name="AIShootAndScoot" Duration="1d2" />
+		
+	<skill Name="Cudgel" />
+	<skill Name="Cudgel_Bludgeon" />
+	<skill Name="Cudgel_Expertise" />
+		
+	<skill Name="SingleWeaponFighting" />
+	<skill Name="SingleWeaponFighting_WeaponExpertise" />
+	
+	<skill Name="Pistol" />
+    <skill Name="Pistol_SteadyHands" />
+	
+	<skill Name="Tinkering_Repair" />
+    <skill Name="Tinkering_Tinker1" />
+    <skill Name="Tinkering_Disassemble" />
+    <skill Name="Tinkering_DeployTurret" />
+    <skill Name="Tinkering_LayMine" />
+    <skill Name="Tinkering_Tinker2" />
+    <skill Name="Tinkering_Scavenger" />
+	<skill Name="Tinkering_Tinker3" />
+	
+	<stat Name="HeatResistance" Value="50" />
+    <stat Name="ColdResistance" Value="75" />
+    <stat Name="ElectricResistance" Value="60" />
+
+	</object>
+	
+	<object Name="Aric Artifex 3" Inherits= "AricBaseIbul">
+
+	<part Name= "Render" Tile="creatures/caste_5.bmp" DisplayName="Artifex Ingenium" />
+	<part Name = "Description" Short="Ingenium is the highest rank an Artifex can hope to reach. In incredible demand, they are the pride of whichever tower is able to command their allegiance." />
+	
+	<stat Name="Level" Value="35" />
+    <stat Name="Hitpoints" Value="200" />
+    <stat Name="Strength" sValue="28" />
+    <stat Name="Toughness" sValue="32" />
+    <stat Name="Willpower" sValue="28" />
+	<stat Name="Ego" sValue= "26"/>
+	<stat Name="Agility" sValue= "30"/>
+	<stat Name="Intelligence" sValue = "34"/>
+	<stat Name="Speed" Value="110" />
+	<stat Name= "AV" Value="13"/>
+		<stat Name="DV" Value="3" />
+	<tag Name="Tier" Value="8" /> 
+	
+	<part Name="CyberneticsHasImplants" Implants="MagneticCore@body,CherubicVisage@face" />
+	<part Name="CyberneticsHasRandomImplants" ChangeColor="false" ImplantChance="100" ImplantTable="Aric Ibul Cybernetics" LicensesAtLeast="2" />
+		
+	<tag Name="InventoryPopulationTable" Value="Aric Artifex Ingenium Kit" />
+	<part Name="Leader" popTable="Aric Artifex Bodyguard" />
+	<part Name="AIShootAndScoot" Duration="1d2" />
+	
+	<skill Name="Cudgel" />
+	<skill Name="Cudgel_Bludgeon" />
+	<skill Name="Cudgel_Expertise" />
+		
+	<skill Name="SingleWeaponFighting" />
+	<skill Name="SingleWeaponFighting_WeaponExpertise" />
+	<skill Name="SingleWeaponFighting_OpportuneAttacks"/>
+	
+	<skill Name="Pistol" />
+    <skill Name="Pistol_SteadyHands" />
+	<skill Name= "Pistol_Akimbo"/>
+	<skill Name="Pistol_WeakSpotter" />
+    <skill Name="Pistol_EmptyTheClips" />
+	
+	<skill Name="Tinkering_Repair" />
+    <skill Name="Tinkering_Tinker1" />
+    <skill Name="Tinkering_Disassemble" />
+    <skill Name="Tinkering_DeployTurret" />
+    <skill Name="Tinkering_LayMine" />
+    <skill Name="Tinkering_Tinker2" />
+    <skill Name="Tinkering_Scavenger" />
+	<skill Name="Tinkering_Tinker3" />
+	
+	<stat Name="HeatResistance" Value="50" />
+    <stat Name="ColdResistance" Value="100" />
+    <stat Name="ElectricResistance" Value="75" />
+
+	</object>
+	
+	<object Name="Aric Ibul Tinker Companion" Inherits="Random Turret Tinker">
+	
+		<part Name="Render" DisplayName="Artifex Fortification Bot" Tile="Aric_Ibul_Tinker.png" DetailColor="b" ColorString="&amp;B" />
+	
+		<part Name="Brain" Factions="Aric Ibul-100" />
+		<tag Name="ExcludeFromDynamicEncounters"/>
+	</object>
+	
+	<object Name="Aric Consul" Inherits= "AricBaseIbul">
+
+	<part Name= "Render" Tile="creatures/caste_6.bmp" DisplayName="Consul" />
+	<part Name = "Description" Short="Every tower within the Ice Sheathed arcology is ruled by their Chief Executor. The Will of these Executors trickles down through every level of the consulate- these indiviudals are responsible for ensuring their will is done." />
+	
+	<stat Name="Level" Value="25" />
+    <stat Name="Hitpoints" Value="80" />
+    <stat Name="Strength" sValue="24" />
+    <stat Name="Toughness" sValue="20" />
+    <stat Name="Willpower" sValue="24" />
+	<stat Name="Ego" sValue= "28"/>
+	<stat Name="Agility" sValue= "26"/>
+	<stat Name="Intelligence" sValue = "22"/>
+	<stat Name="Speed" Value="100" />
+	<stat Name= "AV" Value="5"/>
+	<stat Name="DV" Value="-5" />
+	
+	<tag Name="Tier" Value="5" /> 
+	
+	<part Name="CyberneticsHasRandomImplants" ChangeColor="false" ImplantChance="75" ImplantTable="Aric Ibul Cybernetics" LicensesAtLeast="2" />
+	<part Name="Leader" popTable="Aric Consul Bodyguard" />
+	
+    <inventoryobject Blueprint="Aric Consul Force Bracelet" />
+    <inventoryobject Blueprint="Walking Stick" />
+	<inventoryobject Blueprint="Borderlands Revolver" />
+	<inventoryobject Blueprint="Lead Slug" Number="20" />
+	
+	
+	<skill Name= "Persuasion"/>
+	<skill Name= "Persuasion_MenacingStare"/>
+	<skill Name= "Persuasion_Intimidate"/>
+	<skill Name= "Persuasion_Berate"/>
+	<skill Name= "Persuasion_InspiringPresence"/>
+	
+	
+
+	<skill Name="Pistol_WeakSpotter" />
+
+	<stat Name="HeatResistance" Value="25" />
+    <stat Name="ColdResistance" Value="50" />
+    <stat Name="ElectricResistance" Value="25" />
+
+	</object>
+	
+	<object Name="Aric Consul 2" Inherits= "AricBaseIbul">
+
+	<part Name= "Render" Tile="creatures/caste_6.bmp" DisplayName="Consul Magister" />
+	<part Name = "Description" Short="The Magisters hold the sacred duty of management. They are responsible for ensuring the productivity of their myriad subdivisions, from nutrient production to diplomatic relations " />
+
+	<stat Name="Level" Value="35" />
+    <stat Name="Hitpoints" Value="175" />
+    <stat Name="Strength" sValue="26" />
+    <stat Name="Toughness" sValue="24" />
+    <stat Name="Willpower" sValue="28" />
+	<stat Name="Ego" sValue= "34"/>
+	<stat Name="Agility" sValue= "30"/>
+	<stat Name="Intelligence" sValue = "26"/>
+	<stat Name="Speed" Value="100" />
+	<stat Name= "AV" Value="8"/>
+	<stat Name="DV" Value="-5" />
+	
+	<tag Name="Tier" Value="7" /> 
+
+	<part Name="CyberneticsHasRandomImplants" ChangeColor="false" ImplantChance="100" ImplantTable="Aric Ibul Cybernetics" LicensesAtLeast="2" />
+	<part Name="Leader" popTable="Aric Magister Bodyguard" />
+	
+    <inventoryobject Blueprint="Aric Consul Force Bracelet" />
+	<inventoryobject Blueprint="Hologram Bracelet" />
+    <inventoryobject Blueprint="Amber-Tipped Staff" />
+	<inventoryobject Blueprint="Aric Magister Pistol" />
+	<inventoryobject Blueprint="Lead Slug" Number="20" />
+
+
+	<skill Name= "Persuasion"/>
+	<skill Name= "Persuasion_MenacingStare"/>
+	<skill Name= "Persuasion_Intimidate"/>
+	<skill Name= "Persuasion_Berate"/>
+	<skill Name= "Persuasion_InspiringPresence"/>
+	
+	<skill Name="Pistol" />
+    <skill Name="Pistol_SteadyHands" />
+	
+	<skill Name= "Discipline_IronMind"/>
+	<skill Name= "Discipline_Lionheart"/>
+
+	<stat Name="HeatResistance" Value="40" />
+    <stat Name="ColdResistance" Value="75" />
+    <stat Name="ElectricResistance" Value="40" />
+
+	</object>
+	
+	<object Name="Aric Consul 3" Inherits= "AricBaseIbul">
+	<part Name= "Render" Tile="creatures/caste_6.bmp" DisplayName="Consul Princeps" />
+	<part Name = "Description" Short="Princeps often have the great honour of becoming Directors of the various divisions within each tower. Some even gain that most esteemd positon of Assistant to the Executor." />
+
+	<stat Name="Level" Value="45" />
+    <stat Name="Hitpoints" Value="250" />
+    <stat Name="Strength" sValue="26" />
+    <stat Name="Toughness" sValue="24" />
+    <stat Name="Willpower" sValue="28" />
+	<stat Name="Ego" sValue= "40"/>
+	<stat Name="Agility" sValue= "30"/>
+	<stat Name="Intelligence" sValue = "26"/>
+	<stat Name="Speed" Value="100" />
+	<stat Name= "AV" Value="11"/>
+	<stat Name="DV" Value="-3" />
+	
+	<tag Name="Tier" Value="8" /> 
+
+	<part Name="CyberneticsHasRandomImplants" ChangeColor="false" ImplantChance="100" ImplantTable="Aric Ibul Cybernetics" LicensesAtLeast="2" />
+	<part Name="Leader" popTable="Aric Princeps Bodyguard" />
+	
+    <inventoryobject Blueprint="Aric Consul Force Bracelet" />
+	<inventoryobject Blueprint="Tri-Hologram Bracelet" />
+    <inventoryobject Blueprint="Amber-Tipped Staff" />
+	<inventoryobject Blueprint="Aric Princeps Pistol" />
+	<inventoryobject Blueprint="Nuclear Cell" />
+
+	<skill Name= "Persuasion"/>
+	<skill Name= "Persuasion_MenacingStare"/>
+	<skill Name= "Persuasion_Intimidate"/>
+	<skill Name= "Persuasion_Berate"/>
+	<skill Name= "Persuasion_InspiringPresence"/>
+	
+	<skill Name="Pistol" />
+    <skill Name="Pistol_SteadyHands" />
+	
+	<skill Name= "Discipline_IronMind"/>
+	<skill Name= "Discipline_Lionheart"/>
+
+	<stat Name="HeatResistance" Value="50" />
+    <stat Name="ColdResistance" Value="100" />
+    <stat Name="ElectricResistance" Value="50" />
+
+	</object>
+	
+	<object Name="Aric Praetorian" Inherits= "AricBaseIbul">
+	<part Name= "Render" Tile="creatures/caste_7.bmp" DisplayName="Praetorian" />
+	<part Name = "Description" Short="The Praetorian caste are the warriors of Ibul, enforcing the will of the Executors and defending their assets from both external threats from the glacial plains and the ambition of rivals." />
+
+	<stat Name="Level" Value="25" />
+    <stat Name="Hitpoints" Value="100" />
+    <stat Name="Strength" sValue="34" />
+    <stat Name="Toughness" sValue="28" />
+    <stat Name="Willpower" sValue="24" />
+	<stat Name="Ego" sValue= "20"/>
+	<stat Name="Agility" sValue= "26"/>
+	<stat Name="Intelligence" sValue = "20"/>
+	
+	<tag Name="Tier" Value="5" /> 
+	
+	<tag Name="InventoryPopulationTable" Value="Aric Praetorian Rifle" />
+	
+	<part Name="CyberneticsHasRandomImplants" ChangeColor="false" ImplantChance="75" ImplantTable="Aric Ibul Cybernetics" LicensesAtLeast="2" />
+	
+	<inventoryobject Blueprint="Aric Praetorian Shield 1" />
+    <inventoryobject Blueprint="Carbide Plate Armor" />
+    <inventoryobject Blueprint="Carbide Boots" />
+	<inventoryobject Blueprint="Carbide Gauntlets" />
+	<inventoryobject Blueprint="Steel Helmet" />
+	<inventoryobject Blueprint="Long Sword4" />
+	<inventoryobject Blueprint="Lead Slug" Number="20" />
+	
+	<!-- ammo, new shield with new token-->
+	
+		<skill Name="LongBlades" />
+		<skill Name="LongBladesProficiency" />
+		<skill Name="LongBladesLunge" />
+		<skill Name="LongBladesSwipe" />
+		<skill Name="LongBladesDuelingStance" />
+		<skill Name="Tactics_Charge" />
+		
+		<skill Name="Shield" />
+		<skill Name="Shield_Block" />
+		<skill Name="Shield_StaggeringBlock" />
+		<skill Name="Shield_Slam" />
+		<skill Name= "Endurance_Calloused"/>
+		
+		<skill Name="SingleWeaponFighting" />
+		<skill Name="SingleWeaponFighting_WeaponExpertise" />
+		<skill Name="SingleWeaponFighting_OpportuneAttacks"/>
+		
+		<skill Name="Rifle_SteadyHands" />
+		<skill Name="Rifle_DrawABead" />
+		<skill Name="Rifle_SuppressiveFire" />
+		
+    <stat Name="HeatResistance" Value="25" />
+    <stat Name="ColdResistance" Value="50" />
+    <stat Name="ElectricResistance" Value="25" />
+
+	</object>
+	
+	<object Name="Aric Praetorian 2" Inherits= "AricBaseIbul">
+
+	<part Name= "Render" Tile="creatures/caste_7.bmp" DisplayName="Praetorian Tribune" />
+	<part Name = "Description" Short="Bodyguards and warriors for the great and true, Tribunes are drawn from the lower ranks by grading their indicators of key performance. In spite of such a method, they are extremely competent." />
+	
+	<stat Name="Level" Value="35" />
+    <stat Name="Hitpoints" Value="200" />
+    <stat Name="Strength" sValue="40" />
+    <stat Name="Toughness" sValue="34" />
+    <stat Name="Willpower" sValue="24" />
+	<stat Name="Ego" sValue= "20"/>
+	<stat Name="Agility" sValue= "30"/>
+	<stat Name="Intelligence" sValue = "20"/>
+	
+	<tag Name="Tier" Value="7" /> 
+	
+	<tag Name="InventoryPopulationTable" Value="Aric Praetorian Tribune Rifle" />
+	<part Name="CyberneticsHasRandomImplants" ChangeColor="false" ImplantChance="100" ImplantTable="Aric Ibul Cybernetics" LicensesAtLeast="2" />
+	
+	<inventoryobject Blueprint="Aric Praetorian Shield 2" />
+    <inventoryobject Blueprint="Fullerite Plate Mail" />
+    <inventoryobject Blueprint="Fullerite Boots" />
+	<inventoryobject Blueprint="Fullerite Gauntlets" />
+	<inventoryobject Blueprint="Fullerite Armet" />
+	<inventoryobject Blueprint="Long Sword5" />
+	<inventoryobject Blueprint="Nuclear Cell" />
+	
+		<skill Name="LongBlades" />
+		<skill Name="LongBladesProficiency" />
+		<skill Name="LongBladesLunge" />
+		<skill Name="LongBladesSwipe" />
+		<skill Name="LongBladesDuelingStance" />
+		<skill Name="LongBladesImprovedDefensiveStance" />
+		<skill Name="Tactics_Charge" />
+		
+		<skill Name="Shield" />
+		<skill Name="Shield_Block" />
+		<skill Name="Shield_StaggeringBlock" />
+		<skill Name="Shield_Slam" />
+		<skill Name= "Endurance_Calloused"/>
+		
+		<skill Name="SingleWeaponFighting" />
+		<skill Name="SingleWeaponFighting_WeaponExpertise" />
+		<skill Name="SingleWeaponFighting_OpportuneAttacks"/>
+		<skill Name="SingleWeaponFighting_PenetratingStrikes" />
+		
+		<skill Name="Rifles" />
+		<skill Name="Rifle_SteadyHands" />
+		<skill Name="Rifle_DrawABead" />
+		<skill Name="Rifle_SuppressiveFire" />
+		<skill Name="Rifle_FlatteningFire" />
+		<skill Name="Rifle_SureFire" />
+		<skill Name="Rifle_BeaconFire" />
+		
+	
+    <stat Name="HeatResistance" Value="40" />
+    <stat Name="ColdResistance" Value="75" />
+    <stat Name="ElectricResistance" Value="40" />
+
+	</object>
+	
+	<object Name="Aric Praetorian 3" Inherits= "AricBaseIbul">
+	
+	<part Name= "Render" Tile="creatures/caste_7.bmp" DisplayName="Praetorian Prefect" />
+	<part Name = "Description" Short="Praetorian Prefects are the only warriors trusted to protect the lives and personal assets of the Chief Executors of the various towers of Ibul. A lifetime of surpassing annual targets and meeting indicators has left them well equipped for a hostile world." />
+	
+	<stat Name="Level" Value="45" />
+    <stat Name="Hitpoints" Value="300" />
+    <stat Name="Strength" sValue="46" />
+    <stat Name="Toughness" sValue="40" />
+    <stat Name="Willpower" sValue="30" />
+	<stat Name="Ego" sValue= "24"/>
+	<stat Name="Agility" sValue= "36"/>
+	<stat Name="Intelligence" sValue = "20"/>
+	
+	<tag Name="Tier" Value="8" /> 
+	
+	<tag Name="InventoryPopulationTable" Value="Aric Praetorian Prefect Rifle" />
+	
+	<part Name="CyberneticsHasRandomImplants" ChangeColor="false" ImplantChance="100" ImplantTable="Aric Ibul Cybernetics" LicensesAtLeast="2" />
+	<part Name="CyberneticsHasImplants" Implants="StasisProjector@arm,CherubicVisage@face" />
+	
+	<inventoryobject Blueprint="Aric Praetorian Shield 3" />
+    <inventoryobject Blueprint="Flawless Crysteel Shardmail" />
+    <inventoryobject Blueprint="Flawless Crysteel Boots" />
+	<inventoryobject Blueprint="Flawless Crysteel Gauntlets" />
+	<inventoryobject Blueprint="Flawless Crysteel Coronet" />
+	<inventoryobject Blueprint="Long Sword7" />
+	
+		<skill Name="LongBlades" />
+		<skill Name="LongBladesProficiency" />
+		<skill Name="LongBladesLunge" />
+		<skill Name="LongBladesSwipe" />
+		<skill Name="LongBladesDuelingStance" />
+		<skill Name="LongBladesImprovedAggressiveStance" />
+		<skill Name="LongBladesImprovedDefensiveStance" />
+		<skill Name="LongBladesImprovedDuelistStance" />
+		<skill Name="LongBladesDeathblow" />
+		
+		<skill Name="Rifles" />
+		<skill Name="Rifle_SteadyHands" />
+		<skill Name="Rifle_DrawABead" />
+		<skill Name="Rifle_SuppressiveFire" />
+		<skill Name="Rifle_WoundingFire" />
+		<skill Name="Rifle_DisorientingFire" />
+		<skill Name="Rifle_FlatteningFire" />
+		<skill Name="Rifle_SureFire" />
+		<skill Name="Rifle_BeaconFire" />
+		<skill Name="Rifle_OneShot" />
+		
+		<skill Name="Shield" />
+		<skill Name="Shield_Block" />
+		<skill Name="Shield_StaggeringBlock" />
+		<skill Name="Shield_Slam" />
+		<skill Name="Shield_SwiftBlocking" />
+		<skill Name="Shield_DeftBlocking" />
+		<skill Name= "Endurance_Calloused"/>
+		
+		<skill Name="SingleWeaponFighting" />
+		<skill Name="SingleWeaponFighting_WeaponExpertise" />
+		<skill Name="SingleWeaponFighting_OpportuneAttacks"/>
+		<skill Name="SingleWeaponFighting_PenetratingStrikes" />
+		<skill Name="SingleWeaponFighting_WeaponMastery" />
+		
+    <stat Name="HeatResistance" Value="60" />
+    <stat Name="ColdResistance" Value="100" />
+    <stat Name="ElectricResistance" Value="60" />
+	
+	</object>
+		
+	<object Name="Aric Praetorian Dog"  Inherits="BaseDog">
+		
+		<part Name="Render" DisplayName="Ibul Molossus Hound" Tile="AricPraetorianDog.png" RenderString="C" ColorString="&amp;Y" DetailColor="C" />
+		<part Name="Corpse" CorpseChance="100" CorpseBlueprint="Dog Corpse" />
+		<part Name="Brain" Hostile="false" Factions="Aric Ibul-100" MinKillRadius="1" MaxKillRadius="99" />
+		<stat Name="AV" Value="6" />
+		<stat Name="Hitpoints" Value="60" />
+		<part Name="Description" Short="A great beast and noble companion, the great war hounds of the Glacial Plains are said to be a breed above their kin in Qud. Capable of chasing down and harrying their foes, great salt encrusted spikes around their necks promise swift vengeance against retaliation." />
+		<stat Name="Level" Value="20" />
+		<stat Name="Strength" Boost="1" />
+		<inventoryobject Blueprint="Aric_Dog_Bite" Number="1" />
+		<tag Name="Role" Value="Brute" />
+		<part Name="AricSpikedCollar"/>
+		<stat Name="MoveSpeed" Value="50" />
+		
+		<skill Name="ShortBlades" />
+		<skill Name="ShortBlades_Hobble" />
+		<skill Name="ShortBlades_Bloodletter" />
+	
+	</object>
+	
+	 <object Name="Aric_Dog_Bite" Inherits="Bite">
+	 
+		<part Name="MeleeWeapon" BaseDamage="1d8" />
+		
+	</object>
+	
+	<object Name="Aric Eunuch" Inherits= "AricBaseIbul">
+	<part Name= "Render" Tile="creatures/caste_8.bmp" DisplayName="Eunuch" />
+	<part Name = "Description" Short="Without loyalty to their progeny, members of the Eunuch caste are trusted to serve in all manner of position within the Ibul hierarchy. With all emotion stunted and by powerful chemical processes, they carry out their grim duties with dispassionate efficiency." />
+	
+	<stat Name="Level" Value="25" />
+    <stat Name="Hitpoints" Value="80" />
+    <stat Name="Strength" sValue="28" />
+    <stat Name="Toughness" sValue="26" />
+    <stat Name="Willpower" sValue="24" />
+	<stat Name="Ego" sValue= "20"/>
+	<stat Name="Agility" sValue= "32"/>
+	<stat Name="Intelligence" sValue = "20"/>
+	<stat Name="Speed" Value="125" />
+	<stat Name="AV" Value= "8"/>
+	<stat Name="DV" Value="-8" />
+	
+	<tag Name="Tier" Value="5" /> 
+	
+	
+	<part Name="CyberneticsHasRandomImplants" ChangeColor="false" ImplantChance="75" ImplantTable="Aric Ibul Cybernetics" LicensesAtLeast="2" />
+	
+	<inventoryobject Blueprint="Chrome Mantle" />
+    <inventoryobject Blueprint="Flexivest" />
+ <!--    <inventoryobject Blueprint="Flexarmour Boots" />
+	<inventoryobject Blueprint="Flexarmour Gloves" />
+	<inventoryobject Blueprint="Flexarmour Cap" /> -->
+	
+	<inventoryobject Blueprint="Dagger4" Number ="2" />
+	<inventoryobject Blueprint="ArmDagger4" Number ="1" />
+	<inventoryobject Blueprint="Laser Pistol" Number= "2" />	
+	<inventoryobject Blueprint="Chem Cell" Number= "2" />
+	
+	<inventoryobject Blueprint="SkulkTonic"/>
+	<inventoryobject Blueprint="ShadeOilTonic"/>
+	
+		<skill Name="ShortBlades" />
+		<skill Name="ShortBlades_Expertise" />
+		<skill Name="ShortBlades_Bloodletter" />
+		<skill Name="ShortBlades_Jab" />
+		<skill Name="ShortBlades_Hobble" />
+		
+		<skill Name="Tactics_Charge" />
+		<skill Name="Acrobatics_SwiftReflexes"/>
+		
+		<skill Name="Multiweapon_Fighting" />
+		<skill Name="Multiweapon_Flurry" />
+		<skill Name="Multiweapon_Proficiency"/>
+		
+		<skill Name="Discipline_IronMind"/>
+		
+		<skill Name="Pistol" />
+		<skill Name="Pistol_SteadyHands" />
+		<skill Name= "Pistol_Akimbo"/>
+		<skill Name="Pistol_WeakSpotter" />
+		
+		
+    <stat Name="HeatResistance" Value="25" />
+    <stat Name="ColdResistance" Value="50" />
+    <stat Name="ElectricResistance" Value="25" />
+	</object>
+	
+	<object Name="Aric Eunuch 2" Inherits= "AricBaseIbul">
+<part Name= "Render" Tile="creatures/caste_8.bmp" DisplayName="Eunuch Praepositus" />
+	<part Name = "Description" Short="There are many routes to power for the Consuls of Ibul's many spires. Assassination is but one tool in their arsenal, though one at which the Eunuchs excel. While officially existing outside the jurisdiction of any individual tower, consuls have been known to keep particularly able Eunuchs on retainer, keeping a valuable tool to hand as needed, and depriving it of their rivals. " />
+	
+	
+	<stat Name="Level" Value="35" />
+    <stat Name="Hitpoints" Value="160" />
+    <stat Name="Strength" sValue="34" />
+    <stat Name="Toughness" sValue="30" />
+    <stat Name="Willpower" sValue="30" />
+	<stat Name="Ego" sValue= "20"/>
+	<stat Name="Agility" sValue= "38"/>
+	<stat Name="Intelligence" sValue = "20"/>
+	<stat Name="Speed" Value="135" />
+	<stat Name="AV" Value= "8"/>
+	<stat Name="DV" Value="-8" />
+	
+	<tag Name="Tier" Value="7" /> 
+	
+	<part Name="CyberneticsHasRandomImplants" ChangeColor="false" ImplantChance="100" ImplantTable="Aric Ibul Cybernetics" LicensesAtLeast="2" />
+	<part Name="CyberneticsHasImplants" Implants="Phase-Adaptive Scope@back,CherubicVisage@face" />
+	
+	
+	<inventoryobject Blueprint="Chrome Mantle" />
+    <inventoryobject Blueprint="Flexivest" />
+<!--     <inventoryobject Blueprint="Flexarmour Boots" />
+	<inventoryobject Blueprint="Flexarmour Gloves" />
+	<inventoryobject Blueprint="Flexarmour Cap" /> -->
+	
+	
+	<inventoryobject Blueprint="Dagger6" Number = "2" />
+	<inventoryobject Blueprint="Aric Eunuch ArmDagger6" Number = "2" />
+	<inventoryobject Blueprint="Eigenpistol" Number= "2" />	
+	<inventoryobject Blueprint="Nuclear Cell" Number= "2" />
+	
+	<inventoryobject Blueprint="SkulkTonic" Number= "1-2"/>
+	<inventoryobject Blueprint="ShadeOilTonic" Number = "1-2"/>
+	
+		<skill Name="ShortBlades" />
+		<skill Name="ShortBlades_Expertise" />
+		<skill Name="ShortBlades_Bloodletter" />
+		<skill Name="ShortBlades_Jab" />
+		<skill Name="ShortBlades_Hobble" />
+		<skill Name="ShortBlades_Rejoinder" />
+		
+		<skill Name="Tactics_Charge" />
+		
+		<skill Name="Multiweapon_Fighting" />
+		<skill Name="Multiweapon_Flurry" />
+		<skill Name="Multiweapon_Proficiency"/>
+		<skill Name="Multiweapon_Expertise"/>
+		<skill Name="Multiweapon_Mastery"/>
+		
+		<skill Name="Discipline_IronMind"/>
+		<skill Name="Discipline_Lionheart"/>
+		
+		<skill Name="Acrobatics"/>
+		<skill Name="Acrobatics_SwiftReflexes"/>
+		<skill Name="Acrobatics_Dodge"/>
+		
+		<skill Name="Pistol" />
+		<skill Name="Pistol_SteadyHands" />
+		<skill Name= "Pistol_Akimbo"/>
+		<skill Name="Pistol_WeakSpotter" />
+		<skill Name="Pistol_DisarmingShot" />
+		<skill Name="Pistol_DeadShot" />
+		
+		<skill Name = "Endurance_Juicer"/>
+	
+    <stat Name="HeatResistance" Value="40" />
+    <stat Name="ColdResistance" Value="75" />
+    <stat Name="ElectricResistance" Value="40" />
+	</object>
+	
+	<object Name="Aric Eunuch 3" Inherits= "AricBaseIbul">
+
+<part Name= "Render" Tile="creatures/caste_8.bmp" DisplayName="Eunuch Manus Mortis" />
+	<part Name = "Description" Short="The Manus Mortis deals death with a cybernetically fixed smile. No longer permitted by the Eunuch Patriarch to subcontract, they serve only the instituation that created them. " />
+	
+	<stat Name="Level" Value="45" />
+    <stat Name="Hitpoints" Value="220" />
+    <stat Name="Strength" sValue="38" />
+    <stat Name="Toughness" sValue="34" />
+    <stat Name="Willpower" sValue="34" />
+	<stat Name="Ego" sValue= "20"/>
+	<stat Name="Agility" sValue= "44"/>
+	<stat Name="Intelligence" sValue = "20"/>
+	<stat Name="Speed" Value="150" />
+	<stat Name="DV" Value="-4" />
+	<stat Name="AV" Value="11" />
+	<tag Name="Tier" Value="8" /> 
+	
+	
+	<part Name="CyberneticsHasImplants" Implants="ForceModulator@back,StasisEntangler@feet,CherubicVisage@face" />
+	
+    <inventoryobject Blueprint="Nanoweave Vest" />
+<!--     <inventoryobject Blueprint="Nanoweave Boots" />
+	<inventoryobject Blueprint="Nanoweave Gloves" />
+	<inventoryobject Blueprint="Nanoweave Cap" /> -->
+	
+	<inventoryobject Blueprint="Aric Eunuch ArmDagger7" Number= "2" />
+	<inventoryobject Blueprint="Dagger7" Number= "2" />	
+	<inventoryobject Blueprint="Hand Rail" Number= "2" />	
+	<inventoryobject Blueprint="Nuclear Cell" Number= "2" />	
+	
+	<inventoryobject Blueprint="SkulkTonic" Number= "1-2"/>
+	<inventoryobject Blueprint="ShadeOilTonic" Number = "1-2"/>
+	
+		<skill Name="ShortBlades" />
+		<skill Name="ShortBlades_Expertise" />
+		<skill Name="ShortBlades_Bloodletter" />
+		<skill Name="ShortBlades_Jab" />
+		<skill Name="ShortBlades_Hobble" />
+		<skill Name="ShortBlades_Rejoinder" />
+		<skill Name="ShortBlades_Shank" />
+		
+		<skill Name="Pistol_SteadyHands" />
+		<skill Name="Pistol_Akimbo" />
+		<skill Name="Pistol_WeakSpotter" />
+		<skill Name="Pistol_EmptyTheClips" />
+		<skill Name="Pistol_FastestGun" />
+		
+		<skill Name="Tactics_Charge" />
+		
+		<skill Name="Multiweapon_Fighting" />
+		<skill Name="Multiweapon_Flurry" />
+		<skill Name="Multiweapon_Proficiency"/>
+		<skill Name="Multiweapon_Expertise"/>
+		<skill Name="Multiweapon_Mastery"/>
+		
+		<skill Name="Discipline_IronMind"/>
+		<skill Name="Discipline_Lionheart"/>
+		
+		<skill Name="Acrobatics"/>
+		<skill Name="Acrobatics_SwiftReflexes"/>
+		<skill Name="Acrobatics_Dodge"/>
+		
+		<skill Name = "Endurance_Juicer"/>
+	
+    <stat Name="HeatResistance" Value="60" />
+    <stat Name="ColdResistance" Value="100" />
+    <stat Name="ElectricResistance" Value="40" />
+
+	</object>
+	
+	<!-- Yawning Moon creatures -->
+	<object Name= "Aric Child of the Hearth" Inherits= "AricBaseYawningMoon">`
+	<part Name= "Render" Tile="creatures/caste_9.bmp" DisplayName="Child of the Hearth" />
+	<part Name = "Description" Short="Deep beneath the earth and across the pale sea, the cannons and hammers of the Children of the Hearth defend their subterranean cities against the threats of the deep. " />
+	
+	<stat Name="Level" Value="25" />
+    <stat Name="Hitpoints" Value="100" />
+    <stat Name="Strength" sValue="34" />
+    <stat Name="Toughness" sValue="28" />
+    <stat Name="Willpower" sValue="24" />
+	<stat Name="Ego" sValue= "20"/>
+	<stat Name="Agility" sValue= "26"/>
+	<stat Name="Intelligence" sValue = "20"/>
+	
+	<tag Name="Tier" Value="5" /> 
+	
+	<tag Name="InventoryPopulationTable" Value="Aric Child of the Hearth Kit" />
+	<part Name="CyberneticsHasRandomImplants" ChangeColor="false" ImplantChance="75" ImplantTable="Aric YM Cybernetics" LicensesAtLeast="2" />
+	
+
+    <inventoryobject Blueprint="Carbide Plate Armor" />
+    <inventoryobject Blueprint="Carbide Boots" />
+	<inventoryobject Blueprint="Carbide Gauntlets" />
+	<inventoryobject Blueprint="Steel Helmet" />
+	<inventoryobject Blueprint="Lead Slug" Number="20" />
+	
+	
+		<skill Name="Cudgel" />
+		<skill Name="Cudgel_Bludgeon" />
+		<skill Name="Cudgel_Expertise" />
+		<skill Name="Cudgel_Slam" />
+		<skill Name="Tactics_Charge" />
+		
+		<skill Name="Shield" />
+		<skill Name="Shield_Block" />
+		<skill Name="Shield_StaggeringBlock" />
+		<skill Name="Shield_Slam" />
+		<skill Name= "Endurance_Calloused"/>
+		
+		<skill Name="SingleWeaponFighting" />
+		<skill Name="SingleWeaponFighting_WeaponExpertise" />
+		<skill Name="SingleWeaponFighting_OpportuneAttacks"/>
+		
+		<skill Name="HeavyWeapons" />
+		<skill Name="HeavyWeapons_StrappingShoulders" />
+		<skill Name="HeavyWeapons_Tank" />
+		
+    <stat Name="HeatResistance" Value="50" />
+    <stat Name="ColdResistance" Value="25" />
+    <stat Name="ElectricResistance" Value="25" />
+	
+	</object>
+	
+	<object Name= "Aric Child of the Hearth 2" Inherits= "AricBaseYawningMoon">`
+	<part Name= "Render" Tile="creatures/caste_9.bmp" DisplayName="Child of the Hearth Bulwark" />
+	<part Name = "Description" Short="Against the might of the Bulwarks, all manner of threat has broken. The fortresses of the Yawning Moon are renowned as unassailable, and for good reason." />
+	
+	<stat Name="Level" Value="35" />
+    <stat Name="Hitpoints" Value="200" />
+    <stat Name="Strength" sValue="40" />
+    <stat Name="Toughness" sValue="34" />
+    <stat Name="Willpower" sValue="24" />
+	<stat Name="Ego" sValue= "20"/>
+	<stat Name="Agility" sValue= "30"/>
+	<stat Name="Intelligence" sValue = "20"/>
+	
+	<tag Name="Tier" Value="7" /> 
+	
+	<tag Name="InventoryPopulationTable" Value="Aric Child of the Hearth Bulwark Kit" />
+	<part Name="CyberneticsHasRandomImplants" ChangeColor="false" ImplantChance="100" ImplantTable="Aric YM Cybernetics" LicensesAtLeast="2" />
+	
+
+    <inventoryobject Blueprint="Fullerite Plate Mail" />
+    <inventoryobject Blueprint="Fullerite Boots" />
+	<inventoryobject Blueprint="Fullerite Gauntlets" />
+	<inventoryobject Blueprint="Fullerite Armet" />
+	<inventoryobject Blueprint="Lead Slug" Number="20" />
+	<inventoryobject Blueprint="Nuclear Cell" Number="1" />
+	
+	
+	
+		<skill Name="Cudgel" />
+		<skill Name="Cudgel_Bludgeon" />
+		<skill Name="Cudgel_Expertise" />
+		<skill Name="Cudgel_Slam" />
+		<skill Name="Cudgel_ChargingStrike" />
+		<skill Name="Tactics_Charge" />
+		
+		<skill Name="Shield" />
+		<skill Name="Shield_Block" />
+		<skill Name="Shield_StaggeringBlock" />
+		<skill Name="Shield_Slam" />
+		<skill Name= "Endurance_Calloused"/>
+		
+		<skill Name="SingleWeaponFighting" />
+		<skill Name="SingleWeaponFighting_WeaponExpertise" />
+		<skill Name="SingleWeaponFighting_OpportuneAttacks"/>
+		<skill Name="SingleWeaponFighting_PenetratingStrikes" />
+		
+		<skill Name="HeavyWeapons" />
+		<skill Name="HeavyWeapons_StrappingShoulders" />
+		<skill Name="HeavyWeapons_Tank" />
+	
+    <stat Name="HeatResistance" Value="75" />
+    <stat Name="ColdResistance" Value="40" />
+    <stat Name="ElectricResistance" Value="40" />
+	
+	</object>
+	
+	<object Name= "Aric Child of the Hearth 3" Inherits= "AricBaseYawningMoon">`
+	<part Name= "Render" Tile="creatures/caste_9.bmp" DetailColor="G" ColorString="&amp;g" DisplayName="Child of the Hearth Praesidium" />
+	<part Name = "Description" Short="The armour, and indeed the warriors of the Crustal Mortars are forged in the fires beneath the earth. Against their might, none can hope to stand." />
+	
+	<stat Name="Level" Value="45" />
+    <stat Name="Hitpoints" Value="300" />
+    <stat Name="Strength" sValue="46" />
+    <stat Name="Toughness" sValue="40" />
+    <stat Name="Willpower" sValue="30" />
+	<stat Name="Ego" sValue= "24"/>
+	<stat Name="Agility" sValue= "36"/>
+	<stat Name="Intelligence" sValue = "20"/>
+	
+	<tag Name="Tier" Value="8" /> 
+	
+	<tag Name="InventoryPopulationTable" Value="Aric Child of the Hearth Praesidium Kit" />
+	<part Name="CyberneticsHasRandomImplants" ChangeColor="false" ImplantChance="100" ImplantTable="Aric YM Cybernetics" LicensesAtLeast="2" />
+	<part Name="CyberneticsHasImplants" Implants="AnomalyFumigator@body,GunRack@back,AirCurrentMicrosensor@head" />
+	
+
+    <inventoryobject Blueprint="Flawless Crysteel Shardmail" />
+    <inventoryobject Blueprint="Flawless Crysteel Boots" />
+	<inventoryobject Blueprint="Flawless Crysteel Gauntlets" />
+	<inventoryobject Blueprint="Flawless Crysteel Coronet" />
+	<inventoryobject Blueprint="Antimatter Cell" Number="2" />
+	
+	
+		<skill Name="Cudgel" />
+		<skill Name="Cudgel_Bludgeon" />
+		<skill Name="Cudgel_Expertise" />
+		<skill Name="Cudgel_Slam" />
+		<skill Name="Cudgel_ChargingStrike" />
+		<skill Name="Tactics_Charge" />
+		<skill Name="Cudgel_Backswing"/>
+		<skill Name= "Cudgel_SmashUp" />
+		
+		<skill Name="HeavyWeapons" />
+		<skill Name="HeavyWeapons_StrappingShoulders" />
+		<skill Name="HeavyWeapons_Tank" />
+		<skill Name="HeavyWeapons_Sweep"/>
+		<skill Name="Pistol_Akimbo"/>
+		
+		<skill Name="Shield" />
+		<skill Name="Shield_Block" />
+		<skill Name="Shield_StaggeringBlock" />
+		<skill Name="Shield_Slam" />
+		<skill Name="Shield_SwiftBlocking" />
+		<skill Name="Shield_DeftBlocking" />
+		<skill Name= "Endurance_Calloused"/>
+		
+		<skill Name="SingleWeaponFighting" />
+		<skill Name="SingleWeaponFighting_WeaponExpertise" />
+		<skill Name="SingleWeaponFighting_OpportuneAttacks"/>
+		<skill Name="SingleWeaponFighting_PenetratingStrikes" />
+		<skill Name="SingleWeaponFighting_WeaponMastery" />
+	
+    <stat Name="HeatResistance" Value="100" />
+    <stat Name="ColdResistance" Value="60" />
+    <stat Name="ElectricResistance" Value="60" />
+	
+	</object>
+	
+	<object Name= "Aric Child of the Deep" Inherits= "AricBaseYawningMoon">`
+	<part Name= "Render" Tile="creatures/caste_11.bmp" DisplayName="Child of the Deep" />
+	<part Name = "Description" Short="The Children of the Yawningmoon carve the rock beneath the earth to create their great colonies. These dark places are home to all manner of danger, a fact of which the Children of the Deep are all too aware." />
+	
+	<stat Name="Level" Value="25" />
+    <stat Name="Hitpoints" Value="130" />
+    <stat Name="Strength" sValue="28" />
+    <stat Name="Toughness" sValue="34" />
+    <stat Name="Willpower" sValue="24" />
+	<stat Name="Ego" sValue= "20"/>
+	<stat Name="Agility" sValue= "26"/>
+	<stat Name="Intelligence" sValue = "20"/>
+	<stat Name="MoveSpeed" Value="100" />
+	
+	<tag Name="Tier" Value="5" /> 
+	
+	
+	<tag Name="InventoryPopulationTable" Value="Gemstones" />
+	<part Name="CyberneticsHasRandomImplants" ChangeColor="false" ImplantChance="75" ImplantTable="Aric YM Cybernetics" LicensesAtLeast="2" />
+	
+	<inventoryobject Blueprint="Nanopneumatic Jackhammer" />
+    <inventoryobject Blueprint="Carbide Plate Armor" />
+    <inventoryobject Blueprint="Carbide Boots" />
+	<inventoryobject Blueprint="Carbide Gauntlets" />
+	<inventoryobject Blueprint="Miner's Helmet" />
+	<inventoryobject Blueprint="SunderGrenade1" Number = "0-2" />
+	<inventoryobject Blueprint="Structural Scanning Bracelet" />
+	<inventoryobject Blueprint="Chem Cell" Number="2" />
+	
+	
+		<skill Name="Cudgel" />
+		<skill Name="Cudgel_Bludgeon" />
+		<skill Name="Cudgel_Expertise" />
+		<skill Name="Cudgel_Slam" />
+		<skill Name="Tactics_Charge" />
+		
+		
+		<skill Name= "Endurance_Calloused"/>
+		<skill Name= "Endurance_ShakeItOff"/>
+		
+		<skill Name="SingleWeaponFighting" />
+		<skill Name="SingleWeaponFighting_WeaponExpertise" />
+		<skill Name="SingleWeaponFighting_OpportuneAttacks"/>
+		
+		<skill Name="HeavyWeapons" />
+		<skill Name="HeavyWeapons_StrappingShoulders" />
+		<skill Name="HeavyWeapons_Tank" />
+		
+    <stat Name="HeatResistance" Value="50" />
+    <stat Name="ColdResistance" Value="25" />
+    <stat Name="ElectricResistance" Value="25" />
+	
+	</object>
+	
+	<object Name= "Aric Child of the Deep 2" Inherits= "AricBaseYawningMoon">`
+	<part Name= "Render" Tile="creatures/caste_11.bmp" DisplayName="Child of the Deep Pitboss" />
+	<part Name = "Description" Short="The lives of Children of the Deep are often nasty, brutish and short. Those that survive a number of years may eventually find their way to promotions, and are called to lead the most dangerous expeditions." />
+	
+	<stat Name="Level" Value="35" />
+    <stat Name="Hitpoints" Value="250" />
+    <stat Name="Strength" sValue="34" />
+    <stat Name="Toughness" sValue="40" />
+    <stat Name="Willpower" sValue="28" />
+	<stat Name="Ego" sValue= "20"/>
+	<stat Name="Agility" sValue= "30"/>
+	<stat Name="Intelligence" sValue = "20"/>
+	<stat Name="MoveSpeed" Value="95" />
+	<tag Name="Role" Value="Brute"/>
+	
+	<tag Name="Tier" Value="7" /> 
+	
+	<part Name="CyberneticsHasRandomImplants" ChangeColor="false" ImplantChance="100" ImplantTable="Aric YM Cybernetics" LicensesAtLeast="2" />
+	
+	<inventoryobject Blueprint="Aric Combat Jackhammer" />
+    <inventoryobject Blueprint="Fullerite Plate Mail" />
+    <inventoryobject Blueprint="Fullerite Boots" />
+	<inventoryobject Blueprint="Fullerite Gauntlets" />
+	<inventoryobject Blueprint="Fullerite Armet" />
+	<inventoryobject Blueprint="Steel Buckler" />
+	<inventoryobject Blueprint="SunderGrenade2" Number = "2-4" />
+	<inventoryobject Blueprint="Structural Scanning Bracelet" />
+	<inventoryobject Blueprint="Chem Cell" Number="4" />
+	
+		<skill Name="Cudgel" />
+		<skill Name="Cudgel_Bludgeon" />
+		<skill Name="Cudgel_Expertise" />
+		<skill Name="Cudgel_Slam" />
+		<skill Name="Cudgel_ChargingStrike" />
+		<skill Name="Tactics_Charge" />
+		
+		<skill Name="Shield" />
+		<skill Name="Shield_Block" />
+		<skill Name="Shield_StaggeringBlock" />
+		<skill Name="Shield_Slam" />
+		<skill Name= "Endurance_Calloused"/>
+		<skill Name= "Endurance_ShakeItOff"/>
+		<skill Name= "Endurance_Longstrider"/>
+		<skill Name= "Endurance_Weathered"/>
+		
+		<skill Name="SingleWeaponFighting" />
+		<skill Name="SingleWeaponFighting_WeaponExpertise" />
+		<skill Name="SingleWeaponFighting_OpportuneAttacks"/>
+		<skill Name="SingleWeaponFighting_PenetratingStrikes" />
+		
+		
+	
+    <stat Name="HeatResistance" Value="75" />
+    <stat Name="ColdResistance" Value="40" />
+    <stat Name="ElectricResistance" Value="40" />
+	
+	</object>
+	
+	<object Name= "Aric Child of the Deep 3" Inherits= "AricBaseYawningMoon">`
+	<part Name= "Render" Tile="creatures/caste_11.bmp" ColorString="&amp;g" DisplayName="Child of the Deep Thane" />
+	<part Name = "Description" Short="The greatest honour a Child of the Deep can be awarded is that of Thaneship. They are sent into the infinite black beyond their home to carve a new colony. Few survive their ordeal, but those that do will be remembered eternally, and found a new great house." />
+	
+	<stat Name="Level" Value="45" />
+    <stat Name="Hitpoints" Value="350" />
+    <stat Name="Strength" sValue="40" />
+    <stat Name="Toughness" sValue="46" />
+    <stat Name="Willpower" sValue="30" />
+	<stat Name="Ego" sValue= "24"/>
+	<stat Name="Agility" sValue= "36"/>
+	<stat Name="Intelligence" sValue = "20"/>
+	<stat Name="MoveSpeed" Value="125" />
+	<tag Name="Role" Value="Brute"/>
+	
+	<tag Name="Tier" Value="8" /> 
+	
+	
+	<part Name="CyberneticsHasRandomImplants" ChangeColor="false" ImplantChance="100" ImplantTable="Aric YM Cybernetics" LicensesAtLeast="2" />
+	<part Name="CyberneticsHasImplants" Implants="PenetratingRadar@body,AirCurrentMicrosensor@head" />
+	
+	
+	<inventoryobject Blueprint="Flawless Crysteel Shield" />
+    <inventoryobject Blueprint="Flawless Crysteel Shardmail" />
+    <inventoryobject Blueprint="Flawless Crysteel Boots" />
+	<inventoryobject Blueprint="Flawless Crysteel Gauntlets" />
+	<inventoryobject Blueprint="Flawless Crysteel Coronet" />
+	<inventoryobject Blueprint="Aric Crysteel Pulveriser" />
+	<inventoryobject Blueprint="VISAGE" />
+	<inventoryobject Blueprint="SunderGrenade3" Number = "3-5" />
+	<inventoryobject Blueprint="Nuclear Cell" Number="2" />
+	
+		<skill Name="Cudgel" />
+		<skill Name="Cudgel_Bludgeon" />
+		<skill Name="Cudgel_Expertise" />
+		<skill Name="Cudgel_Slam" />
+		<skill Name="Cudgel_ChargingStrike" />
+		<skill Name="Cudgel_Backswing"/>
+		<skill Name= "Cudgel_SmashUp" />
+		
+		<skill Name="Persuasion_Berate"/>
+		
+		<skill Name= "Endurance_Calloused"/>
+		
+		<skill Name="SingleWeaponFighting" />
+		<skill Name="SingleWeaponFighting_WeaponExpertise" />
+		<skill Name="SingleWeaponFighting_OpportuneAttacks"/>
+		<skill Name="SingleWeaponFighting_PenetratingStrikes" />
+		<skill Name="SingleWeaponFighting_WeaponMastery" />
+	
+    <stat Name="HeatResistance" Value="100" />
+    <stat Name="ColdResistance" Value="60" />
+    <stat Name="ElectricResistance" Value="60" />
+	
+	</object>
+	
+	<object Name= "Aric Child of the Wheel" Inherits= "AricBaseYawningMoon">`
+	<part Name= "Render" Tile="creatures/caste_10.bmp" DisplayName="Child of the Wheel" />
+	<part Name = "Description" Short="The Children of the Wheel keep the great society of the Yawningmoon turning. They are the workers, the builders, the mariners. Those that accompany their God-Children Captains across the choking waves hope to one day be elevated to that same rank." />
+	
+	<stat Name="Level" Value="25" />
+    <stat Name="Hitpoints" Value="80" />
+    <stat Name="Strength" sValue="28" />
+    <stat Name="Toughness" sValue="26" />
+    <stat Name="Willpower" sValue="24" />
+	<stat Name="Ego" sValue= "20"/>
+	<stat Name="Agility" sValue= "32"/>
+	<stat Name="Intelligence" sValue = "20"/>
+	<stat Name="Speed" Value="125" />
+	<stat Name="AV" Value= "6"/>
+	<stat Name="DV" Value="-7" />
+	
+	<tag Name="Tier" Value="5" /> 
+	
+	
+	<part Name="CyberneticsHasRandomImplants" ImplantChance="75" ImplantTable="Aric YM Cybernetics" LicensesAtLeast="2" />
+	
+	<inventoryobject Blueprint="Flexivest" />
+<!--     <inventoryobject Blueprint="Flexarmour Boots" />
+	<inventoryobject Blueprint="Flexarmour Gloves" />
+	<inventoryobject Blueprint="Flexarmour Cap" /> -->
+	
+	<inventoryobject Blueprint="Battle Axe4" />
+	<inventoryobject Blueprint="Dagger4" />
+	<inventoryobject Blueprint="Aric ThrowingDagger4" Number ="1-3" />
+	
+	<inventoryobject Blueprint="SkulkTonic"/>
+	<inventoryobject Blueprint="ShadeOilTonic"/>
+	
+		<skill Name="ShortBlades" />
+		<skill Name="ShortBlades_Expertise" />
+		<skill Name="ShortBlades_Bloodletter" />
+		<skill Name="ShortBlades_Jab" />
+		<skill Name="ShortBlades_Hobble" />
+		
+		<skill Name="Tactics_Charge" />
+		<skill Name="Tactics_Throwing"/>
+		
+		<skill Name="Axe" />
+		<skill Name="Axe_Expertise" />
+		<skill Name="Axe_Cleave" />
+		<skill Name="Shield_Slam" />
+		
+		<skill Name="Multiweapon_Fighting" />
+		<skill Name="Multiweapon_Flurry" />
+		<skill Name="Multiweapon_Proficiency"/>
+		
+		<skill Name="Discipline_IronMind"/>
+		
+    <stat Name="HeatResistance" Value="50" />
+    <stat Name="ColdResistance" Value="25" />
+    <stat Name="ElectricResistance" Value="25" />
+	
+	</object>
+	
+	<object Name= "Aric Child of the Wheel 2" Inherits= "AricBaseYawningMoon">`
+	<part Name= "Render" Tile="creatures/caste_10.bmp" DisplayName="Child of the Wheel Marine" />
+	<part Name = "Description" Short="The fire and fumes are not the only dangers that threaten Yawningmoon expeditions. It is the duty of the Marine to throw these threats back to the Fuming Gods below. When the great ships make landing in the savage east, Marines defend their captains, their ships and their goods with their lives." />
+	
+	<stat Name="Level" Value="35" />
+    <stat Name="Hitpoints" Value="160" />
+    <stat Name="Strength" sValue="34" />
+    <stat Name="Toughness" sValue="30" />
+    <stat Name="Willpower" sValue="30" />
+	<stat Name="Ego" sValue= "20"/>
+	<stat Name="Agility" sValue= "38"/>
+	<stat Name="Intelligence" sValue = "20"/>
+	<stat Name="Speed" Value="135" />
+	<stat Name="AV" Value= "9"/>
+	<stat Name="DV" Value="-7" />
+	
+	<tag Name="Tier" Value="7" /> 
+	
+	<part Name="CyberneticsHasRandomImplants" ImplantChance="100" ImplantTable="Aric YM Cybernetics" LicensesAtLeast="2" />
+	<part Name="CyberneticsHasImplants" Implants="PrecisionForceLathe@back,AirCurrentMicrosensor@head" />
+	
+    <inventoryobject Blueprint="Flexivest" />
+<!--     <inventoryobject Blueprint="Flexarmour Boots" />
+	<inventoryobject Blueprint="Flexarmour Gloves" />
+	<inventoryobject Blueprint="Flexarmour Cap" />
+	 -->
+	<inventoryobject Blueprint="Battle Axe6" />
+	<inventoryobject Blueprint="Dagger6" />
+	
+	
+	<inventoryobject Blueprint="SkulkTonic" Number= "1-2"/>
+	<inventoryobject Blueprint="ShadeOilTonic" Number = "1-2"/>
+	
+		<skill Name="ShortBlades" />
+		<skill Name="ShortBlades_Expertise" />
+		<skill Name="ShortBlades_Bloodletter" />
+		<skill Name="ShortBlades_Jab" />
+		<skill Name="ShortBlades_Hobble" />
+		<skill Name="ShortBlades_Rejoinder" />
+		
+		<skill Name="Tactics_Charge" />
+		<skill Name="Tactics_Throwing"/>
+		
+		<skill Name="Axe" />
+		<skill Name="Axe_Expertise" />
+		<skill Name="Axe_Cleave" />
+		<skill Name="Axe_Dismember" />
+		<skill Name="Cudgel_ChargingStrike" />
+		
+		
+		<skill Name="Multiweapon_Fighting" />
+		<skill Name="Multiweapon_Flurry" />
+		<skill Name="Multiweapon_Proficiency"/>
+		<skill Name="Multiweapon_Expertise"/>
+		<skill Name="Multiweapon_Mastery"/>
+		
+		<skill Name="Discipline_IronMind"/>
+		<skill Name="Discipline_Lionheart"/>
+		
+		<skill Name="Acrobatics"/>
+		<skill Name="Acrobatics_SwiftReflexes"/>
+		<skill Name="Acrobatics_Dodge"/>
+		
+		<skill Name = "Endurance_Juicer"/>
+	
+    <stat Name="HeatResistance" Value="75" />
+    <stat Name="ColdResistance" Value="40" />
+    <stat Name="ElectricResistance" Value="40" />
+	
+	</object>
+	
+	<object Name= "Aric Child of the Wheel 3" Inherits= "AricBaseYawningMoon">`
+	<part Name= "Render" Tile="creatures/caste_10.bmp" DisplayName="Child of the Wheel Forsworn" />
+	<part Name = "Description" Short=" Children of the Wheel who are offered ascension to the divine rank of Fuming God-Child, but choose to eschew their divine duty are named forsworn. Forever to be the point of the vanguard, the first to board an enemy vessel or scout an unknown ruin. If they will not give their lives to the Fuming Gods, then they must give their deaths." />
+	
+	<stat Name="Level" Value="45" />
+    <stat Name="Hitpoints" Value="220" />
+    <stat Name="Strength" sValue="38" />
+    <stat Name="Toughness" sValue="34" />
+    <stat Name="Willpower" sValue="34" />
+	<stat Name="Ego" sValue= "20"/>
+	<stat Name="Agility" sValue= "44"/>
+	<stat Name="Intelligence" sValue = "20"/>
+	<stat Name="Speed" Value="150" />
+	<stat Name="DV" Value="-4" />
+	<stat Name="AV" Value= "10"/>
+	
+	<tag Name="Tier" Value="8" /> 
+	
+	
+	<part Name="CyberneticsHasImplants" Implants="PrecisionForceLathe@back,HighFidelityMatterRecompositer@body,GraftedMirrorArm@arm,AirCurrentMicrosensor@head" />
+	
+	<mutation Name="MultipleArms" Level="1" />
+	
+	<inventoryobject Blueprint="Helping Hands" />
+    <inventoryobject Blueprint="Nanoweave Vest" />
+<!--     <inventoryobject Blueprint="Nanoweave Boots" />
+	<inventoryobject Blueprint="Nanoweave Gloves" />
+	<inventoryobject Blueprint="Nanoweave Cap" />
+	 -->
+	<inventoryobject Blueprint="Battle Axe7" />
+	<inventoryobject Blueprint="Battle Axe7" />
+	<inventoryobject Blueprint="Dagger7" />
+	<inventoryobject Blueprint="Dagger7" />
+	
+	
+	<inventoryobject Blueprint="SkulkTonic" Number= "1-2"/>
+	<inventoryobject Blueprint="ShadeOilTonic" Number = "1-2"/>
+	
+		<skill Name="ShortBlades" />
+		<skill Name="ShortBlades_Expertise" />
+		<skill Name="ShortBlades_Bloodletter" />
+		<skill Name="ShortBlades_Jab" />
+		<skill Name="ShortBlades_Hobble" />
+		<skill Name="ShortBlades_Rejoinder" />
+		<skill Name="ShortBlades_Shank" />
+		
+		<skill Name="Tactics_Charge" />
+		<skill Name="Tactics_Throwing"/>
+		
+		<skill Name="Axe" />
+		<skill Name="Axe_Expertise" />
+		<skill Name="Axe_Cleave" />
+		<skill Name="Axe_Dismember" />
+		<skill Name="Cudgel_ChargingStrike" />
+		<skill Name="Axe_Decapitate" />
+		<skill Name="Axe_Berserk" />
+		
+		
+		<skill Name="Multiweapon_Fighting" />
+		<skill Name="Multiweapon_Flurry" />
+		<skill Name="Multiweapon_Proficiency"/>
+		<skill Name="Multiweapon_Expertise"/>
+		<skill Name="Multiweapon_Mastery"/>
+		
+		<skill Name="Discipline_IronMind"/>
+		<skill Name="Discipline_Lionheart"/>
+		
+		<skill Name="Acrobatics"/>
+		<skill Name="Acrobatics_SwiftReflexes"/>
+		<skill Name="Acrobatics_Dodge"/>
+		
+		<skill Name = "Endurance_Juicer"/>
+	
+    <stat Name="HeatResistance" Value="100" />
+    <stat Name="ColdResistance" Value="55" />
+    <stat Name="ElectricResistance" Value="40" />
+	
+	</object>
+
+	<object Name="Aric Fuming God-Child" Inherits= "AricBaseYawningMoon">
+		<part Name= "Render" Tile="creatures/caste_12.bmp" ColorString="&amp;r" DisplayName="Fuming God-Child" />
+		<part Name = "Description" Short="When the black stair fell upon the earth and the Fuming God claimed their sea, only the brave or the foolish dared cast off in search of vital trade. Those that returned were named Fuming God-child, and in time, became the sole masters of those waves." />
+		<part Name="Body" Anatomy="AricHumanoidBelt" />		
+	<stat Name="Level" Value="25" />
+    <stat Name="Hitpoints" Value="100" />
+    <stat Name="Strength" sValue="22" />
+    <stat Name="Toughness" sValue="26" />
+    <stat Name="Willpower" sValue="26" />
+	<stat Name="Ego" sValue= "24"/>
+	<stat Name="Agility" sValue= "26"/>
+	<stat Name="Intelligence" sValue = "28"/>
+	<stat Name="Speed" Value="100" />
+	<stat Name= "AV" Value="10"/>
+	<stat Name= "DV" Value="-3"/>
+	<tag Name="Tier" Value="5" /> 
+	
+	<part Name="CyberneticsHasRandomImplants" ChangeColor="false" ImplantChance="75" ImplantTable="Aric YM Cybernetics" LicensesAtLeast="2" />
+	
+	<inventoryobject Blueprint="Billowing Conch of the Aji" />
+    <inventoryobject Blueprint="Long Sword4" />
+    <inventoryobject Blueprint="Aric Fuming Hand Cannon" />
+	<inventoryobject Blueprint="Lead Slug" Number="20" />
+	
+	<skill Name="Cudgel" />
+	<skill Name="Cudgel_Bludgeon" />
+	<skill Name="Cudgel_Expertise" />
+	
+	<skill Name="LongBlades" />
+	<skill Name="LongBladesProficiency" />
+	<skill Name="LongBladesLunge" />
+	<skill Name="LongBladesSwipe" />
+	<skill Name="LongBladesDuelingStance" />
+		
+	<skill Name="SingleWeaponFighting" />
+	<skill Name="SingleWeaponFighting_WeaponExpertise" />
+	
+	<skill Name="Pistol" />
+    <skill Name="Pistol_SteadyHands" />
+	
+	<skill Name= "Persuasion"/>
+	<skill Name= "Persuasion_MenacingStare"/>
+	<skill Name= "Persuasion_Intimidate"/>
+	
+	<skill Name="Endurance_PoisonTolerance"/>
+	<skill Name="Discipline_IronMind"/>
+	
+	<stat Name="HeatResistance" Value="50" />
+    <stat Name="ColdResistance" Value="25" />
+    <stat Name="ElectricResistance" Value="25" />
+
+	</object>
+
+	<object Name="Aric Fuming God-Child 2" Inherits= "AricBaseYawningMoon">
+		<part Name= "Render" Tile="creatures/caste_12.bmp" DetailColor="r" DisplayName="Aric Fuming God-Child Seer" />
+		<part Name = "Description" Short="Atop their black glass spires, the nine Gas Eaters dwell. Consuming the fumes of the deep that rise through their domains, they see visions of the past, the present and the future. They are served by the Seers, who will one day replace them, when the toxic nature of acting as divine conduit takes it's toll. In the wider world, they act as divine instruments- enforcing the divine will across the Archipelago.   " />
+		<part Name="Body" Anatomy="AricHumanoidBelt" />						
+				
+	<stat Name="Level" Value="35" />
+    <stat Name="Hitpoints" Value="200" />
+    <stat Name="Strength" sValue="28" />
+    <stat Name="Toughness" sValue="32" />
+    <stat Name="Willpower" sValue="30" />
+	<stat Name="Ego" sValue= "26"/>
+	<stat Name="Agility" sValue= "30"/>
+	<stat Name="Intelligence" sValue = "34"/>
+	<stat Name="Speed" Value="90" />
+	<stat Name= "AV" Value="10"/>
+	<stat Name= "DV" Value="-1"/>
+	
+	<tag Name="Tier" Value="7" /> 
+	
+	<part Name="CyberneticsHasRandomImplants" ChangeColor="false" ImplantChance="100" ImplantTable="Aric YM Cybernetics" LicensesAtLeast="2" />
+	<part Name="CyberneticsHasImplants" Implants="Aric GasTumbler@back,AirCurrentMicrosensor@head"/>
+	
+	<inventoryobject Blueprint="Aric Fuming Conch of the Aji" />
+    <inventoryobject Blueprint="Long Sword6" />
+    <inventoryobject Blueprint="Aric Heavy Fuming Hand Cannon" Number= "4" />
+	<inventoryobject Blueprint="Lead Slug" Number="20" />
+	
+	
+	<skill Name="Cudgel" />
+	<skill Name="Cudgel_Bludgeon" />
+	<skill Name="Cudgel_Expertise" />
+	
+	<skill Name="LongBlades" />
+	<skill Name="LongBladesProficiency" />
+	<skill Name="LongBladesLunge" />
+	<skill Name="LongBladesSwipe" />
+	<skill Name="LongBladesDuelingStance" />
+	<skill Name="LongBladesImprovedDefensiveStance" />
+		
+	<skill Name="SingleWeaponFighting" />
+	<skill Name="SingleWeaponFighting_WeaponExpertise" />
+	<skill Name="SingleWeaponFighting_OpportuneAttacks"/>
+	<skill Name="SingleWeaponFighting_PenetratingStrikes" />
+	
+	<skill Name="Pistol" />
+	<skill Name="Pistol_SteadyHands" />
+	<skill Name="Pistol_WeakSpotter" />
+	<skill Name="Pistol_DeadShot" />
+	
+	<skill Name= "Persuasion"/>
+	<skill Name= "Persuasion_MenacingStare"/>
+	<skill Name= "Persuasion_Intimidate"/>
+	
+	<skill Name="Endurance_PoisonTolerance"/>
+	<skill Name="Discipline_IronMind"/>
+	
+	<stat Name="HeatResistance" Value="75" />
+    <stat Name="ColdResistance" Value="40" />
+    <stat Name="ElectricResistance" Value="40" />
+		
+		
+	</object>
+
+	<object Name="Aric Fuming God-Child 3" Inherits= "AricBaseYawningMoon">
+		<part Name= "Render" Tile="creatures/caste_12.bmp" DetailColor="r" DisplayName="Fuming God-Child Avatar of the Aji" />
+		<part Name = "Description" Short="The Fuming Gods protect and humble the people of the Crustal Mortars with their pyroclast. When A Fuming God-Child gains such mastery over that same power, how can they be anything but divine?" />
+		<part Name="Body" Anatomy="AricHumanoidBelt" />		
+	
+	<stat Name="Level" Value="45" />
+    <stat Name="Hitpoints" Value="220" />
+    <stat Name="Strength" sValue="36" />
+    <stat Name="Toughness" sValue="34" />
+    <stat Name="Willpower" sValue="36" />
+	<stat Name="Ego" sValue= "24"/>
+	<stat Name="Agility" sValue= "38"/>
+	<stat Name="Intelligence" sValue = "24"/>
+	<stat Name="Speed" Value="100" />
+	<stat Name= "AV" Value="14"/>
+	<stat Name= "DV" Value="3"/>
+	
+	<tag Name="Tier" Value="8" /> 
+	
+	<part Name="CyberneticsHasRandomImplants" ChangeColor="false" ImplantChance="100" ImplantTable="Aric YM Cybernetics" LicensesAtLeast="2" />
+	<part Name="CyberneticsHasImplants" Implants="Aric GasTumbler@back,AirCurrentMicrosensor@head"/>
+	
+	<inventoryobject Blueprint="Aric Erupting Conch of the Aji" />
+    <inventoryobject Blueprint="Aric Plasma Sword" IntProperties="AlwaysEquipAsWeapon:1" />
+	<inventoryobject Blueprint="Antimatter Cell" Number="1" />
+    <inventoryobject Blueprint="Aric Erupting Hand Cannon" Number= "4" />
+	<inventoryobject Blueprint="Lead Slug" Number="20" />
+	
+	
+	<skill Name="Cudgel" />
+	<skill Name="Cudgel_Bludgeon" />
+	<skill Name="Cudgel_Expertise" />
+	
+	<skill Name="LongBlades" />
+		<skill Name="LongBladesProficiency" />
+		<skill Name="LongBladesLunge" />
+		<skill Name="LongBladesSwipe" />
+		<skill Name="LongBladesDuelingStance" />
+		<skill Name="LongBladesImprovedAggressiveStance" />
+		<skill Name="LongBladesImprovedDefensiveStance" />
+		<skill Name="LongBladesImprovedDuelistStance" />
+		<skill Name="LongBladesDeathblow" />
+		
+	<skill Name="SingleWeaponFighting" />
+		<skill Name="SingleWeaponFighting_WeaponExpertise" />
+		<skill Name="SingleWeaponFighting_OpportuneAttacks"/>
+		<skill Name="SingleWeaponFighting_PenetratingStrikes" />
+		<skill Name="SingleWeaponFighting_WeaponMastery" />
+	
+	<skill Name="Pistol" />
+	<skill Name="Pistol_SteadyHands" />
+	<skill Name="Pistol_WeakSpotter" />
+	<skill Name="Pistol_DeadShot" />
+	
+	<skill Name= "Persuasion"/>
+	<skill Name= "Persuasion_MenacingStare"/>
+	<skill Name= "Persuasion_Intimidate"/>
+	
+	<skill Name="Endurance_PoisonTolerance"/>
+	<skill Name="Discipline_IronMind"/>
+	
+	<stat Name="HeatResistance" Value="100" />
+    <stat Name="ColdResistance" Value="60" />
+    <stat Name="ElectricResistance" Value="40" />
+	
+	</object>
+	
+	 <object Name="Punching Bag" Inherits="NPC">
+    <part Name="Render" DisplayName="Punching Bag" ColorString="&amp;y" RenderString="p" Tile="Creatures/sw_farmer1.bmp" />
+    <part Name="Brain" Hostile="false" Calm="true" />
+    <stat Name="Hitpoints" Value="99999" />
+
+    <stat Name="HeatResistance" Value="0" />
+    <stat Name="ColdResistance" Value="0" />
+    <stat Name="ElectricResistance" Value="0" />
+    <stat Name="AcidResistance" Value="0" />
+
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+
+
+
+	</objects>
