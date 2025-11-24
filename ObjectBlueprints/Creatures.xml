@@ -1703,7 +1703,7 @@
 	
 	<object Name= "Aric Child of the Deep 2" Inherits= "AricBaseYawningMoon">`
 	<part Name= "Render" Tile="creatures/caste_11.bmp" DisplayName="Child of the Deep Pitboss" />
-	<part Name = "Description" Short="The lives of Children of the Deep are often nasty, brutish and short. Those that survive a number of years may eventually find their way to promotions, and are called to lead the most dangerous expeditions." />
+	<part Name = "Description" Short="The lives of Children of the Deep are often nasty, brutish and short. Those that survive a number of years may eventually find their way to promotion, and are called to lead the most dangerous expeditions." />
 	
 	<stat Name="Level" Value="35" />
     <stat Name="Hitpoints" Value="250" />
@@ -1817,7 +1817,7 @@
 	
 	<object Name= "Aric Child of the Wheel" Inherits= "AricBaseYawningMoon">`
 	<part Name= "Render" Tile="creatures/caste_10.bmp" DisplayName="Child of the Wheel" />
-	<part Name = "Description" Short="The Children of the Wheel keep the great society of the Yawningmoon turning. They are the workers, the builders, the mariners. Those that accompany their God-Children Captains across the choking waves hope to one day be elevated to that same rank." />
+	<part Name = "Description" Short="The Children of the Wheel keep the great society of the Yawningmoon turning. They are the workers, the builders, the mariners. Those that accompany their God-Child Captains across the choking waves hope to one day be elevated to that same caste." />
 	
 	<stat Name="Level" Value="25" />
     <stat Name="Hitpoints" Value="80" />

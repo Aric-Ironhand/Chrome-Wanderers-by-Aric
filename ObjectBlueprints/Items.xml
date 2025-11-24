@@ -5,7 +5,7 @@
 <!-- Ibul Gear -->
 
 <object Name= "Aric Advanced Stun Rod" Inherits= "Stun Rod">
-	<part Name="Render" DisplayName="Advanced {{c|stun}} rod"/>
+	<part Name="Render" DisplayName="advanced {{c|stun}} rod"/>
 	<part Name = "Description" Short = "An overcharged power core and conductive spikes have modifed this stun rod to be considerably more effective."/>
 	<part Name="StunOnHit" ChargeUse="20" Chance="50" Duration="1d4" />
 	<part Name="MeleeWeapon" MaxStrengthBonus="4" BaseDamage="2d4" Skill="Cudgel" Stat="Strength" />
@@ -15,7 +15,7 @@
 
 <object Name= "Aric Pacification Rod" Inherits= "Stun Rod">
 	<part Name = "Description" Short = "Product of the master crafters of Ibul, who claim a direct line of master-apprentice to the eaters themselves. No matter the truth of this claim, this weapon is certainly powerful."/>
-	<part Name="Render" DisplayName="{{c|Pacification}} Rod" Tile="Items/sw_baton_siphon.bmp" DetailColor="c"/>
+	<part Name="Render" DisplayName="{{c|pacification}} rod" Tile="Items/sw_baton_siphon.bmp" DetailColor="c"/>
 	<part Name="StunOnHit" ChargeUse="30" Chance="75" Duration="1d4" />
 	<part Name="MeleeWeapon" MaxStrengthBonus="6" BaseDamage="2d4" Skill="Cudgel" Stat="Strength" />
 	<part Name="ElementalDamage" Damage="1d5+5" Attributes="Electric" ChargeUse="5" />
@@ -81,7 +81,7 @@
 
 <object Name= "Aric Eunuch ArmDagger7" Inherits= "ArmDagger4">
 
-	<part Name="Render" DisplayName="{{K|{{crysteel|crysteel}} wristblade" Tile="Items/sw_shortblade_11.bmp" ColorString="&amp;g" DetailColor="K" />
+	<part Name="Render" DisplayName="{{K|{{flawless crysteel|crysteel}} wristblade" Tile="Items/sw_shortblade_11.bmp" ColorString="&amp;g" DetailColor="K" />
 	<part Name= "Description" Short = "A slash of emerald tucked masterfully hidden until the moment of death. The frozen smile of the Manus Mortis makes the efficency of their work all the more terrifying. "/>
 	<part Name="MeleeWeapon" MaxStrengthBonus="8" BaseDamage="1d12+1" Slot= "Arm" />
 	<part Name="Metal" />
@@ -95,14 +95,14 @@
 
 <object Name= "Aric Praetorian Shield 1" Inherits= "Carbide Shield">
 
-    <part Name="Render" DisplayName="{{b|carbide}} Scutum" Tile="AricPraetorianScutum.png" ColorString="&amp;b" TileColor="&amp;b" DetailColor="b" />
+    <part Name="Render" DisplayName="{{b|carbide}} scutum" Tile="AricPraetorianScutum.png" ColorString="&amp;b" TileColor="&amp;b" DetailColor="b" />
 	<part Name="Description" Short="Frozen blue steel is curved around a convex striking boss. A tetrad of painted frozen wings spread from it's centre." />
 
 </object>
 
 <object Name= "Aric Praetorian Shield 2" Inherits= "Fullerite Shield">
 
-	<part Name="Render" DisplayName="{{K|fullerite}} Scutum" Tile="AricPraetorianScutum.png" ColorString="&amp;K" DetailColor="K" />
+	<part Name="Render" DisplayName="{{K|fullerite}} scutum" Tile="AricPraetorianScutum.png" ColorString="&amp;K" DetailColor="K" />
 	<part Name="Description" Short="Layers of midnight metal, drawn into a deflecting curve. A battle dented umbo is the epicentre of a tetrad of painted frozen wings." />
 
 </object>
@@ -119,14 +119,14 @@
  
  <object Name="Aric Camoflauged Flexivest" Inherits="Flexivest">
  
-	<part Name="Render" DisplayName="Camoflauged Flexivest" ColorString= "&amp;g" DetailColor="G"/>
+	<part Name="Render" DisplayName="{{camoflauge|camoflauged}} flexivest" ColorString= "&amp;g" DetailColor="G"/>
 	<part Name="Yurtmat" />
 	    <tag Name="Tier" Value="4" />
  
  </object>
  
  <object Name="Aric Camoflauged Nanoweave Vest" Inherits="Nanoweave Vest">
- 	<part Name="Render" DisplayName="Camoflauged Nanoweave Vest" ColorString="&amp;g" DetailColor="G"/>
+ 	<part Name="Render" DisplayName="{{camoflauge|camoflauged}} nanoweave vest" ColorString="&amp;g" DetailColor="G"/>
 	<part Name="Yurtmat" />
 	    <tag Name="Tier" Value="5" />
  
@@ -134,7 +134,7 @@
  
  <object Name="Aric Sunbird Bow" Inherits="Compound Bow">
  
-	<part Name="Render" DisplayName="Sunbird bow" ColorString="&amp;g" DetailColor="r" Tile="Items/sw_bow_2.bmp" />
+	<part Name="Render" DisplayName="sunbird bow" ColorString="&amp;g" DetailColor="r" Tile="Items/sw_bow_2.bmp" />
 	<part Name="MissileWeapon" Skill="Rifle" AmmoChar="-" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="1" ProjectilePenetrationStat="Agility" />
 	<part Name="Description" Short="The Venomous Sunbird is revered by the people of Ekuemekiyye as a living incarnation of the sun. But when the moon rises and the hunters prowl through the jungles, not even the holy sun is safe. The feathers that adorn this bow were won in such a hunt. While difficult to wield to it's full effectiveness, in the hands of a master, this weapon is exceptionally lethal." />
     <tag Name="Tier" Value="5" />
@@ -144,7 +144,7 @@
  
   <object Name="Aric Ibis Bow" Inherits="Compound Bow">
  
-	<part Name="Render" DisplayName="Ibis Bow" ColorString="&amp;K" DetailColor="Y" Tile="Items/sw_bow_2.bmp" />
+	<part Name="Render" DisplayName="ibis bow" ColorString="&amp;K" DetailColor="Y" Tile="Items/sw_bow_2.bmp" />
 	<part Name="MissileWeapon" Skill="Rifle" AmmoChar="-" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="1" ProjectilePenetrationStat="Agility" />
 	<part Name="Description" Short="Along the banks of the Null River that runs through the Toxic Jungle, Mindrend Ibis psionically deal death from the sky. Those that wield this bow attempt to emulate their silent lethality. While exceptionally difficult to wield, in the hands of a master this weapon is an unparalelled dealer of death." />
     <part Name="MissilePerformance" PenetrationModifier="5" DamageDieModifier="6" DamageModifier="2" />
@@ -154,21 +154,21 @@
  </object>
  
  <object Name="Aric Mace of the Sun1" Inherits="Cudgel4">
-	<part Name="Render" DisplayName="Mace of the Sun" Tile="Items/sw_cudgel_6.bmp" ColorString="&amp;O" DetailColor="W" />
+	<part Name="Render" DisplayName="mace of the {{sun|sun}}" Tile="Items/sw_cudgel_6.bmp" ColorString="&amp;O" DetailColor="W" />
 	<part Name= "Description" Short= "A shaft of golden heartwood meets a burnished metal head."/>
 		<tag Name="ExcludeFromDynamicEncounters"/>
 
  </object>
  
  <object Name="Aric Mace of the Sun2" Inherits="Cudgel6">
-	<part Name="Render" DisplayName="Morningstar Hammer" Tile="AricMorningstar.png" ColorString="&amp;O" DetailColor="W" />
+	<part Name="Render" DisplayName="{{sun|morningstar}} hammer" Tile="AricMorningstar.png" ColorString="&amp;O" DetailColor="W" />
 	<part Name= "Description" Short= "The morning is a time of holy retrospection to the Ekuemekiyyens, to rest from the savagery of the Moon Hunts. But the spilled blood can never be forgotten."/>
   	<part Name="BleedingOnHit" Amount="1" SaveTarget="15" Stack="true" />
 		<tag Name="ExcludeFromDynamicEncounters"/>
  </object>
  
  <object Name="Aric Mace of the Sun3" Inherits="Cudgel7">
-	<part Name="Render" DisplayName="Sun's Zenith Hammer" Tile="AricMorningstar.png" ColorString="&amp;O" DetailColor="W" />
+	<part Name="Render" DisplayName="{{sun|sun's}} zenith hammer" Tile="AricMorningstar.png" ColorString="&amp;O" DetailColor="W" />
 	<part Name= "Description" Short= "As the sun inexorably descends to the Horizon, so must the hammer that stuns the sacrifice, ensuring that it rises once again. The cruel spikes that cover the head belie any outward showing of regret, however."/>
   	<part Name="BleedingOnHit" Amount="1" SaveTarget="20" Stack="true" />
 		<tag Name="ExcludeFromDynamicEncounters"/>
@@ -176,7 +176,7 @@
  
   <object Name="Aric Sickle of the Moon1" Inherits="Battle Axe4">
  
-	<part Name="Render" DisplayName="Sickle of the Moon" Tile="AricMoonSickle.png" ColorString="&amp;k" DetailColor="Y" />
+	<part Name="Render" DisplayName="sickle of the {{moon|moon}}" Tile="AricMoonSickle.png" ColorString="&amp;k" DetailColor="Y" />
 	<part Name="BleedingOnHit" Amount="1" SaveTarget="20" Stack="false" />
 	<part Name="Description" Short="A slash of moonlight specks the night with scarlet. So the sun returns, and rest."/>
 	<tag Name="ExcludeFromDynamicEncounters"/>
@@ -185,7 +185,7 @@
  
  <object Name="Aric Sickle of the Moon2" Inherits="Battle Axe6">
  
-	<part Name="Render" DisplayName="Silver Crescent" Tile="AricMoonSickle.png" ColorString="&amp;k" DetailColor="Y" />
+	<part Name="Render" DisplayName="{{moon|silver}} crescent" Tile="AricMoonSickle.png" ColorString="&amp;k" DetailColor="Y" />
 	<part Name="BleedingOnHit" Amount="1d2" SaveTarget="22" Stack="false" />
 	<part Name="Description" Short="Each night the moon's light wanes, further enshrouding the atrocoties of night, encouraging her servants to acts of greater and greater savagery."/>
      <tag Name="ExcludeFromDynamicEncounters"/>
@@ -193,16 +193,16 @@
  
  <object Name="Aric Sickle of the Moon3" Inherits="Battle Axe7">
  
-	<part Name="Render" DisplayName="Black Moon's Fury" Tile="AricMoonSickle.png" ColorString="&amp;k" DetailColor="k" />
+	<part Name="Render" DisplayName="black moon's fury" Tile="AricMoonSickle.png" ColorString="&amp;k" DetailColor="k" />
 	<part Name="BleedingOnHit" Amount="1d2+1" SaveTarget="25" Stack="false" />
-	<part Name="Description" Short="A nanite fine monomolecular edge renders this blade almost invisible. On the nights that the Moon shares none of her light, the lunar hunt begins, and the Aboretum is baptised once more in blood."/>
+	<part Name="Description" Short="A nanite fine monomolecular edge renders this blade almost invisible. On the nights that the Moon shares none of her light, the lunar hunt begins, and the Aboreta are baptised once more in blood."/>
     <tag Name="ExcludeFromDynamicEncounters"/>
  </object>
  
 <object Name="Aric Slumberling Cloak" Inherits="BaseCloak">
     <part Name="Armor" AV="1" DV="1" WornOn="Back" />
 	<part Name= "EquipStatBoost" Boosts="Strength:2"/>
-    <part Name="Render" DisplayName="Slumberling cloak" RenderString="]" Tile="Items/sw_cloak_panther.bmp" ColorString="&amp;w" DetailColor="W" />
+    <part Name="Render" DisplayName="slumberling cloak" RenderString="]" Tile="Items/sw_cloak_panther.bmp" ColorString="&amp;w" DetailColor="W" />
     <part Name="Commerce" Value="80" />
     <part Name="Description" Short="Some among the Ekuemekiyye believe that to slay a foe and consume them is to absorb their strength. At least in the case of this Slumberling, it seems hard to disagree." />
     <part Name="Physics" Weight="6" Organic="true" />
@@ -216,7 +216,7 @@
  <object Name="Aric Fanged Sun and Moon Mask" Inherits= "BaseFangs">
  
 	<part Name="Armor" AV="0" DV="1" WornOn="Face" />
-    <part Name="Render" DisplayName="Fanged{{sun|sun}} and {{moon|moon}} mask" RenderString="]" ColorString="&amp;W" DetailColor="B" Tile="items/sw_mask2.bmp" />
+    <part Name="Render" DisplayName="fanged{{sun|sun}} and {{moon|moon}} mask" RenderString="]" ColorString="&amp;W" DetailColor="B" Tile="items/sw_mask2.bmp" />
     <part Name="Commerce" Value="8" />
     <part Name="Description" Short="The traditional sun and moon mask is segmented, blades of black metal jutting from the upper half. The weapon of a beast, more than man. " />
     <part Name="Physics" Weight="1" />
@@ -230,7 +230,7 @@
  <object Name="Aric Toxic Fanged Sun and Moon Mask" Inherits= "BaseFangs">
  
 	<part Name="Armor" AV="0" DV="1" WornOn="Face" />
-    <part Name="Render" DisplayName="Toxic Fanged {{sun|sun}} and {{moon|moon}} mask" RenderString="]" ColorString="&amp;W" DetailColor="B" Tile="items/sw_mask2.bmp" />
+    <part Name="Render" DisplayName="venomous fanged {{sun|sun}} and {{moon|moon}} mask" RenderString="]" ColorString="&amp;W" DetailColor="B" Tile="items/sw_mask2.bmp" />
     <part Name="Commerce" Value="80" />
     <part Name="Description" Short="The traditional sun and moon mask is segmented, blades of black metal jutting from the upper half, dripping with a cocktail of toxins. The weapon of a beast, more than man. " />
     <part Name="Physics" Weight="1" />
@@ -246,7 +246,7 @@
  
  <object Name="Aric Barbed Arrow1" Inherits="Folded Carbide Arrow">
  
-	<part Name="Render" DisplayName="Barbed Arrow"  ColorString="&amp;r" />
+	<part Name="Render" DisplayName="barbed arrow"  ColorString="&amp;r" />
 	<part Name="Description" Short="Fletched with feathers of a bird from a foreign land, the head of this arrow is pocked with tiny barbed spikes, to bloody. " />
 	<part Name="AmmoArrow" ProjectileObject="AricProjectileBarbedArrow1" />
 	<part Name="TinkerItem" Bits="C" CanBuild="true" CanDisassemble="false" NumberMade="10" />
@@ -257,13 +257,13 @@
  <object Name="AricProjectileBarbedArrow1" Inherits ="ProjectileFoldedCarbideArrow">
  
 	<part Name="AricBleedingOnHit" Amount="1d2" SaveTarget="18" Stack="false" />
-	<part Name="Render" DisplayName="Barbed Arrow"  ColorString="&amp;R" />
+	<part Name="Render" DisplayName="barbed arrow"  ColorString="&amp;R" />
 	
  </object>
  
   <object Name="Aric Barbed Arrow2" Inherits="Crysteel Arrow">
  
-	<part Name="Render" DisplayName="Wicked Barbed Arrow"  ColorString="&amp;r" />
+	<part Name="Render" DisplayName="wicked barbed arrow"  ColorString="&amp;r" />
 	<part Name="Description" Short="Fletched with feathers of a bird from a foreign land, the head of this arrow  is arrayed with a monomolecular shrapnel ejector, to mutilate. " />
 	<part Name="AmmoArrow" ProjectileObject="AricProjectileBarbedArrow2" />
 	<part Name="TinkerItem" Bits="4" CanBuild="true" CanDisassemble="false" NumberMade="5"/>
@@ -273,14 +273,14 @@
  <object Name="AricProjectileBarbedArrow2" Inherits ="ProjectileCrysteelArrow">
  
 	<part Name="AricBleedingOnHit" Amount="1d2+1" SaveTarget="20" Stack="false" />
-	<part Name="Render" DisplayName="Wicked Barbed Arrow"  ColorString="&amp;R" />
+	<part Name="Render" DisplayName="wicked barbed arrow"  ColorString="&amp;R" />
 	
  </object>
  
   <object Name="Aric Barbed Arrow3" Inherits="Flawless Crysteel Arrow">
  
-	<part Name="Render" DisplayName="Nanotech Mutilator Arrow"  ColorString="&amp;r" />
-	<part Name="Description" Short="Fletched with feathers of a bird from a foreign land, the head of this arrow  is arrayed with an micro ai controlled monomolecular shrapnel ejector that directs each shrapnel fragment towards exposed arteries, to iviscerate. " />
+	<part Name="Render" DisplayName="nanotech mutilator arrow"  ColorString="&amp;r" />
+	<part Name="Description" Short="Fletched with feathers of a bird from a foreign land, the head of this arrow  is arrayed with an AI controlled monomolecular shrapnel ejector that directs each shrapnel fragment towards exposed arteries, to eviscerate. " />
 	<part Name="AmmoArrow" ProjectileObject="AricProjectileBarbedArrow3" />
 	<part Name="TinkerItem" Bits="6" CanBuild="true" CanDisassemble="false" NumberMade="5"/>
 	
@@ -289,13 +289,13 @@
  <object Name="AricProjectileBarbedArrow3" Inherits ="ProjectileFlawlessCrysteelArrow">
  
 	<part Name="AricBleedingOnHit" Amount="1d4+2" SaveTarget="25" Stack="false" />
-	<part Name="Render" DisplayName="Barbed Arrow"  ColorString="&amp;R" />
+	<part Name="Render" DisplayName="barbed arrow"  ColorString="&amp;R" />
 	
  </object>
  
   <object Name="Aric Rusting Arrow1" Inherits="Folded Carbide Arrow">
  
-	<part Name="Render" DisplayName="Rusting Arrow"  ColorString="&amp;r" />
+	<part Name="Render" DisplayName="rusting arrow"  ColorString="&amp;r" />
 	<part Name="Description" Short="Fletched with feathers from a bird from a foreign land, the head of this arrow is engraved with tiny channels, into which qudzu folicles have been delicately pressed, to expose. " />
 	<part Name="AmmoArrow" ProjectileObject="AricProjectileRustArrow1" />
 	<part Name="TinkerItem" Bits="C" CanBuild="true" CanDisassemble="false" NumberMade="5" Ingredient="Qudzu Stem"  />
@@ -305,13 +305,13 @@
   <object Name="AricProjectileRustArrow1" Inherits ="ProjectileFoldedCarbideArrow">
  
 	<part Name= "RustOnHit" Chance="20" />
-	<part Name="Render" DisplayName="Rusting Arrow"  ColorString="&amp;r" />
+	<part Name="Render" DisplayName="rusting arrow"  ColorString="&amp;r" />
 	
  </object>
  
  <object Name="Aric Rusting Arrow2" Inherits="Crysteel Arrow">
  
-	<part Name="Render" DisplayName="Disintegrating Arrow"  ColorString="&amp;r" />
+	<part Name="Render" DisplayName="disintegrating arrow"  ColorString="&amp;r" />
 	<part Name="Description" Short="Fletched with feathers from a bird from a foreign land, the crysteel head of this arrow is engraved with tiny channels, into which qudzu folicles have been delicately pressed, to expose. " />
 	<part Name="AmmoArrow" ProjectileObject="AricProjectileRustArrow2" />
 	<part Name="TinkerItem" Bits="4" CanBuild="true" CanDisassemble="false" NumberMade="5" Ingredient="Qudzu Stem"  />
@@ -321,13 +321,13 @@
   <object Name="AricProjectileRustArrow2" Inherits ="ProjectileCrysteelArrow">
  
 	<part Name= "RustOnHit" Chance="40" />
-	<part Name="Render" DisplayName="Disintegrating Arrow"  ColorString="&amp;r" />
+	<part Name="Render" DisplayName="disintegrating arrow"  ColorString="&amp;r" />
 	
  </object>
  
   <object Name="Aric Rusting Arrow3" Inherits="Flawless Crysteel Arrow">
  
-	<part Name="Render" DisplayName="Nanocorrosive Arrow"  ColorString="&amp;r" />
+	<part Name="Render" DisplayName="nanocorrosive arrow"  ColorString="&amp;r" />
 	<part Name="Description" Short="Fletched with feathers from a bird from a foreign land, the crysteel head of this arrow is engraved with tiny channels, into which processed qudzu essence has been applied, to expose. " />
 	<part Name="AmmoArrow" ProjectileObject="AricProjectileRustArrow3" />
 	<part Name="TinkerItem" Bits="6" CanBuild="true" CanDisassemble="false" NumberMade="5" Ingredient="Qudzu Stem"  />
@@ -337,13 +337,13 @@
   <object Name="AricProjectileRustArrow3" Inherits ="ProjectileFlawlessCrysteelArrow">
  
 	<part Name= "RustOnHit" Chance ="60" />
-	<part Name="Render" DisplayName="Nanocorrosive Arrow"  ColorString="&amp;r" />
+	<part Name="Render" DisplayName="nanocorrosive arrow"  ColorString="&amp;r" />
 	
  </object>
  
  <object Name="Aric Toxin Arrow1" Inherits="Folded Carbide Arrow">
  
-	<part Name="Render" DisplayName="Toxin Arrow"  ColorString="&amp;g" />
+	<part Name="Render" DisplayName="toxin arrow"  ColorString="&amp;g" />
 	<part Name="Description" Short="Fletched with feathers from a bird from a foreign land, the head of this arrow is engraved with tiny channels, into which a cocktail of toxins has been applied, to slay. " />
 	<part Name="AmmoArrow" ProjectileObject="AricProjectileToxicArrow1" />
 	<part Name="TinkerItem" Bits="C" CanBuild="true" CanDisassemble="false" NumberMade="10" />
@@ -352,13 +352,13 @@
  
  <object Name="AricProjectileToxicArrow1" Inherits ="ProjectileFoldedCarbideArrow">
  
-	<part Name="Render" DisplayName="Toxic Arrow"  ColorString="g" />
+	<part Name="Render" DisplayName="toxic arrow"  ColorString="g" />
 	<part Name= "AricPoisonOnHit" Chance= "100" Strength= "20" DamageIncrement="3" />
 	
  </object>
  
  <object Name="Aric Toxin Arrow2" Inherits="Crysteel Arrow">
-	<part Name="Render" DisplayName="Lethal toxic arrow"  ColorString="&amp;g" /> 
+	<part Name="Render" DisplayName="lethal toxic arrow"  ColorString="&amp;g" /> 
 	<part Name="Description" Short="Fletched with feathers from a bird from a foreign land, the head of this arrow is engraved with tiny channels, into which a cocktail of lethal toxins has been applied, to slay. " />
 	<part Name="AmmoArrow" ProjectileObject="AricProjectileToxicArrow1" />
 	<part Name="TinkerItem" Bits="4" CanBuild="true" CanDisassemble="false" NumberMade="5"/>
@@ -367,13 +367,13 @@
  
  <object Name="AricProjectileToxicArrow2" Inherits ="ProjectileCrysteelArrow">
  
-	<part Name="Render" DisplayName="Lethal toxic arrow"  ColorString="g" />
+	<part Name="Render" DisplayName="lethal toxic arrow"  ColorString="g" />
 	<part Name= "AricPoisonOnHit" Chance= "100" Strength= "25" DamageIncrement="5" />
 	
  </object>
  
  <object Name="Aric Toxin Arrow3" Inherits="Flawless Crysteel Arrow">
-	<part Name="Render" DisplayName="Virulent arrow"  ColorString="&amp;g" /> 
+	<part Name="Render" DisplayName="virulent arrow"  ColorString="&amp;g" /> 
 	<part Name="Description" Short="Fletched with feathers from a bird from a foreign land, the head of this arrow is engraved with tiny channels, into which a cocktail of synethic neurotoxins, developed secret laboratories beneath vaulted Ziggurats, has been applied, to eliminate. " />
 	<part Name="AmmoArrow" ProjectileObject="AricProjectileToxicArrow3" />
 	<part Name="TinkerItem" Bits="6" CanBuild="true" CanDisassemble="false" NumberMade="5"/>
@@ -381,13 +381,13 @@
  
  <object Name="AricProjectileToxicArrow3" Inherits ="ProjectileFlawlessCrysteelArrow">
  
-	<part Name="Render" DisplayName="Virulent arrow"  ColorString="&amp;g" />
+	<part Name="Render" DisplayName="virulent arrow"  ColorString="&amp;g" />
 	<part Name= "AricPoisonOnHit" Chance= "100" Strength= "30" DamageIncrement="8" />
 	
  </object>
  
   <object Name="Aric Mindrend Arrow" Inherits="Flawless Crysteel Arrow">
-	<part Name="Render" DisplayName="Mindrend Arrow" DetailColor="K"  ColorString="&amp;m" />
+	<part Name="Render" DisplayName="mindrend arrow" DetailColor="K"  ColorString="&amp;m" />
 	<part Name="Description" Short="Fletched with vantafeathers of the Mindrend Ibis, the head of this arrow is engraved with tiny channels, into which the extracted cerebrum ofthat selfsame bird has been applied. To extinguish. " />
 	<part Name="AmmoArrow" ProjectileObject="AricProjectileMindrendArrow" />
 	
@@ -405,7 +405,7 @@
  <!--Yawningmoon gear -->
  
  <object Name="Aric Fuming Conch of the Aji" Inherits="MeleeWeapon">
-    <part Name="Render" DisplayName="Fuming conch of the {{r|Aji}}" Tile="Items/sw_shell_1.bmp" ColorString="&amp;r" DetailColor="K" />
+    <part Name="Render" DisplayName="fuming conch of the {{r|Aji}}" Tile="Items/sw_shell_1.bmp" ColorString="&amp;r" DetailColor="K" />
     <part Name="MeleeWeapon" MaxStrengthBonus="5" BaseDamage="4d2" Skill="Cudgel" Stat="Strength" />
     <part Name="Commerce" Value="250" />
     <part Name="Description" Short="As the Fuming Gods belch their fury from the sea, so do their children." />
@@ -417,7 +417,7 @@
   </object>
   
   <object Name="Aric Erupting Conch of the Aji" Inherits="MeleeWeapon">
-    <part Name="Render" DisplayName="Erupting conch of the {{r|Aji}}" Tile="Items/sw_shell_1.bmp" ColorString="&amp;r" DetailColor="K" />
+    <part Name="Render" DisplayName="erupting conch of the {{r|Aji}}" Tile="Items/sw_shell_1.bmp" ColorString="&amp;r" DetailColor="K" />
     <part Name="MeleeWeapon" MaxStrengthBonus="7" BaseDamage="6d2" Skill="Cudgel" Stat="Strength" />
     <part Name="Commerce" Value="500" />
     <part Name="Description" Short="As the Fuming Gods belch their fury from the sea, so do their children." />
@@ -429,7 +429,7 @@
   </object>
  
 	 <object Name="Aric Fuming Hand Cannon" Inherits="BaseMagazinePistol">
-    <part Name="Render" Tile="Items/sw_techpistol_3.bmp" DisplayName="Fuming Hand Cannon" ColorString="&amp;r" DetailColor="O" />
+    <part Name="Render" Tile="Items/sw_techpistol_3.bmp" DisplayName="fuming hand cannon" ColorString="&amp;r" DetailColor="O" />
     <part Name="Physics" Weight="4" />
     <part Name="Commerce" Value="200" />
     <part Name="MissileWeapon" Skill="Pistol" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="1" />
@@ -448,7 +448,7 @@
   </object>
   
    <object Name="Aric Heavy Fuming Hand Cannon" Inherits="BaseMagazinePistol">
-    <part Name="Render" Tile= "Items/sw_techpistol_3.bmp" DisplayName="Heavy Fuming Hand Cannon" ColorString="&amp;r" DetailColor="o" />
+    <part Name="Render" Tile= "Items/sw_techpistol_3.bmp" DisplayName="heavy fuming hand cannon" ColorString="&amp;r" DetailColor="o" />
     <part Name="Physics" Weight="4" />
     <part Name="Commerce" Value="200" />
     <part Name="MissileWeapon" Skill="Pistol" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="1" />
@@ -467,7 +467,7 @@
   </object>
   
    <object Name="Aric Erupting Hand Cannon" Inherits="BaseMagazinePistol">
-    <part Name="Render" Tile="Items/sw_techpistol_3.bmp" DisplayName="Erupting Hand Cannon" ColorString="&amp;r" DetailColor="o" />
+    <part Name="Render" Tile="Items/sw_techpistol_3.bmp" DisplayName="erupting hand cannon" ColorString="&amp;r" DetailColor="o" />
     <part Name="Physics" Weight="4" />
     <part Name="Commerce" Value="200" />
     <part Name="MissileWeapon" Skill="Pistol" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="1" />
@@ -488,19 +488,19 @@
   </object>
   
 	<object Name= "Aric Combat Jackhammer" Inherits="Nanopneumatic Jackhammer">
-		<part Name="Render" DisplayName="Yawningmoon Combat Jackhammer" ColorString="&amp;C"/>
+		<part Name="Render" DisplayName="yawningmoon combat jackhammer" ColorString="&amp;C"/>
 		<part Name="MeleeWeapon" PenBonus="1" MaxStrengthBonus="6" BaseDamage="4d4" Skill="Cudgel" />
 		<part Name="Commerce" Value="100" />
 		<tag Name="Tier" Value="5" />
 		<part Name="Examiner" Alternate="UnknownClub" Complexity="4" />
     <part Name="TinkerItem" Bits="345" CanDisassemble="true" CanBuild="true" />
 	<part Name="BleedingOnHit" Amount="1-2" SaveTarget="25" Stack="true" />
-		<part Name="Description" Short="Characteristic weapon of Elite Children of the Deep. While their purpose is to carve new homes and pathways through their subterranean environment, the drill bit's wicked barbs split armour and flesh and bone just as readily as stone." />
+		<part Name="Description" Short="Characteristic weapon of elite Children of the Deep. While their purpose is to carve new homes and pathways through their subterranean environment, the drill bit's wicked barbs split armour and flesh and bone just as readily as stone." />
 	</object>
 
 	<object Name="Aric Crysteel Pulveriser" Inherits= "Aric Combat Jackhammer">
 	
-		<part Name="Render" DisplayName="Yawningmoon Crysteel Pulveriser" ColorString="&amp;g" DetailColor="G" Tile="Items/sw_jackhammer.bmp" />
+		<part Name="Render" DisplayName="yawningmoon crysteel pulveriser" ColorString="&amp;g" DetailColor="G" Tile="Items/sw_jackhammer.bmp" />
 		<part Name="MeleeWeapon" PenBonus="1" MaxStrengthBonus="9" BaseDamage="6d4" Skill="Cudgel" />
 		<part Name="Commerce" Value="500" />
 		<tag Name="Tier" Value="7" />
@@ -508,7 +508,7 @@
 		<part Name="Drill" ChargeUse="0" PenetrationBonus="30" HitsRequired="2" IsBootSensitive="false" IsEMPSensitive="true" IsPowerLoadSensitive="true" IsTechScannable="true" />
 		<part Name="TinkerItem" Bits="567" CanDisassemble="true" CanBuild="true" />
 		<part Name="BleedingOnHit" Amount="2-3" SaveTarget="30" Stack="true" />
-		<part Name="Description" Short="Badge of office of the Thanes of Yawningmoon, highest of Children of the Deep. Should they prove successful on their quest, they will be raised to nobility." />
+		<part Name="Description" Short="Badge of office of the Thanes of Yawningmoon, highest of the Children of the Deep. Should they prove successful on their quest, they will be raised to nobility." />
 
 	</object>
 	
@@ -607,7 +607,7 @@
 	<object Name="Aric GasTumbler" Inherits="BaseCyberneticsEquipment_4point">
 		<part Name="Physics" Weight="15" />
 		<part Name="Description" Short="Gravitational micromanipulators ensure optimal dispersal of gases, while largely shielding the operator from their negative effects." />
-		<part Name="Render" DisplayName="{{Y|Industrial Mixing Unit}}" Tile="Items/sw_magnetic_core.bmp" TileColor="&amp;r" DetailColor="C" />
+		<part Name="Render" DisplayName="{{Y|industrial mixing unit}}" Tile="Items/sw_magnetic_core.bmp" TileColor="&amp;r" DetailColor="C" />
 		<part Name="CyberneticsBaseItem" Slots="Back" Cost="4" BehaviorDescription="Gases you generate are denser, disperse less readily and you are protected from some of their worse effects." />
 		<part Name="GasTumbler" ChargeUse="0" DispersalMultiplier="25" DensityMultiplier="200" />
 		<part Name="GasMask" Power="50"/>
