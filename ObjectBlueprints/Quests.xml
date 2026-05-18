@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quests>
+
+		<quest ID="AricIbulMain" Name="The ruin that cleaves the sky" Factions="Aric Ibul" Reputation="200" Level="35" System="Aric_Ibul_Main_System"
+         Accomplishment="You secured the Heavenpiercer ruin for the Arcology of Ibul." 
+         Hagiograph="In the month of =month= of =year=, =name=  drove hostile forces from the ruin that cleft the sky."
+         HagiographCategory="DoesSomethingRad"
+         Gospel="In honour of the Arcology of Ibul, Quaestor =name= raised a tower that touched the heavens, to serve as their capital city in Qud. In thanks,the people of the frozen arcology &lt;spice.history.gospels.Celebration.LateSultanate.!random&gt;.">
+	
+			<step Name="Travel to the Heavenpiercer" XP="500">
+					<text>Travel to the Heavenpiercer ruin.</text>
+			</step>
+
+			<step Name="Clear the ground Level of the Heavenpiercer" XP="500">
+					<text>Slay or otherwise remove all creatures that might be hostile to the Ibulian expedition on this floor.</text>
+			</step>
+
+			<step Name="Clear the 1st Level of the Heavenpiercer" XP="500">
+					<text>Slay or otherwise remove all creatures that might be hostile to the Ibulian expedition on this floor.</text>
+			</step>
+
+			<step Name="Clear the 2nd Level of the Heavenpiercer" XP="500">
+					<text>Slay or otherwise remove all creatures that might be hostile to the Ibulian expedition on this floor.</text>
+			</step>
+			
+			<step Name="Clear the 3rd Level of the Heavenpiercer" XP="500">
+					<text>Slay or otherwise remove all creatures that might be hostile to the Ibulian expedition on this floor.</text>
+			</step>
+
+			<step Name="Clear the final Level of the Heavenpiercer" XP="500">
+					<text>Slay or otherwise remove all creatures that might be hostile to the Ibulian expedition on this floor.</text>
+			</step>
+
+			<step Name="Clear the Heavenpiercer" XP="1000">
+					<text>Slay or otherwise remove all creatures that might be hostile to the Ibulian expedition in the heavenpiercer ruin.</text>
+			</step>
+
+			<step Name="Return to the Magister" XP="1000">
+					<text>Return the the Magister and report your success.</text>
+			</step>
+
+
+	</quest>
+
+	<quest ID="AricEkuemekiyyeMain" Name="The Wayward Hunter" Factions="Aric Ekuemekiyye" Reputation="100" Level="30" System="Aric_Ekuemekiyye_Main_System"
+         Accomplishment="You destroyed the goatfolk stockade." 
+         Hagiograph="In the month of =month= of =year=, =name=  stalked the jungles and slew the goatfolk shamans in their unholy fortress."
+         HagiographCategory="DoesSomethingRad"
+         Gospel="At the bloody Battle of the bloody grove, Moonchosen =name= slew the high chieftain of the goatfolk and liberated the people of the syzgy from captivity. In =player.t's= honour they &lt;spice.history.gospels.Celebration.LateSultanate.!random&gt;.">
+	
+			<step Name="Journey to the Stockade" XP="1000">
+					<text>Travel to Goatfolk Stockade</text>
+			</step>
+			
+			<step Name="Slay the Goatfolk Gaoler">
+					<text>Claim the key to the Ekuemekiyyen's bonds from the corpse of the gaoler</text>
+			</step>
+
+			<step Name="Recover the Goatfolk Gaoler's key">
+					<text>Claim the key to the Ekuemekiyyen's bonds from the corpse of the gaoler</text>
+			</step>
+
+			<step Name="Free the Priest of the Moon" XP="500">
+					<text>Speak to the imprisoned Priest of the Moon and use the key to free them from their bonds</text>
+			</step>
+
+			<step Name="Return to high priest of the encampment" XP="500">
+					<text>Return to the high priest and tell them the outcome of your raid</text>
+			</step>
+	</quest>
+	
+	<quest ID="AricGoatfolk" Name="A demonstration in savagery" Factions="Goatfolk" Reputation="100" Level="30" System="Aric_Goatfolk_System"
+         Accomplishment="At the request of a goatfolk chieftain, You destroyed the Ekuemekiyyen encampment." 
+         Hagiograph="In the month of =month= of =year=, =name=  stalked the jungles and put the Ekuemekiyyens to the sword in their unholy fortress."
+         HagiographCategory="DoesSomethingRad"
+         Gospel="At the  Battle of the bloody grove, =name= lead the armies of the goatfolk clans against the masked hunters of the jungle, and cracked the moon asunder. In =player.t's= honour they &lt;spice.history.gospels.Celebration.LateSultanate.!random&gt;.">
+	
+			<step Name="Journey to the Ekuemekiyyen camp" XP="1000">
+					<text>Travel to the camp of the Ekuemekiyyens.</text>
+			</step>
+
+			<step Name="Slay the commander of the Ekuemekiyyen encampment.">
+					<text>Slay the commander of the Ekuemekiyyen encampment.</text>
+			</step>
+
+			<step Name="Return to the Goatfolk Chieftain" XP="500">
+					<text>Return to the Chieftain and tell them the outcome of your raid</text>
+			</step>
+	</quest>
+
+	
+	
+</quests>
+

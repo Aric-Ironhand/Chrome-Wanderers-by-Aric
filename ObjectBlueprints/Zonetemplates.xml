@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<zonetemplates>
+
+	<zonetemplate Name="HPGeneric" RegionSize="200">
+	<global>
+      <population Table=""></population>
+    </global>
+
+	</zonetemplate> 
+	
+	
+	
+ </zonetemplates>

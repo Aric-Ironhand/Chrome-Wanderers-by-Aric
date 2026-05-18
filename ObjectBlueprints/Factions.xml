@@ -4,6 +4,8 @@
 <faction
 	Name="Aric Ekuemekiyye"
 	DisplayName = "The Toxic Arboreta of Ekuemekiyye, the Holy City"
+	Old="false"
+    FormatWithArticle="true"
     Visible="true"
     InitialPlayerReputation="0" 
 	 PositiveSound="Sounds/Reputation/sfx_reputation_putusTemplar_positive"
@@ -34,6 +36,10 @@
       <interest Tags="ruins,tech,historic" WillBuy="true" WillSell="false" MatchAny="true" Inverse="true" Description="the modern world" />
       <interest Tags="settlement" />
     </interests>
+	
+	<ranks>
+      <rank Name="Moonchosen" Standing="1" />
+    </ranks>
     
 
 </faction>
@@ -41,6 +47,8 @@
 <faction
 	Name="Aric Ibul"
 	DisplayName = "The Ice-Sheathed Arcology of Ibul"
+	Old="false"
+    FormatWithArticle="true"
     Visible="true"
     InitialPlayerReputation="0" 
 	 PositiveSound="Sounds/Reputation/sfx_reputation_putusTemplar_positive"
@@ -71,6 +79,10 @@
       <interest Tags="cybernetics" WillBuy="false" WillSell="true" />
       
     </interests>
+	
+	<ranks>
+      <rank Name="Quaestor" Standing="1" />
+    </ranks>
     
 
 </faction>
@@ -78,6 +90,8 @@
 <faction
 	Name="Aric YawningMoon"
 	DisplayName = "The Crustal Mortars of Yawningmoon"
+	Old="false"
+    FormatWithArticle="true"
     Visible="true"
     InitialPlayerReputation="0" 
 	 PositiveSound="Sounds/Reputation/sfx_reputation_putusTemplar_positive"
@@ -106,7 +120,43 @@
       <interest Tags="cybernetics" WillBuy="false" WillSell="true" />
       <interest Tags="artifact" />
     </interests>
+	
+	<ranks>
+      <rank Name="" Standing="1" />
+    </ranks>
     
 
 </faction>
+
+  <faction
+    Name="Aricneutral"
+    Visible="false"
+    InitialPlayerReputation="0"
+  >
+	  <feeling About="Player" Value="0" />
+  </faction>
+
+   <faction
+    Name="Goatfolk"
+	Load="Merge"
+  >
+	<feeling About="Aricneutral" Value="0" />
+  </faction> 
+  
+  
+   <faction
+    Name="AricHostile"
+    Visible="false"
+    InitialPlayerReputation="0"
+  >
+	  <feeling About="*" Value="-100" />
+  </faction>
+
+   <faction
+    Name="Goatfolk"
+	Load="Merge"
+  >
+	<feeling About="Aricneutral" Value="0" />
+  </faction> 
+  
 </factions>

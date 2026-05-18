@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<objects>
+
+
+		
+		<object Name="Aric Heavenpiercer Terrain" Inherits="TerrainBaroqueRuins">
+		
+			<part Name="Render" DisplayName="the heavenpiercer" RenderString="204" ColorString="&amp;k^k" Tile="Terrain/sw_ruins2.bmp" />
+			<part Name="Description" Short="A shard of obsidian pierces roiling cumuli, scraping the very sky. Only the shimmering ribbon of the spindle casts a longer shadow upon the canopy below." />
+		
+			<tag Name="RegionTier" Value="7" />
+			<tag Name="NoBiomes" Value="1" />
+		
+		</object>
+		
+
+</objects>

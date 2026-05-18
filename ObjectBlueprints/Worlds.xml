@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<worlds>
+
+	<world Name="JoppaWorld" Load="Merge">
+		
+		<cell Name="Aric Heavenpiercer" Inherits="BaroqueRuinsCell" ApplyTo="Aric Heavenpiercer Terrain" LandingZone="1,1" Mutable="false">
+		
+			<zone Level="10" x="1" y="1" Name="Base of the Heavenpiercer" ProperName="true" IncludeStratumInZoneDisplay="false" HasWeather="true" WindSpeed="0-100" WindDirections="NW,NW,W,W,SW" WindDuration="50-3000">
+				
+				<map FileName="Aric_Heavenpiercer_G.rpm"></map>
+
+				<postbuilder Class="ZoneTemplate:HPGeneric"></postbuilder>
+
+			</zone>
+			
+			<zone Level="9" x="1" y="1" Name="Heavenpiercer manufactory" ProperName="true" IncludeStratumInZoneDisplay="true">
+				
+				<map FileName="Aric_Heavenpiercer_1.rpm"></map>
+				<builder Class="FlagInside"></builder>
+				<postbuilder Class="ZoneTemplate:HPGeneric"></postbuilder>
+				    
+				
+
+			</zone>
+			
+			
+			<zone Level="8" x="1" y="1" Name="Heavenpiercer hall of warriors" ProperName="true" IncludeStratumInZoneDisplay="true">
+				
+				<map FileName="Aric_Heavenpiercer_3.rpm"></map>
+				<builder Class="FlagInside"></builder>
+
+				<postbuilder Class="ZoneTemplate:HPGeneric"></postbuilder>
+<!-- 				<builder Class="AddBlueprintBuilder" Object="Aric Dawnglider Hero"></builder> -->
+				
+			</zone>
+			
+			<zone Level="7" x="1" y="1" Name="Heavenpiercer throneroom" ProperName="true" IncludeStratumInZoneDisplay="true">
+				
+				<map FileName="Aric_Heavenpiercer_4.rpm"></map>
+				<builder Class="FlagInside"></builder>
+
+				<postbuilder Class="ZoneTemplate:HPGeneric"></postbuilder>
+<!-- 				<builder Class="AddBlueprintBuilder" Object="Aric Dawnglider Hero"></builder> -->
+				
+			</zone>
+			
+		</cell>
+		
+		
+
+	</world>
+
+</worlds>
+

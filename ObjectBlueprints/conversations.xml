@@ -1,0 +1,1143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<conversations>
+<!-- General -->
+
+  <conversation ID="Aric Ekuemekiyye Generic">
+
+    <start ID="Start Local" IfSubtypeCategory="Ekuemekiyye">
+      <text>
+        May his warmth rejuvenate you, Child of the Arboreta. Come. Perhaps I can interest you in some wares from home?~
+        May her grace protect you, Child of the Arboreta. How long has it been, since you were graced by the shadows of the Ziggurats? Do the aromas of the Arboreta call to you?
+      </text>
+      <choice GotoID="End">Live and drink.</choice>
+	  <choice GotoID="End">May her grace protect you.</choice>
+    </start>
+	
+	<start ID="Start Foreign" IfNotSubtypeCategory="Ekuemekiyye">
+      <text>
+        Moon and Sun, wanderer. Come, see the wonders forged in the ziggurats of my home.
+      </text>
+      <choice GotoID="End">Live and drink.</choice>
+    </start>
+  </conversation>
+  
+      <conversation ID="Aric Yawningmoon Generic">
+  
+      <start ID="Start Local" IfSubtypeCategory="Yawningmoon">
+      <text>
+        By fire and Salt! Not often we see another of the Stair this far west.~
+        Ho! A fellow child of the fumes, this far west. I never thought I'd see the day.
+      </text>
+      <choice GotoID="End">Live and drink.</choice>
+	  <choice GotoID="End">Gods watch over you.</choice>
+    </start>
+	
+	<start ID="Start Foreign" IfNotSubtypeCategory="Ekuemekiyye">
+      <text>
+        Ho, wanderer.
+      </text>
+      <choice GotoID="End">Live and drink.</choice>
+    </start>
+  </conversation>
+  
+  <conversation ID="Aric Ibul Generic">
+  
+      <start ID="Start Local" IfSubtypeCategory="Ibul">
+      <text>
+       Salutations. Are you an exile? I suppose it does not matter.~
+	   My metrics of performance are struggling. I have to do better.~
+	   Salutations, fellow Ibulian. I have seen few of our people since arriving in this strange land. I am pleased to see you.~
+	   Salutations. How large the spindle seems in this land. Would that we still had the skills of artifice of our forebears.~
+	   Salutations. I am recently arrived across that most horrible salt desert. How much I prefer the frozen tundra of our home.
+	   Salutations. What brings you all this way, to this blasted land of rust?
+	   Salutations. Do you too, miss the glorious streets of our home? I have seen naught more than a dirt track since arriving.
+      </text>
+      <choice GotoID="End">Live and drink.</choice>
+	  <choice GotoID="End">May your metrics only improve.</choice>
+    </start>
+	
+	<start ID="Start Foreign" IfNotSubtypeCategory="Ibul">
+      <text>
+        Salutations, wanderer.~
+		Not another hunter for those gutsmonger savages, I hope?~
+		Fear not, I am no Templar.~
+		I see your look of apprehension. Worry not, my people have little and less in common with the Children of Oudin- I dare say they would consider my people barely above your own.~
+		Have you heard of the great Glacial Arcology of Ibul? I assure you, it is even grander than you imagine.~
+		If you ever have the fortune of meeting a merchant of my people, I would encourage you to browse their wares. The Artifice is unmatched by any in all the world.
+      </text>
+      <choice GotoID="End">Live and drink.</choice>
+    </start>
+  </conversation>
+  
+  
+
+<!-- Commanders -->
+
+  <conversation ID="Aric Ibul Commander Consul">
+  
+      <start ID="Start Local" IfSubtypeCategory="Ibul">
+		<text>
+	  {{emote|*A beatific face rises to meet your gaze, and what you now realise was feigned pleasure at your company is replaced by a retrospectively more genuine smile.*}} 
+       Salutations. You are the first of our people I have seen from without our expedition since before we crossed Arthax. Well met, fellow.
+
+		</text>
+		<choice Target="Aric_Consul_hub">May I ask you some questions?</choice>
+		<choice Target="Aric_HeavenPiercer_hub" IfHaveQuest="AricIbulMain">I wish to discuss the Heavenpiercer.</choice>
+		<choice GotoID="End">Live and drink.</choice>
+		<choice GotoID="End">May your metrics only improve.</choice>
+    </start>
+	
+	<start ID="Start Foreign" IfNotSubtypeCategory="Ibul">
+      <text>
+	  {{emote|*A beatific face rises to meet your gaze, smiling warmly.*}} 
+        Salutations, wanderer. You have no need to fear, we are peaceful explorers.
+      </text>
+	  
+	  <choice Target="Aric_Consul_hub">May I ask you some questions?</choice>
+	  <choice Target="Aric_HeavenPiercer_hub" IfHaveQuest="AricIbulMain">I wish to discuss the Heavenpiercer.</choice>
+
+      <choice GotoID="End">Live and drink.</choice>
+    </start>
+	
+	<node ID="Aric_Consul_hub">
+		<text>What would you like to know?</text>
+		
+		<choice Target="Aric_ExpeditionPurpose">What is the purpose of your expedition, Magister?</choice>	
+		<choice Target="Aric_IbulInfo">Can you tell me more about the Arcology of Ibul?</choice>
+		<choice Target="Aric_OtherTruekin">Do you know anything of other clans of Truekin?</choice>
+		<choice Target="Aric_IbulWork" IfNotHaveQuest="AricIbulMain">Is there any work that needs doing?</choice>
+		<choice GotoID="End">Live and drink.</choice>
+	</node>
+	
+	
+	<node ID="Aric_ExpeditionPurpose">
+		<text>We are here to plumb the depths of deep time. I am charged by the Chief Executor of Archaeology herself to lead this expedition. While our Artifices are the greatest in all the world, our forebears were possessed of even greater powers of creation. And so we seek out their works, and more importantly their workplaces, so that we might learn their secrets. </text>
+	
+		<choice Target="Aric_Consul_hub">I see, thank you. Let us return to my other questions.</choice>
+		<choice Target="Aric_IbulWork" IfNotHaveQuest="AricIbulMain">Might I be able to assist in this endeavour?</choice>
+		<choice GotoID="End">Live and drink.</choice>
+	</node>
+	
+	<node ID="Aric_IbulInfo">
+		<text IfSubtypeCategory="Ibul">Surely, you have not forgotten your own people? The glorious towers of the executorial estates? The great forges of the Artifices? The indomitable praetorian legion? A jest, it must be. Well nonetheless, I am sure you know our ways. Our ceaseless ambition to improve our metrics of key performance, our ambition to reclaim the mantle of our forebears and surpass even their lofty heights.</text>
+		<text IfNotSubtypeCategory="Ibul">Why of course, it is my duty to inform the world of the opportunities our great home might afford them. We are an ancient people, and our home is far to the north, across the wretched Salt Desert, through the mountains, and across the frozen plain of Arthax. Deep beneath the ground, our home uses the warmth of the earth to power our great machines, farms, forges and automatons. Our legions protect us, and our Artifices create greater and greater works of technology, that we might one day surpass even our forebears. I encourage you to speak with our merchant, who I am certain will have wares of interest to you. </text>
+
+		<choice IfSubtypeCategory="Ibul" Target="Aric_Consul_hub">Of course Magister, I meant no offense. Let us turn to other topics.></choice>
+		<choice IfNotSubtypeCategory="Ibul" Target="Aric_Consul_hub">I see, thank you. May we return to my other questions?</choice>
+		<choice GotoID="End">Live and drink.</choice>
+	</node>
+	
+	<node ID="Aric_OtherTruekin">
+		<text>I know some, indeed. While there are many clans of those known as truekin, only four, including we of Glacial Ibul are active in Qud, that I am aware of. The Putus Templar of Oudin, the Celestial worshippers of Ekuemekiyye and the Volcanic wayerfarers of Yawningmoon. Which would you like to discuss?</text>
+	
+		<choice Target="OudinInfo">The Putus Templar.</choice>
+		<choice Target="EkuemekiyyeInfo">The Ekuemekiyyens.</choice>
+		<choice Target="YawningmoonInfo">The Yawningmoon.</choice>
+		<choice GotoID="End">Live and drink.</choice>
+	</node>
+	
+	<node ID="OudinInfo">
+	{{emote|*The gently smiling face of the Magister briefly contorts to disgust, before resuming it's cherubic form.*}} 
+		<text>The Putus Templar are a genocidal cult, who venerate their own so called genetic purity and wish to annihilate all mutantkind.
+
+				No doubt were they to be successful, they would eventually turn on my people and the other clans, before turning inwards and devouring themselves. 
+				
+				They hail from the mountains of the north, far to the east of our home. I suggest caution when dealing with them. Avoid them if possible, and if this proves impossible: be prepared for battle at any moment. </text>
+	
+		<choice Target="Aric_OtherTruekin">I wish to know more about another group of truekin.</choice>
+		<choice Target="Aric_Consul_hub">Let us return to my other questions.</choice>
+		<choice GotoID="End">Live and drink.</choice>
+	</node>
+	
+	<node ID="EkuemekiyyeInfo">
+		<text> Hailing far from the south, I know little of these people, other than their fearsome reputation. It is said that they have great command over the toxic flora of their homeland, and dark rumours suround their religious practices. Some say they believe that the sun only rises thanks to a nightly blood sacrifice, and they conduct vicious hunts through their lands and beyond to ensure, from their perspective, that the sun always rises again.</text>
+	
+		<choice Target="Aric_OtherTruekin">I wish to know more about another group of truekin.</choice>
+		<choice Target="Aric_Consul_hub">Let us return to my other questions.</choice>
+		<choice GotoID="End">Live and drink.</choice>
+	</node>
+
+	<node ID="YawningmoonInfo">
+		<text>We have conducted much trade with this people. An archipelago far to the west is their home. They worship the cruel gods beneath the Fuming Sea, that protect and humble the people of the Yawningmoon with their pyroclast. They are prolific miners and sailors, carving their great halls beneath the earth, and their towers above it, while trading all across the known world. Worthy allies, should you be so lucky as to meet them.  </text>
+	
+		<choice Target="Aric_OtherTruekin">I wish to know more about another group of truekin.</choice>
+		<choice Target="Aric_Consul_hub">Let us return to my other questions.</choice>
+		<choice GotoID="End">Live and drink.</choice>
+	</node>	
+	
+	<node ID="Aric_IbulWork">
+		<text>If you are interested in work, there is one task I might bestow upon you. It is not without danger, so you are under no obligation to accept. </text>
+	
+		<choice Target="Aric_HeavenpiercerIntro">Tell me of this task.</choice>
+		<choice Target="Aric_Consul_hub">Let us return to my other questions.</choice>
+		<choice GotoID="End">Perhaps we will talk of this later. Live and Drink.</choice>
+	</node>
+	
+	<node ID="Aric_HeavenpiercerIntro">
+		<text>My scouts report that the ancient ruins of Qud are somewhat divided, in the danger and value of the treasure to be found. Further east, on the shores of the great reef, there are areas known as baroque ruins. We have found inteligence that one ruin in particular resides there, and I greatly wish to establish a second base there. 
+		
+		Of the scouts I sent, only one returned, and they did not survive their injuries. Before their passing, the scout spoke of a dangerous journey through the black jungles of deep Qud, and the ruin itself was populated by no small number of extremely hostile creatures.
+
+		My request then, is that you travel to this ruin, and drive out anything that might represent a threat to us. What say you?</text>
+	
+		<choice Target="Aric_HeavenpiercerAccept" StartQuest="AricIbulMain">I accept. Tell me where I will find this ruin.</choice>
+		<choice Target="Aric_HeavenpiercerRewardQuestion">This sounds like a difficult task. Surely such great effort will earn a great reward?</choice>
+		<choice Target="Aric_HeavenpiercerInfo">Can you tell me more about this ruin?</choice>
+		<choice GotoID="End">Perhaps we can discuss this later. Live and drink.</choice>
+	</node>
+	
+	<node ID="Aric_HeavenpiercerRewardQuestion">
+		<text IfSubtypeCategory="Ibul">Of course! We are a people that understand the importance of rewarding good work. To begin, I will be sure to inform the Executor of Archaeology of your good work, which I am certain would reflect very well on your personal indicators of performance were you to return to the Arcology. But more immediately, I have at my disposal a number of fine gems mined deep beneath the Glaciers of home that the people of this land would find exceptionally valuable. Or alternatively, a recent military development by our own chief Artifex may be of interest to you. The choice will be yours, should you succeed. You of course are also welcome to any other valuables you might find whilst clearing the ruin. </text>
+		<text IfNotSubtypeCategory="Ibul">Of course! We are a people that understands the importance of rewarding good work. I have at my disposal a number of fine gems mined deep beneath the Glaciers of my home that the people of this land would find exceptionally valuable. Or alternatively, a recent military development by our own chief Artifex may be of interest to you. The choice will be yours, should you succeed. You of course are also welcome to any other valuables you might find whilst clearing the ruin.</text>
+	
+		<choice Target="Aric_HeavenPiercer_hub" IfHaveQuest="AricIbulMain">Let's talk more about the Heavenpiercer.</choice>
+		<choice Target="Aric_HeavenpiercerInfo"> Can you tell me more of this ruin?</choice>
+		<choice Target="Aric_HeavenpiercerAccept" IfNotHaveQuest="AricIbulMain" StartQuest="AricIbulMain">I accept. Tell me where I will find this ruin.</choice>
+		<choice GotoID="End">Perhaps we can discuss this later. Live and drink.</choice>
+	</node>
+	
+	<node ID="Aric_HeavenpiercerInfo">
+		<text>Most certainly. The ruin is called the Heavenpiercer, and is a truly spectacular sight, visible from many parasangs away. It is said to split the very clouds that pass overhead and my scouts believe it was once home to an organisation of the Artifices of our forebears. I hope that we might extract the location of valuable locations from their ancient databanks.
+
+			As I mentioned, it is also home to a variety of hostile creatures. Creatures from the wider jungle seem to nest there, but my scout reported robotic sentries, a clan of savage cannibals and even psychic espers!</text>
+	
+		<choice Target="Aric_HeavenPiercer_hub" IfHaveQuest="AricIbulMain">Let's talk more about the Heavenpiercer.</choice>
+		<choice Target="Aric_HeavenpiercerRewardQuestion">To clear a ruin of such magnitude is no small task. I trust the reward for such an task would be considerable?</choice>
+		<choice Target="Aric_HeavenpiercerAccept" IfNotHaveQuest="AricIbulMain" StartQuest="AricIbulMain">I accept. Tell me where I will find this ruin.</choice>
+		<choice GotoID="End">Live and drink.</choice>
+	</node>
+	
+	<node ID="Aric_HeavenpiercerAccept">
+		<text>Spectacular. I shall mark the location for you. Return when you have completed the task for a great reward.</text>
+	
+
+		<choice GotoID="End" RevealMapNote="$Aric_HeavenpiercerLocation"> I will return with news. Live and drink.</choice>
+	</node>
+	
+	<node ID="Aric_HeavenPiercer_hub">
+		<text>Do you bring news? </text>
+	
+		<choice Target="Aric_HeavenpiercerInfo">Tell me again what you know of the Heavenpiercer.</choice>
+		<choice Target="Aric_HeavenpiercerRewardQuestion">Tell me again of the reward for completing this task.</choice>
+		<choice Target="Aric_HeavenpiercerVictory" IfFinishedQuestStep="AricIbulMain~Clear the Heavenpiercer">I have cleared the ruin as you asked.</choice>
+		<choice GotoID="End">Live and drink.</choice>
+	</node>
+	
+	<node ID="Aric_HeavenpiercerVictory">
+		<text>You have exceeded my expectations, congratulations are very much in order. I shall dispatch the Chief Archaeologist immediately to establish a new base of operations. And now for your reward. </text>
+	
+
+		<choice GotoID="End" FinishQuest="AricIbulMain">
+		<text>Thank you, Magister. Live and drink.</text>
+		<part Name="ReceiveItem" Pick="true" Table="Aric_HeavenpiercerRewards" Identify="All" />
+		</choice>
+		
+	</node>
+	
+	
+	<node ID="">
+		<text> </text>
+	
+		<choice Target=""></choice>
+		<choice Target=""></choice>
+		<choice GotoID="End">Live and drink.</choice>
+	</node>
+	
+  </conversation>
+  
+    <conversation ID="Aric Ekuemekiyye Commander">
+  
+      <start ID="Start Local" IfSubtypeCategory="Ekuemekiyye">
+      <text>
+	  {{emote|*From beneath a smiling soapstone visage, kindly eyes lock with yours. A sonorous voice intones:*}} 
+       By the sun! A fellow servant of the Szygy. May his warmth rejuvenate you. How long it has been, since I saw one of our people, not of my flock. Breathe deep, my brethren, and inhale the scents of home.
+
+      </text>
+	  <choice GotoID="Aric_PleasantMemory">It is a pleasant reminder of home. I hope to eventually return.</choice>
+      <choice GotoID="Aric_Exile">The jungles hold few dear memories to me, Priest, for I am an exile of the Arboreta.</choice>
+	  <choice GotoID="Aric_Priest_hub">I wish to ask you about your flock.</choice>
+	  <choice Target="Aric_WorkInformation" IfHaveQuest="AricEkuemekiyyeMain">I wish to discuss my mission to free the Priest of All Moons, Zutele Ka.</choice>
+	  <choice Target="Aric_Betrayal" IfHaveQuest="AricGoatfolk">I have been to the goatfolk stockade and spoken to it's chieftain. I have chosen my side, and it not yours.</choice>
+	  <choice GotoID="End">May her grace protect you.</choice>
+	  <choice GotoID="End">Live and drink.</choice>
+    </start>
+	
+	<start ID="Start Foreign" IfNotSubtypeCategory="Ekuemekiyye">
+      <text>
+	  {{emote|*From beneath a smiling soapstone visage, kindly eyes lock with yours. A sonorous voice intones:*}} 
+        By the sun! Welcome, traveller, to our temporary jungle home. Speak to our trader, if you seek wares from the far off Arboreta, or if you come with questions, perhaps I can elucidate them.
+      </text>
+	  
+	  <choice GotoID="Aric_Priest_hub">I wish to ask you about your flock.</choice>
+	  <choice Target="Aric_WorkInformation" IfHaveQuest="AricEkuemekiyyeMain">I wish to discuss my mission to free the Priest of All Moons, Zutele Ka.</choice>
+	  <choice Target="Aric_Betrayal" IfHaveQuest="AricGoatfolk">I have been to the goatfolk stockade and spoken to it's chieftain. I have chosen my side, and it not yours.</choice>
+      <choice GotoID="End">Live and drink.</choice>
+    </start>
+	
+	<node ID="Aric_PleasantMemory">
+		<text>We must hope that her grace will guide you home, as indeed, I hope it does for my flock and I.</text>
+		
+		<choice GotoID="Aric_Priest_hub">I wish to ask you about your flock.</choice>
+		
+		<choice GotoID="End">May her grace protect you.</choice>
+		<choice GotoID="End">Live and drink.</choice>
+	</node>
+	
+	<node ID="Aric_Exile">
+		<text>I see. It is not His place to judge, and so I shall not either. Know that while Her grace my be fickle, His Balm will be felt every morning as He returns.
+
+Was there something you wished to discuss? </text>
+		
+		<choice Target="Aric_Priest_hub">Indeed, I have questions for you.</choice>	
+
+		<choice GotoID="End">May her grace protect you.</choice>
+		<choice GotoID="End">Live and drink.</choice>
+	</node>
+	
+	<node ID="Aric_Betrayal" AllowEscape="false">
+		<text IfSubtypeCategory="Ekuemekiyye">
+{{emote|*The priest is visibly shocked, though it quickly turns to fury*}} 
+By the Sun! You would betray your people for these cowardly savages? Such treason beggars belief. Your corpse will be left to rot in the sun, and your savage friends will all be made sacrifices. Die now, traitor. May you never again feel His warmth. 
+
+		</text>
+		
+		<text IfNotSubtypeCategory="Ekuemekiyye">
+{{emote|*The priest is visibly shocked, though it quickly turns to fury*}} 
+By the Sun!You would fight for these cowardly savages? Your corpse will be left to rot in the sun, and your savage friends will all be made sacrifices. Die now. 
+
+		</text>
+	
+		<choice GotoID="End">
+		<text>You will try.</text>
+		<part Name="StartFight" />
+		</choice>
+	</node>
+	
+	<node ID="Aric_Priest_hub">
+		<text>What would you like to know?</text>
+		
+		<choice Target="Aric_ExpeditionPurpose">What is the purpose of your flock in these lands, Priest?</choice>	
+		<choice Target="Aric_EkuemekiyyeInfo">Can you tell me more about the Toxic Arboreta of Ekuemekiyye?</choice>
+		<choice Target="Aric_OtherTruekin">Do you know anything of other clans of Truekin?</choice>
+		<choice Target="Aric_Sacrifice">I have heard rumours of your people- that you prowl the jungles at night, hunting and killing those that you find. Is there any truth to these runours? </choice>
+		<choice Target="Aric_EkuemekiyyeWork" IfNotHaveQuest="AricEkuemekiyyeMain">Is there any work that needs doing?</choice>
+		
+		<choice GotoID="End">Live and drink.</choice>
+	</node>
+	
+	<node ID="Aric_ExpeditionPurpose">
+		<text>We have come to this land on the orders of our Archpriests, though I may not divulge our complete intentions. What I may say, is that there is much in these lands of interest to us, and we will return that which we can. </text>
+		
+		<choice Target="Aric_Priest_hub">I see, I have other questions.</choice>	
+
+		<choice GotoID="End">May her grace protect you.</choice>
+		<choice GotoID="End">Live and drink.</choice>
+	</node>	
+	
+	<node ID="Aric_EkuemekiyyeInfo">
+		<text IfSubtypeCategory="Ekuemekiyye">Surely, you have not forgotten your own people? Perhaps an unfortunate meeting with the vile mind sucking winged rodents or leeches that seem to infest this land of screams? It seems you are due to pilgrimage down the Null River to the jungles of our home. To see again the Black Ziggurats of the Valley of the Archpriests. To feel the thrill of Her grace as you prowl the Arboreta and His balm as you repose in the shade of the valley. Speak with the trader, perhaps some of their wares will invoke a memory of home. </text>
+		<text IfNotSubtypeCategory="Ekuemekiyye"> Few outsiders have ever reached the Arboreta,and fewer still have returned to tell of it, so your curiosity is only natural. Far to the southeast, the Null River, stalked by the Mindrend Ibis and other such creatures, weaves through the desert. Some distance along it's length, the great jungles tended by our horticulturalists rise. The air is thick with toxins, and at night all manner of predators stalk it's shade. Deep within these jungles are the great Ziggurats of the Valley of the Archpriests, and it is here that my people are at home. 
+		
+		At every Jeweled dusk, when the respective masters of the cycle trade positions, the day's sacrifice is offered to the Syzgy that His warmth might return to us.</text>
+	
+		<choice IfSubtypeCategory="Ekuemekiyye" Target="Aric_Priest_hub">My apologies, I meant no offense. Let us turn to other topics.></choice>
+		<choice IfNotSubtypeCategory="Ekuemekiyye" Target="Aric_Priest_hub">I see, thank you. May we return to my other questions?</choice>
+		<choice GotoID="End">Live and drink.</choice>
+	</node>
+	
+	<node ID="Aric_OtherTruekin">
+		<text>I know some, indeed. While there are many clans of those known as truekin, only four, including we, the Children of Ekuemekiyye, that have any presence in these lands, to my knowledge. The Putus Templar of Oudin, the Frozen merchants of Ibul and the Blasphemers of the Black Stair of Yawningmoon. Which would you like to discuss?</text>
+	
+		<choice Target="OudinInfo">The Putus Templar.</choice>
+		<choice Target="IbulInfo">The Ibulians.</choice>
+		<choice Target="YawningmoonInfo">The Yawningmoon.</choice>
+		<choice GotoID="End">Live and drink.</choice>
+	</node>
+	
+		<node ID="OudinInfo">
+	{{emote|*Even from beneath the soapstone grin, disgust is clear in the features of the priest.*}} 
+		<text>The Putus Templar are a genocidal cult, who worship their ancestors and wish to annihilate all mutantkind.
+
+				While they do not bother us yet, I have no doubt that were they successful in their ridiculous purity crusade, they would turn on my people and the other clans, before devouring themselves in a spiral of purity competition. 
+				
+				They hail from the mountains of the north. I suggest caution when dealing with them. If they do not attack you on sight, simply slay them whilst their backs are turned, and take their strength in chrome for yourself. </text>
+	
+		<choice Target="Aric_OtherTruekin">I wish to know more about another group of truekin.</choice>
+		<choice Target="Aric_Priest_hub">Let us return to my other questions.</choice>
+		<choice GotoID="End">Live and drink.</choice>
+	</node>
+	
+	<node ID="IbulInfo">
+		<text> Merchants, from the frozen north. They adopt affectations of a people ancient even to the Old Ones, and feel no emotion beneath their frozen smiles. It is said that they have great command over technology, and are as close a people to the Old Ones in their grasp of chrome as any.</text>
+	
+		<choice Target="Aric_OtherTruekin">I wish to know more about another group of truekin.</choice>
+		<choice Target="Aric_Priest_hub">Let us return to my other questions.</choice>
+		<choice GotoID="End">Live and drink.</choice>
+	</node>
+
+	<node ID="YawningmoonInfo">
+		<text>Fools and heretics all. Worshippers of pyroclastic mountains beneath the Fuming Sea, they fool themselves into believing that the hallucinations of toxic fumes are prophetic. They are sailors and miners, and whilst their beliefs are foolish, they have amassed great wealth in precious stones and a trade empire across most every coast.</text>
+	
+		<choice Target="Aric_OtherTruekin">I wish to know more about another group of truekin.</choice>
+		<choice Target="Aric_Priest_hub">Let us return to my other questions.</choice>
+		<choice GotoID="End">Live and drink.</choice>
+	</node>	
+	
+	<node ID="Aric_EkuemekiyyeWork">
+		<text>Whilst my Syzgyriors are certainly capable, there is a matter of some delicacy that I require assistance with. It is not without danger, but there would be no small reward.</text>
+	
+		<choice Target="Aric_WorkIntro">I am no stranger to danger, tell me more of this task.</choice>
+		<choice Target="Aric_Priest_hub">Let us return to my other questions.</choice>
+		<choice GotoID="End">Live and drink.</choice>
+	</node>	
+	
+	<node ID="Aric_WorkIntro">
+		<text>Very well. It concerns a fellow priest, Zutele Ka, Priest of All Moons. Whilst leading a party through the jungles, his party was ambushed by Goatfolk savages. His company was slaughtered withought mercy, but my scouts report that he was captured, and taken to a prison camp of sorts. I would have you rescue him. </text>
+	
+		<choice Target="Aric_WorkInformation">I see. I have questions about this task.</choice>
+		<choice Target="Aric_Priest_hub">Let us return to my other questions.</choice>
+		<choice GotoID="End">Live and drink.</choice>
+	</node>	
+	
+	<node ID="Aric_WorkInformation">
+		<text>What do you wish to know?</text>
+	
+		<choice Target="Aric_WhyMe">You say you have your own warriors, why do you need me?</choice>
+		<choice Target="Aric_Negotiation">Would you be open to my negotiating for his return?</choice>
+		<choice Target="Aric_WhatFail">What if he can't be saved?</choice>
+		<choice Target="Aric_Acceptance" IfNotHaveQuest="AricEkuemekiyyeMain">I will rescue this priest. You said you know where he was taken?</choice>
+		<choice Target="Aric_Rescue" IfFinishedQuestStep="AricEkuemekiyyeMain~Free the Priest of the Moon">As requested, Zutele Ka has been freed. </choice>
+		<choice Target="Aric_BotchedRescue" IfHaveState="AricEkPrisonerSlain" IfNotFinishedQuestStep="AricEkuemekiyyeMain~Slay the Goatfolk Gaoler">I bring ill tidings, priest. Zutele Ka was slain and I could no slay the Chieftain. </choice>
+		<choice Target="Aric_MostlyBotchedRescue" IfHaveState="AricEkPrisonerSlain" IfFinishedQuestStep="AricEkuemekiyyeMain~Slay the Goatfolk Gaoler">I bring ill tidings, priest. Zutele Ka was slain, though I was able to avenge him and slay the chieftain. </choice>
+		<choice GotoID="End">Live and drink.</choice>
+	</node>	
+	
+	<node ID="Aric_WhyMe">
+		<text>As I mentioned, this is a delicate matter. To assault a village of this scale would require many of my warriors, and given the high position of Zutele Ka, the impact on his reputation would be significant. </text>
+	
+		<choice Target="Aric_WhoCares">Surely reputation matters little in such circumstances?</choice>
+		<choice Target="Aric_WorkInformation">I have more questions about the task.</choice>
+		<choice GotoID="End">Live and drink.</choice>
+	</node>	
+	
+	<node ID="Aric_WhoCares">
+		<text>
+		{{emote|*Even from beneath the soapstone grin, the discomfort of the priest is clear.*}} 
+		
+		Indeed. And normally you would be correct. But Zutele Ka is not merely a priest you see, but is cousin to Momberaoye Ka, Archpriest of All Moons of the Ka Ziggurat. And such disgrace to his family would likely result in... repercussions. It is one thing to die in battle under Her grace, another altogether to be so soundly defeated and to allow oneself captured. The shame, were this to be common knowledge, would be extreme. </text>
+	
+		<choice Target="Aric_Acceptance" IfNotHaveQuest="AricEkuemekiyyeMain">I see. I will take on this task. Where was he taken?</choice>
+		<choice Target="Aric_WorkInformation">I have more questions about the task.</choice>
+		<choice GotoID="End">Live and drink.</choice>
+	</node>	
+	
+	<node ID="Aric_Negotiation">
+		<text>
+		{{emote|*It is clear that the priest had not even considered such a course of action.*}} 
+		
+		To even approach peacefully would require the savages to not attack on sight, which I find unlikely. Additionally, Zutle Ka is prideful. He would need to be convinced of any agreement- he is the final arbiter of any such negotiation, and is likely to prefer violence as a solution. But if you can bring Zutele Ka and the savage chieftain into alignment, that would be acceptable to me. </text>
+	
+		<choice Target="Aric_Acceptance" IfNotHaveQuest="AricEkuemekiyyeMain">I see. I will take on this task. Where was he taken?</choice>
+		<choice Target="Aric_WorkInformation">I have more questions about the task.</choice>
+		<choice GotoID="End">Live and drink.</choice>
+	</node>	
+	
+	<node ID="Aric_WhatFail">
+		<text>
+		{{emote|*Panic flashes through partially obscured eyes, but calm quickly overcomes it.*}} 
+		
+		Should Zutele Ka fall in the battle to liberate him, I can only request you avenge him, and slay the savage chieftain. An avenged killing would surely satisfy his family. But I must impress on you the importance of this mission, please do everything you can to rescue him.</text>
+	
+		<choice Target="Aric_Acceptance" IfNotHaveQuest="AricEkuemekiyyeMain">I see. I will take on this task. Where was he taken?</choice>
+		<choice Target="Aric_WorkInformation">I have more questions about the task.</choice>
+		<choice GotoID="End">Live and drink.</choice>
+	</node>	
+	
+	<node ID="Aric_Acceptance">
+		<text>
+		{{emote|*The priest is clearly relieved at your offer.*}} 
+		
+		I can show you the location of the Goatfolk prison. Find the chieftain, and take the key to his bindings from his corpse. Free Zutele Ka and return to me, and be rewarded.</text>
+	
+
+		<choice GotoID="End" StartQuest="AricEkuemekiyyeMain" RevealMapNote="$Aric_CW_Goatfolk_Stockade">I will return. Live and drink.</choice>
+	</node>	
+		
+	<node ID="Aric_Sacrifice">
+		<text>The natural order of the world is that the weak hunt the strong. This is not opinion, this is truth. In the time since you yourself arrived in this land, have you lived a life of peace and tranquility? I doubt this very much.
+
+Our warriors do indeed prowl. They stalk the night under the grace of Her sight, and bring back tribute. And at every Jeweled Dusk, a tribute is selected, and sacrificed to the holy Syzgy. Their lifeblood ensures the sun rises again, brings peace to our warriors, and prevents the destruction of the world.</text>
+	
+		<choice Target="Aric_Priest_hub">I see, I have other questions.</choice>	
+		<choice GotoID="End">Live and drink.</choice>
+	</node>
+	
+	<node ID="Aric_Rescue" AllowEscape="false">
+		<text> And so you have! By the Sun you have done well. I so name you Moonchosen for your deeds. It is a great honour! Allow me to also offer a personal gift. You have more than earned it.</text>
+	
+		<choice Target="Aric_EK_NoReward">
+		<text>What I have done is for the good of the Ekuemekiyyen people. I require no reward.</text>
+		<part Name="Sibs_ModifyReputation" Faction="Aric Ekuemekiyye" Value="200" Shown="True" />
+		</choice>
+		
+		<choice Target="End" FinishQuest="AricEkuemekiyyeMain">
+			<text>Thank you, live and drink.</text>
+			<part Name="ReceiveItem" Mods="1" Pick="true" Table="AricEkuemekiyye_Rewards" Identify="All" />
+		
+		</choice>
+		
+	</node>	
+	
+		<node ID="Aric_EK_NoReward" AllowEscape="false">
+		<text>
+		{{emote|*Even from beneath the soapstone mask, the priest's surprise is palpable.*}} 
+		
+		Truly? You are a great friend of the people! I am certain that you shall always find solace in her grace. One day, when you are in need, look to us and we shall surely assist you. May His warmth rejuvenate you.</text>
+	
+
+		<choice GotoID="End" FinishQuest="AricEkuemekiyyeMain">Live and drink.</choice>
+		<choice GotoID="End" FinishQuest="AricEkuemekiyyeMain">May Her grace protect you.</choice>
+	</node>	
+	
+	<node ID="Aric_MostlyBotchedRescue" AllowEscape="false">
+		<text>{{emote|*The priest's tone is mournful, though their eyes flash with a glimmer of relief.*}}
+		May he find peace in Her grace. In truth, such an outcome was always likely- and yet an attempt had to be made. The Ka family will be displeased, but they will take some solace knowing that their scion was avenged. Thank you for your service in this matter. For your great valour, I so name you Moonchosen, warrior of the people. A well deserved honour! And allow me also to offer you a personal gift- you have earned this. 
+		</text>
+	
+		<choice Target="Aric_EK_NoReward">
+		<text>What I have done is for the good of the Ekuemekiyyen people. I require no reward.</text>
+		<part Name="Sibs_ModifyReputation" Faction="Aric Ekuemekiyye" Value="200" Shown="True" />
+		</choice>
+		
+		<choice Target="End" FinishQuest="AricEkuemekiyyeMain">
+			<text>Thank you, live and drink.</text>
+			<part Name="ReceiveItem" Mods="1" Pick="true" Table="AricEkuemekiyye_Rewards" Identify="All" />
+		
+		</choice>
+		
+	</node>
+  </conversation>
+  
+    <conversation ID="Aric Yawningmoon Commander">
+  
+      <start ID="Start Local" IfSubtypeCategory="Yawningmoon">
+      <text>
+	  {{emote|*A beatific face rises to meet your gaze, and the feigned pleasure at your company is replaced by a retrospectively more genuine smile.*}} 
+       Salutations. You are the first of our people I have seen from without our expedition since before we crossed Arthax. Well met, fellow.
+
+      </text>
+	  <choice GotoID="">.</choice>
+      <choice GotoID="End">Live and drink.</choice>
+	  <choice GotoID="End">.</choice>
+    </start>
+	
+	<start ID="Start Foreign" IfNotSubtypeCategory="Yawningmoon">
+      <text>
+	  {{emote|*...*}} 
+        ...
+      </text>
+      <choice GotoID="End">Live and drink.</choice>
+    </start>
+  </conversation>
+
+
+
+<!-- Traders -->
+  <conversation ID="Aric Ekuemekiyye Trader">
+
+    <start ID="Start Local" IfSubtypeCategory="Ekuemekiyye">
+      <text>
+        May his warmth rejuvenate you, Child of the Arboreta. Come. Perhaps I can interest you in some wares from home?~
+        May her grace protect you, Child of the Arboreta. How long has it been, since you were graced by the shadows of the Ziggurats? Do the aromas of the Arboreta call to you? Perhaps my wares can stoke your memories.
+      </text>
+      <choice GotoID="End">Live and drink.</choice>
+	  <choice GotoID="End">May her grace protect you.</choice>
+    </start>
+	
+	<start ID="Start Foreign" IfNotSubtypeCategory="Ekuemekiyye">
+      <text>
+        Moon and Sun, wanderer. Come, see the wonders forged in the ziggurats of my home.
+      </text>
+      <choice GotoID="End">Live and drink.</choice>
+    </start>
+  </conversation>
+  
+    <conversation ID="Aric Yawningmoon Trader">
+  
+      <start ID="Start Local" IfSubtypeCategory="Yawningmoon">
+      <text>
+        By fire and Salt! Not often we see another of the Stair this far west. I've plenty of provisions from the islands, if you're interested?~
+        Ho! A fellow child of the fumes, this far west. I never thought I'd see the day. Well, I've plenty from the islands, and more we've picked up since landfall. What can I do you for?
+      </text>
+      <choice GotoID="End">Live and drink.</choice>
+	  <choice GotoID="End">Gods watch over you.</choice>
+    </start>
+	
+	<start ID="Start Foreign" IfNotSubtypeCategory="Ekuemekiyye">
+      <text>
+        Ho, wanderer. Come, see the fine provisions laid before you! Gemstones from deep beneath the black Glass Stair! Arms forged by our most talented artisans. and more than a few pieces we've picked up in our long journey across that blasted desert.
+      </text>
+      <choice GotoID="End">Live and drink.</choice>
+    </start>
+  </conversation>
+  
+      <conversation ID="Aric Ibul Trader">
+  
+      <start ID="Start Local" IfSubtypeCategory="Ibul">
+      <text>
+       Salutations. Are you an exile? I suppose it does not matter. So far from the glorious arcology of home. I have many wares from the fair city, should you wish to peruse.
+      </text>
+      <choice GotoID="End">Live and drink.</choice>
+	  <choice GotoID="End">Gods watch over you.</choice>
+    </start>
+	
+	<start ID="Start Foreign" IfNotSubtypeCategory="Ibul">
+      <text>
+        Salutations, wanderer. This land of Qud is certainly bounteous, but I stock the finest wares from beyond blasted Arthax, the grand Arcology of Ibul! Our artifex rival even the eaters, and our jewels are amongst the finest in all the world. Come, see for yourself.
+      </text>
+      <choice GotoID="End">Live and drink.</choice>
+    </start>
+  </conversation>
+  
+        <conversation ID="Aric Ibul Trader Adv">
+  
+      <start ID="Start Local" IfSubtypeCategory="Ibul">
+      <text>
+       Salutations. Your mission has borne great bounty. Not only am I authorised to open up our rarest stocks, but we have discovered much thanks to this place, and there is all the more to interest you amongst our wares.
+      </text>
+      <choice GotoID="End">Live and drink.</choice>
+    </start>
+	
+	<start ID="Start Foreign" IfNotSubtypeCategory="Ibul">
+      <text>
+        Salutations, wanderer. Your efforts on our behalf have yielded great results, and I am now authorised to allow you access to our finest pieces.
+      </text>
+      <choice GotoID="End">Live and drink.</choice>
+    </start>
+  </conversation>
+  
+  <!-- Quest specific -->
+  
+  <!-- Ekuemekiyye -->
+    <conversation ID="Aric Goatfolk Gaoler">
+
+    <start ID="Start Ekuemekiyye" IfSubtypeCategory="Ekuemekiyye">
+      <text>
+		Graah! Another hunter, come to free the lost pup? You may have welcome in our lands for now- but do not make the same mistake your kinsfolk did.	
+      </text>
+	  <choice GotoID="Aric_Goat_Hub">I wish to ask you some questions.</choice>
+	  <choice GotoID="Aric_Goat_Quest_Hub" IfHaveActiveQuest="AricEkuemekiyyeMain">Yes, I am here to discuss the priest you have taken prisoner</choice>
+      <choice GotoID="End">Live and drink.</choice>
+
+    </start>
+	
+	<start ID="Start Standard" IfNotSubtypeCategory="Ekuemekiyye">
+      <text>
+       Graah! Outsider! Do not outstay the welcome we offer you in these lands. Why have you come?
+      </text>
+	  
+	  <choice GotoID="Aric_Goat_Hub">I wish to ask you some questions.</choice>
+	  <choice GotoID="Aric_Goat_Quest_Hub" IfHaveActiveQuest="AricEkuemekiyyeMain">I am here on behalf of a Priest of the people of Ekuemekiyye. I wish to negotiate the release of the prisoner you have taken.</choice>
+	  
+      <choice GotoID="End">Live and drink.</choice>
+    </start>
+	
+	<node ID="Aric_Goat_Hub">
+		<text>Hmph. What interest does an outsider have in our ways? </text>
+	
+		<choice Target="Aric_How_Chief">Every leader of your people I have met has been a psychic shaman. How is it that you are not?</choice>
+		<choice Target="Aric_What_Stockade">What is this place?</choice>
+		<choice Target="Aric_Goat_Quest_Hub" IfHaveActiveQuest="AricEkuemekiyyeMain">I am here on behalf of a Priest of the people of Ekuemekiyye. I wish to negotiate the release of the prisoner you have taken. </choice>
+		<choice GotoID="End">Live and drink.</choice>
+	</node>	
+	
+	<node ID="Aric_Goat_Quest_Hub">
+		<text>Graah! They stalk the jungle. They slay our sowers and enslave our people. I should tear out his heart and eat! Why should I free him? </text>
+	
+		<choice Target="Aric_Enslave">They enslave your people?</choice>
+		<choice Target="Aric_No_Better">Do your own people not hunt through the jungle and feast on their flesh?</choice>
+		<choice Target="Aric_Love_Request1" IfReputationAtLeast="Loved" >You know of the deeds I have done for your people? I beg this as a personal favour.</choice>
+		<choice Target="Aric_Try_Convince1" >Is there no way I could convince you?</choice>
+		
+		<choice Target="Aric_Try_Convince2" IfHaveState="AricTradeApproved">
+		<part Name="RequireReputation" Faction="Goatfolk" Level="Loved"/>
+		<text>I have spoken with the Priest. Your people take many prisoners from the jungle. If you were willing to trade them to the Ekuemekiyye, they would be willing to cease their predations upon you. </text>
+		</choice>
+		
+		<choice Target="Aric_ChosenDeath">If you will not listen to reason, then you leave me no choice.</choice>
+
+		<choice GotoID="End">Live and drink.</choice>
+	</node>	
+	
+	<node ID="Aric_Enslave">
+		<text>Grah! The chromed moon worshippers stalk the jungles, and kill or capture many of those that they find. They cut their throats atop their cursed temple. So the scouts tell me. But they underestimated their last quarry, and paid the price.</text>
+	
+		<choice Target="Aric_Goat_Hub">I see. Let us talk of other things.</choice>
+		<choice Target="Aric_Goat_Quest_Hub">I see, though I still wish to talk of freeing your captive.</choice>
+
+		<choice GotoID="End">Live and drink.</choice>
+	</node>	
+
+	<node ID="Aric_No_Better">
+		<text>Grah! You speak boldly to me outsider. But your words ring true. We value strength above all, and all the jungle is ours. But we are not cowards. When our parties are destroyed and our people captured, we do not beg for their freedom. It is the way of the jungle is that the strong take from the weak.</text>
+	
+		<choice Target="Aric_Goat_Hub">I see. Let us talk of other things.</choice>
+		<choice Target="Aric_Goat_Quest_Intro">I see. Then you will attack their encampment in the jungle?</choice>
+		<choice Target="Aric_Goat_Quest_Hub">I see, though I still wish to talk of freeing your captive.</choice>
+
+
+		<choice GotoID="End">Live and drink.</choice>
+	</node>	
+	
+	<node ID="Aric_Love_Request1">
+		<text>Hmph. It is true. I might do this for you, but the clans would not allow it. The people of the moon have caused too much pain, that even for you I cannot free him. </text>
+	
+		<choice Target="Aric_Try_Convince1"> I see. Is there no way that they might be convinced?</choice>
+		<choice Target="Aric_ChosenDeath">If you will not listen to reason, you leave me no choice.</choice>
+
+
+		<choice GotoID="End">Live and drink.</choice>
+	</node>	
+
+	<node ID="Aric_Try_Convince1">
+		<text>Grah! Enough! The moon worshippers are our enemies, and we will not, we cannot give them respite.</text>
+	
+		<choice Target="Aric_Negotiator1">What if I could convince them to stop hunting your people?</choice>
+		<choice Target="Aric_ChosenDeath">If you will not listen to reason, you leave me no choice.</choice>
+		<choice Target="Aric_Goat_Hub">I see. Let us talk of other things.</choice>
+
+
+		<choice GotoID="End">I see. Live and drink.</choice>
+	</node>		
+	
+	<node ID="Aric_Try_Convince2">
+		<text>{{emote|*The Chieftain pauses, considering your offer.*}}
+
+		The clans would allow this. The Moon worshippers have powerful weapons. Yes, the priest may go free. Some of the clans will not listen, or parties will still fight. But These will be small, and our relationship will be larger.
+		</text>
+	
+		<choice Target="Aric_Goat_Hub">I see. Let us talk of other things.</choice>
+
+
+		<choice GotoID="End">Thank you, Chieftain. I am glad that it did not have to come to blood. Live and drink.</choice>
+	</node>	
+	
+	<node ID="Aric_Negotiator1">
+		<text>{{emote|*The idea of peace clearly had not occured to the chieftain*}} 
+		Hmph. The moon people would not agree. But... if they did... Perhaps I could allow the priest to go free.</text>
+
+
+		<choice GotoID="End" SetIntState="Aric_Negotiator1,1">I will return when I have spoken to your captive about this.</choice>
+	</node>	
+	
+	<node ID="Aric_How_Chief">
+		<text>
+		{{emote|*The Chieftain exhorts a bleating laugh.*}}
+		
+		Graah! I need not the tricks of the shaman to break these fools they send me. By might I rule this place, and defend it from... trespassers.   </text>
+	
+		<choice Target="Aric_Goat_Hub">I see, I had other questions also.</choice>
+
+		<choice GotoID="End">Live and drink.</choice>
+	</node>	
+	
+	<node ID="Aric_What_Stockade">
+		<text>
+		This place? The many clans come together here, as they do in no other place. Here, enemies of our people are brought, and here I break them.</text>
+	
+		<choice Target="Aric_Goat_Hub">I see, I had other questions also.</choice>
+		<choice Target="Aric_What_Crime">What did these enemies of your people do?</choice>
+
+		<choice GotoID="End">Live and drink.</choice>
+	</node>	
+	
+	<node ID="Aric_What_Crime">
+	
+		<text>
+		Many things bring fools here. Burning our villages, killing the sowers of many clans... asking too many questions.</text>
+	
+		<choice Target="Aric_Goat_Hub">I see, I have other questions.</choice>
+
+		<choice GotoID="End">Live and drink.</choice>
+	</node>	
+	
+	<node ID="Aric_ChosenDeath" AllowEscape="false">
+		<text>Graah!</text>
+      <choice GotoID="End">
+        <text>!</text>
+        <part Name="StartFight" />
+      </choice>
+	</node>
+	
+  </conversation>
+  
+
+  
+  <conversation ID="Aric Prisoner Priest">
+
+    <start ID="Start Ekuemekiyye" IfSubtypeCategory="Ekuemekiyye">
+      <text IfSubtypeCategory="Ekuemekiyye">
+		You there! I find myself in need. If you wish to gain the favour of the Ka family, you will render unto me assistance. 
+      </text>
+	  
+	  <text IfNotSubtypeCategory="Ekuemekiyye">
+       You there! I find myself in need. I have much power and influence within the people of Ekuemekiyye. Assist me, and there will be a reward in it for you.
+      </text>
+	  
+	  
+	  <choice GotoID="Aric_StopHunting" IfHaveState="Aric_Negotiator1">I have spoken to the Chieftain. The goatfolk will free you on the condition that your people stop hunting the Goatfolk.</choice>
+	  <choice GotoID="Aric_PrisonerTrade" IfHaveState="Aric_Prisoner_Trade">The Goatfolk have agreed to free you. In return for your not hunting them, they are willing to trade you sacrifices in tribute. They are aware that some violence may always be possible, but the targeted, consistent hunting must cease. What say you?</choice>
+	  
+	  <choice GotoID="Aric_WhatNeed">What do you need of me?</choice>
+	  <choice GotoID="Aric_HowCaptured">How were you captured?</choice>
+	  <choice GotoID="Aric_Free_Violent" IfHaveBlueprint="Aric_Goatfolk_Key" CompleteQuestStep="AricEkuemekiyyeMain~Free the Priest of the Moon">I have obtained the key. I will free you.</choice>
+      <choice GotoID="End">Live and drink.</choice>
+
+
+    </start>
+	
+	<start ID="Start Free" IfFinishedQuestStep="AricEkuemekiyyeMain~Free the Priest of the Moon" Priority="1">
+      <text>
+		You have done well. I will soon be strong enough to depart. May She watch over your passage.
+      </text>
+      <choice GotoID="End">Live and drink.</choice>
+
+    </start>
+	
+	
+	
+	<node ID="Aric_WhatNeed">
+		<text>What do you think? I am imprisoned by these savages. Kill the one with keys on it's belt, and free me. </text>
+	
+		<choice Target="Aric_negotiation_open" SetIntState="AricNegotiation,1"> What if I could convince the chieftain to let you go? </choice>
+		<choice Target="End">I will do no such thing.</choice>
+		<choice GotoID="End" StartQuest="AricEkuemekiyyeMain">As you wish, Live and drink.</choice>
+	</node>
+	
+	<node ID="Aric_negotiation_open">
+		<text>These savages would never allow it. I am surprised you've even made it close enough to talk to me in the first place. But if by some miracle it could be done... I may accept such an outcome. It nonetheless remains my opinion that they should all be put to the sword.</text>
+	
+		<!-- <choice GotoID="Aric_PrisonerTradeSuggestion">What if the Goatfolk offered you their prisoners?.</choice> -->
+		<choice GotoID="End" StartQuest="AricEkuemekiyyeMain">I see, Live and drink.</choice>
+	</node>
+	
+	<node ID="Aric_StopHunting">
+		<text>Stop hunting? That will not do. The goatfolk are the most numerous and easily hunted of the jungle. And we cannot be without sacrifices. So it is as I always believed- you must kill them and free me by force.</text>
+		
+		<choice GotoID="AricStopHuntingLove">
+		<text>For the love your people bear me, I ask you- do me this favour and allow me to save your life without further bloodshed.</text>
+		<part Name="RequireReputation" Faction="Aric Ekuemekiyye" Level="Loved" />
+		</choice>
+		
+		<choice GotoID="Aric_PrisonerTradeSuggestion">The goatfolk take many prisoners themselves. What if they offered to trade those that they capture to you instead?</choice>
+		
+		
+		
+		<choice GotoID="End">I am not yet convinced a peaceful option is impossible. Live and drink.</choice>
+		<choice GotoID="End">I see, Live and drink.</choice>
+	</node>
+	
+	<node ID="Aric_PrisonerTradeSuggestion" AllowEscape="false">
+		<text>Accept tribute from these savages? An interesting suggestion. As long as the blood flows, He is rejuvenated. And we have much in the way of trade. Very well. Suggest this solution to the savage chief, and report back to me.</text>
+		
+		<choice GotoID="End" StartQuest="AricEkuemekiyyeMain" SetIntState="AricTradeApproved,1">I will return with news.</choice>
+	</node>
+	
+	<node ID="Aric_PrisonerTrade" AllowEscape="false">
+		<text>An interesting proposition. I accept. The finer details can be worked out in the future, but in the meantime, I assume you have arranged for my freedom? </text>
+		
+		<choice GotoID="Aric_Free_Peace">
+		<text>I have indeed. In return for sacrifices from the jungle, the goatfolk will accept peace with the Ekuemekiyye. I have been given permission to free you.</text>
+		<part Name="Sibs_ModifyReputation" Faction="Naphtaali" Value="-100" Faction2="Kyakukya" Value2="-100" Shown="True" />
+		</choice>
+		<choice GotoID="End">I must speak to the chieftain again, Live and drink.</choice>
+	</node>
+	
+	<node ID="Aric_Free_Violent" AllowEscape="false">
+		<text>By Her grace, it is about time. If I see another savage I will have no choice but to slay it. I will return to the encampment shortly. You may see the Priest of All Suns there for your reward. </text>
+		
+		<choice GotoID="End" CompleteQuestStep="AricEkuemekiyyeMain~Free the Priest of the Moon">Live and drink.</choice>
+	</node>
+	
+	<node ID="Aric_Free_Peace" AllowEscape="false">
+		<text>By Her grace, it is about time. I shall wait here a short time and compose myself, before I return to the encampment. See the Priest of All Suns there for your reward. </text>
+		
+		<choice GotoID="End" CompleteQuestStep="AricEkuemekiyyeMain~Free the Priest of the Moon">Live and drink.</choice>
+	</node>
+	
+		<node ID="Aric_negotiation_open">
+		<text>These savages would never allow it. I am surprised you've even made it close enough to talk to me in the first place.</text>
+	
+		<choice GotoID="End">I see, Live and drink.</choice>
+	</node>
+	
+  
+  </conversation>
+  
+  
+  <conversation ID="Aric Prisoner Priest Free">
+
+    <start ID="Start Ekuemekiyye" IfSubtypeCategory="Ekuemekiyye">
+      <text>
+
+      </text>
+      <choice GotoID="End">Live and drink.</choice>
+
+    </start>
+	
+
+  </conversation>
+  
+  <conversation ID="AricCapturedGoatfolk">
+
+    <start ID="Start">
+      <text>  {{emote|*The imprisoned warrior stares without seeing. Once firey eyes are dimmed by the inevitability of oblivion.*}}</text>
+      <choice GotoID="End">Li-... Drink.</choice>
+
+    </start>
+	
+
+  </conversation>
+  
+  <conversation ID="AricCapturedApe">
+
+    <start ID="Start">
+      <text>  {{emote|*The imprisoned warrior stares without seeing. Once firey eyes are dimmed by the inevitability of oblivion.*}}</text>
+      <choice GotoID="End">Li-... Drink.</choice>
+
+    </start>
+	
+
+  </conversation>
+      <conversation ID="AricCapturedSprog">
+
+    <start ID="Start">
+      <text>  {{emote|*The imprisoned woodsprong stares up at you. Once bright eyes peek from behind a scuffed mask, dimmed by the inevitability of agony.*}}
+	  
+	  You. Help? Please.
+	  </text>
+      
+	  <choice GotoID="What_do">How did you come to be here?</choice>
+	  <choice GotoID="RescueYou">
+	  <text>I will free you.</text>
+	  <part Name="Aric_CW_RescuePrisoner"/>
+	  </choice>
+	  <choice GotoID="End">Live and drink.</choice>
+
+    </start>
+	
+	<node ID="What_do">
+		<text>Sowers' eye fell on the Godhed. Minyan avenged. Sower's eye was not blinded, and they came. Punish the Minyan. </text>
+		
+	  <choice GotoID="RescueYou">
+	  <text>I will free you.</text>
+	  <part Name="Aric_CW_RescuePrisoner"/>
+	  </choice>
+	  <choice GotoID="End">I am sorry.</choice>
+	  <choice GotoID="End">You were foolish to challenge the goatfolk.</choice>
+	
+	</node>
+	
+
+  </conversation>
+  
+  <!-- Ibul -->
+<conversation ID="AricHPConsole">
+
+    <start ID="Start">
+      <text>  &amp;B[&amp;CA voice emanates from within. Options appear for you to select&amp;B]&amp;y
+	  
+	  Welcome to our demonstration facility. Would you like a prebuilt scenario, or would you like to customise one from our component options?
+	  </text>
+	  
+	  <choice GotoID="AricDetailPrebuiltScenarios">Detail prebuilt scenario options</choice>
+	  <choice GotoID="AricDetailCustomScenario">Detail custom scenario options</choice>
+	  <choice GotoID="AricChangeCurrent">Current demonstration settings</choice>
+      <choice GotoID="End">End without changes</choice>
+
+    </start>
+	
+	<node ID="AricDetailPrebuiltScenarios">
+		<text>&amp;B[&amp;CA voice emanates from within&amp;B]&amp;y
+
+Please be advised that while these scenarios are designed to be plausible, any similarities to events real or fictional are purely coincidental.
+
+Options available are as follows:
+
+Guerilla insurgents, entrenched in a jungle environment, pitted against a standard security deployment
+
+Radicalised sub-surface mining operatives, active in an urbanised area against a heavy security deployment
+
+Corporate espionage operates, within a large corporate environment, against a heavy military deployment
+		</text>
+		
+		<choice Target="AricPresetStart">
+		<text>Run jungle guerilla scenario.</text>
+		<part Name="Aric_CW_HP_Handler" Drone="security" Deployment="standard" Hostiles="jungle" Map="jungle" />
+		</choice>
+
+		<choice Target="AricPresetStart">
+		<text>Run urban mining radical scenario.</text>
+		<part Name="Aric_CW_HP_Handler" Drone="security" Deployment="heavy" Hostiles="mining" Map="Aric Holo Urban" />
+		</choice>
+
+		<choice Target="AricPresetStart">
+		<text>Run corporate espionage scenario.</text>
+		<part Name="Aric_CW_HP_Handler" Drone="military" Deployment="heavy" Hostiles="corpo" Map="Aric Holo Office" />
+		</choice>	
+				
+		<choice GotoID="AricDetailCustomScenario">Define custom scenario</choice>
+		<choice GotoID="End">Return to root menu</choice>
+	</node>
+	
+	<node ID="AricPresetStart">
+		<text>&amp;B[&amp;CA voice emanates from within&amp;B]&amp;y
+
+Thank you. the scenario will now begin. Please ensure that remain within the secure viewing chamber and keep the security door sealed for the duration of the demonstration, as both holographic combat representations and our drones are programmed for maximum lethality, to give the most realistic demonstration possible.
+		</text>		
+
+		<choice GotoID="End">.</choice>
+	</node>
+	
+	<node ID="AricDetailCustomScenario">
+		<text>&amp;B[&amp;CA voice emanates from within&amp;B]&amp;y
+
+Custom scenarios are comprised of three components:
+
+Location:
+Our holographic projectors can create a variety of potential combat environments, including jungle, urban and even corporate headquarters, which are modeled on the ground floor of this very building!
+
+Enemy:
+Those same projectors are capable of simulating a variety of potential foes for our drones. These include insurgent guerilllas, radicalised miner units and corporate espionage units. Similarity to units belonging to any government, corporation or civil group real or fictional is purely coincidental.
+
+Drone deployment:
+
+We offer a several autonomous security solutions, to fit every need and budget. Available for demonstration are standard and heavy deployments of both our civilian security and military configuration units. For alternative deployments, please speak to a sales advisor for further details. 
+
+		</text>		
+
+		<choice GotoID="AricDefineEnvironment">Define custom scenario.</choice>
+		<choice GotoID="AricDetailPrebuiltScenarios">Select prebuilt scenario.</choice>
+	</node>
+
+	<node ID="AricDefineEnvironment" AllowEscape="false">
+		<text>&amp;B[&amp;CA voice emanates from within&amp;B]&amp;y
+
+Please select environment
+		</text>		
+
+		<choice GotoID="AricDefineEnemy">
+			<text>Jungle</text>
+			<part Name="Aric_CW_HP_Handler" Map="jungle" />
+		</choice>
+		
+		<choice GotoID="AricDefineEnemy">
+			<text>Urban</text>
+			<part Name="Aric_CW_HP_Handler" Map="Aric Holo Urban" />
+		</choice>
+		
+		<choice GotoID="AricDefineEnemy">
+			<text>Corporate</text>
+			<part Name="Aric_CW_HP_Handler" Map="Aric Holo Office" />
+		</choice>
+		
+		<choice GotoID="AricRequestLeave">Leave</choice>
+	</node>
+  
+	<node ID="AricDefineEnemy" AllowEscape="false">
+		<text>&amp;B[&amp;CA voice emanates from within&amp;B]&amp;y
+
+Please select enemy
+		</text>		
+
+		<choice GotoID="AricDefineDeployment">
+			<text>guerilla insurgents</text>
+			<part Name="Aric_CW_HP_Handler" Hostiles="jungle" />
+		</choice>
+		
+		<choice GotoID="AricDefineDeployment">
+			<text>Mining Radicals</text>
+			<part Name="Aric_CW_HP_Handler" Hostiles="mining" />
+		</choice>		
+		
+		<choice GotoID="AricDefineDeployment">
+			<text>Corporate espionage unit</text>
+			<part Name="Aric_CW_HP_Handler" Hostiles="corpo" />
+		</choice>		
+
+		<choice GotoID="AricRequestLeave">Leave</choice>
+	</node> 
+	
+	<node ID="AricDefineDeployment" AllowEscape="false">
+		<text>&amp;B[&amp;CA voice emanates from within&amp;B]&amp;y
+
+Please select deployment
+		</text>		
+
+		<choice GotoID="AricPresetStart">
+			<text>standard security deployment</text>
+			<part Name="Aric_CW_HP_Handler" Drone="security" Deployment="standard" />
+		</choice>
+		
+		<choice GotoID="AricPresetStart">
+			<text>Heavy security deployment</text>
+			<part Name="Aric_CW_HP_Handler" Drone="security" Deployment="heavy" />
+		</choice>		
+		
+		<choice GotoID="AricPresetStart">
+			<text>Standard military deployment</text>
+			<part Name="Aric_CW_HP_Handler" Drone="military" Deployment="standard" />
+		</choice>
+
+		<choice GotoID="AricPresetStart">
+			<text>Heavy military deployment</text>
+			<part Name="Aric_CW_HP_Handler" Drone="military" Deployment="heavy" />
+		</choice>		
+
+		<choice GotoID="AricRequestLeave">Leave</choice>
+	</node> 
+
+	<node ID="AricRequestLeave" AllowEscape="false">
+		<text>&amp;B[&amp;CA voice emanates from within&amp;B]&amp;y
+
+Please note, for your safety, all active holographic projections and drones will be recalled. For further demonstration, please restart the definition process.
+		</text>		
+
+
+		<choice GotoID="End">Leave</choice>
+	</node> 
+
+	<node ID="AricChangeCurrent" AllowEscape="false">
+		<text>&amp;B[&amp;CA voice emanates from within&amp;B]&amp;y
+
+Please select from one of the available options.
+		</text>		
+
+		<choice GotoID="AricChangeCurrent">
+		<text>Clear holographic environment</text>
+		<part Name="Aric_CW_HP_Handler" Clear="environment" />
+		</choice>
+		
+		<choice GotoID="AricChangeCurrent">
+		<text>Clear holographic combatants</text>
+		<part Name="Aric_CW_HP_Handler" Clear="combatants" />
+		</choice>
+		
+		<choice GotoID="AricChangeCurrent">
+		<text>Retrieve active drones</text>
+		<part Name="Aric_CW_HP_Handler" Clear="drones" />
+		</choice>
+		
+		<choice GotoID="AricChangeCurrent">
+		<text>Return demonstration hall to default</text>
+		<part Name="Aric_CW_HP_Handler" Clear="all" />
+		</choice>
+		
+		<choice GotoID="Start">Return to root menu</choice>
+		<choice GotoID="End">Leave</choice>
+	</node> 	
+	
+</conversation>
+  <!-- Yawningmoon -->
+
+</conversations>

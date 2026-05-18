@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<naming>
+
+  <namestyles>
+  
+    <namestyle Name="Ekuemekiyye Commander Title">
+      <scopes>
+        <scope Name="Main" Type="Title" Special="Hero" Faction="Aric Ekuemekiyye" Tag="EkuemekiyyeCommander" Priority="300" Combine="false" />
+      </scopes>
+      <templates>
+        <template Name="Chosen of the Sun" />
+      </templates>
+    </namestyle>
+	
+	<namestyle Name="Yawningmoon Commander Title">
+      <scopes>
+        <scope Name="Main" Type="Title" Special="Hero" Faction="Aric YawningMoon" Tag="YawningmoonCommander" Priority="300" Combine="false" />
+      </scopes>
+      <templates>
+        <template Name="Expedition Captain" />
+      </templates>
+    </namestyle>
+	
+    <namestyle Name="Ibul Commander Title">
+      <scopes>
+        <scope Name="Main" Type="Title" Special="Hero" Faction="Aric Ibul" Tag="IbulCommander" Priority="300" Combine="false" />
+      </scopes>
+      <templates>
+        <template Name="Assistant to the Executor for Archaeology" />
+      </templates>
+    </namestyle>	
+	
+	<namestyle Name="Ibul Artifex Commander Title">
+      <scopes>
+        <scope Name="Main" Type="Title" Special="Hero" Faction="Aric Ibul" Tag="IbulArtifexCommander" Priority="300" Combine="false" />
+      </scopes>
+      <templates>
+        <template Name="Chief Archaeologist" />
+      </templates>
+    </namestyle>
+	
+	<namestyle Name="Aric Marshtaur Chief">
+      <scopes>
+        <scope Name="Main" Type="Title" Special="Hero" Faction="Pariahs" Tag="AricChief" Priority="300" Combine="false" />
+      </scopes>
+      <templates>
+        <template Name="Chieftain of the Skycleave Clan" />
+      </templates>
+    </namestyle>
+	
+	    <namestyle Name="Aric Goatfolk Sower Title">
+      <scopes>
+        <scope Name="Main" Type="Title" Special="Hero" Faction="Goatfolk" Tag="AricSower" Priority="300" Combine="false" />
+      </scopes>
+      <templates>
+        <!--♪ Be sure to update the Strings.xml Goatfolk Hero Naming.xml Context entries -->
+        <template Name="Abramite of the Goatfolk Clanmoot" />
+      </templates>
+      <templatevars>
+        <!--♪ Be sure to update the Strings.xml Goatfolk Hero Naming.xml Context entries -->
+
+		
+		<templatevar Name="epithet">
+          <value Name="Stargazer" />
+
+        </templatevar>
+      </templatevars>
+    </namestyle>
+	
+	</namestyles>
+	
+	
+</naming>

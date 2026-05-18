@@ -5,7 +5,7 @@
 <!-- Ibul Gear -->
 
 <object Name= "Aric Advanced Stun Rod" Inherits= "Stun Rod">
-	<part Name="Render" DisplayName="advanced {{c|stun}} rod"/>
+	<part Name="Render" Tile="LymphRod1.png" DisplayName="advanced {{c|stun}} rod"/>
 	<part Name = "Description" Short = "An overcharged power core and conductive spikes have modifed this stun rod to be considerably more effective."/>
 	<part Name="StunOnHit" ChargeUse="20" Chance="50" Duration="1d4" />
 	<part Name="MeleeWeapon" MaxStrengthBonus="4" BaseDamage="2d4" Skill="Cudgel" Stat="Strength" />
@@ -14,8 +14,8 @@
 </object>
 
 <object Name= "Aric Pacification Rod" Inherits= "Stun Rod">
-	<part Name = "Description" Short = "Product of the master crafters of Ibul, who claim a direct line of master-apprentice to the eaters themselves. No matter the truth of this claim, this weapon is certainly powerful."/>
-	<part Name="Render" DisplayName="{{c|pacification}} rod" Tile="Items/sw_baton_siphon.bmp" DetailColor="c"/>
+	<part Name= "Description" Short = "Product of the master crafters of Ibul, who claim a direct line of master-apprentice to the eaters themselves. No matter the truth of this claim, this weapon is certainly powerful."/>
+	<part Name="Render" DisplayName="{{c|pacification}} rod" Tile="LymphRod2.png" DetailColor="c"/>
 	<part Name="StunOnHit" ChargeUse="30" Chance="75" Duration="1d4" />
 	<part Name="MeleeWeapon" MaxStrengthBonus="6" BaseDamage="2d4" Skill="Cudgel" Stat="Strength" />
 	<part Name="ElementalDamage" Damage="1d5+5" Attributes="Electric" ChargeUse="5" />
@@ -24,19 +24,37 @@
 </object>
 
 <object Name= "Aric Artifex Floating Spaser Pistol" Inherits= "Spaser Pistol">
-	<part Name = "Description" Short = "The master crafters of the frozen arcology imbued this weapon with internal magnets, allowing it serve as a nearby floating turret"/>
+	<part Name = "Description" Short = "The master crafters of the frozen arcology imbued this weapon with internal magnets, allowing it serve as a local floating turret"/>
 	<part Name="ModMagnetized"/>
 	<part Name="TinkerItem" CanBuild="false" />
 </object>
 
-<object Name= "Aric Artifex Floating High-Voltage Arc Winder" Inherits= "High-Voltage Arc Winder">
-	<part Name = "Description" Short = "The master crafters of the frozen arcology imbued this weapon with internal magnets, allowing it serve as a nearby floating turret"/>
+<object Name= "Aric Artifex Floating Carbine" Inherits= "Carbine">
+	<part Name = "Description" Short = "The master crafters of the frozen arcology imbued this weapon with internal magnets, allowing it serve as a local floating turret"/>
+	<part Name="ModMagnetized"/>
+	<part Name="TinkerItem" CanBuild="false" />
+</object>
+
+<object Name= "Aric Artifex Floating Sniper" Inherits= "Sniper Rifle">
+	<part Name = "Description" Short = "The master crafters of the frozen arcology imbued this weapon with internal magnets, allowing it serve as a local floating turret"/>
+	<part Name="ModMagnetized"/>
+	<part Name="TinkerItem" CanBuild="false" />
+</object>
+
+<object Name= "Aric Artifex Floating Laser Pistol" Inherits= "Laser Pistol">
+	<part Name = "Description" Short = "The master crafters of the frozen arcology imbued this weapon with internal magnets, allowing it serve as a local floating turret"/>
 	<part Name="ModMagnetized"/>
 	<part Name="TinkerItem" CanBuild="false" />
 </object>
 
 <object Name= "Aric Artifex Floating Hand Rail" Inherits= "Hand Rail">
-	<part Name = "Description" Short = "The master crafters of the frozen arcology imbued this weapon with internal magnets, allowing it serve as a nearby floating turret"/>
+	<part Name = "Description" Short = "The master crafters of the frozen arcology imbued this weapon with internal magnets, allowing it serve as a local floating turret"/>
+	<part Name="ModMagnetized"/>
+	<part Name="TinkerItem" CanBuild="false" />
+</object>
+
+<object Name= "Aric Artifex Floating High-Voltage Arc Winder" Inherits= "High-Voltage Arc Winder">
+	<part Name = "Description" Short = "The master crafters of the frozen arcology imbued this weapon with internal magnets, allowing it serve as a local floating turret"/>
 	<part Name="ModMagnetized"/>
 	<part Name="TinkerItem" CanBuild="false" />
 </object>
@@ -51,7 +69,7 @@
 <object Name= "Aric Magister Pistol" Inherits= "Borderlands Revolver">
 	
 	<part Name= "Description" Short = "Beautiful gems mined from beneath the Glaciers of Ibul adorn this pistol, though the wielder seems to not notice it's beauty."/>
-	<part Name="Render" DisplayName="Magister's bejeweled sidearm"/>
+	<part Name="Render" Tile="LymphSidearm.png" DisplayName="Magister's bejeweled sidearm"/>
 	<part Name="TinkerItem" Bits="002" CanDisassemble="true" CanBuild="false" />
 	<part Name= "ModJewelEncrusted"/>
 
@@ -59,8 +77,8 @@
 
 <object Name= "Aric Princeps Pistol" Inherits= "Hand Rail">
 	
-	<part Name = "Description" Short = "Beautiful gems mined from beneath the Glaciers of Ibul adorn this pistol, though the wielder seems to not notice it's beauty."/>
-	<part Name="Render" DisplayName="Princeps' bejeweled techpistol"/>
+	<part Name= "Description" Short = "Beautiful gems mined from beneath the Glaciers of Ibul adorn this pistol, though the wielder seems to not notice it's beauty."/>
+	<part Name="Render" Tile="LymphSidearm2.png" DisplayName="Princeps' bejeweled techpistol"/>
 	<part Name="TinkerItem" Bits="00006" CanDisassemble="true" CanBuild="false" />
 	<part Name= "ModJewelEncrusted"/>
 
@@ -68,7 +86,7 @@
 
 <object Name= "Aric Eunuch ArmDagger6" Inherits= "ArmDagger4">
 
-	<part Name="Render" DisplayName="{{K|{{crysteel|crysteel}} wristblade" Tile="Items/sw_shortblade_11.bmp" ColorString="&amp;g" DetailColor="K" />
+	<part Name="Render" DisplayName="{{K|{{crysteel|crysteel}} wristblade" Tile="LymphShortBlade.png" ColorString="&amp;g" DetailColor="K" />
 	<part Name= "Description" Short = "A slash of emerald tucked into an unassuming bracer. Hidden blade of the dispassionate assassin eunuchs of Ibul, trusted by their masters to carry out any task, no matter it's depravity."/>
 	<part Name="MeleeWeapon" MaxStrengthBonus="7" BaseDamage="1d12" Slot= "Arm" />
 	<part Name="Metal" />
@@ -81,7 +99,7 @@
 
 <object Name= "Aric Eunuch ArmDagger7" Inherits= "ArmDagger4">
 
-	<part Name="Render" DisplayName="{{K|{{flawless crysteel|crysteel}} wristblade" Tile="Items/sw_shortblade_11.bmp" ColorString="&amp;g" DetailColor="K" />
+	<part Name="Render" DisplayName="{{K|{{flawless crysteel|crysteel}} wristblade" Tile="LymphShortBlade.png" ColorString="&amp;g" DetailColor="K" />
 	<part Name= "Description" Short = "A slash of emerald tucked masterfully hidden until the moment of death. The frozen smile of the Manus Mortis makes the efficency of their work all the more terrifying. "/>
 	<part Name="MeleeWeapon" MaxStrengthBonus="8" BaseDamage="1d12+1" Slot= "Arm" />
 	<part Name="Metal" />
@@ -95,21 +113,21 @@
 
 <object Name= "Aric Praetorian Shield 1" Inherits= "Carbide Shield">
 
-    <part Name="Render" DisplayName="{{b|carbide}} scutum" Tile="AricPraetorianScutum.png" ColorString="&amp;b" TileColor="&amp;b" DetailColor="b" />
+    <part Name="Render" DisplayName="{{b|carbide}} scutum" Tile="LymphPraetorianScutum.png" ColorString="&amp;b" TileColor="&amp;b" DetailColor="b" />
 	<part Name="Description" Short="Frozen blue steel is curved around a convex striking boss. A tetrad of painted frozen wings spread from it's centre." />
 
 </object>
 
 <object Name= "Aric Praetorian Shield 2" Inherits= "Fullerite Shield">
 
-	<part Name="Render" DisplayName="{{K|fullerite}} scutum" Tile="AricPraetorianScutum.png" ColorString="&amp;K" DetailColor="K" />
+	<part Name="Render" DisplayName="{{K|fullerite}} scutum" Tile="LymphPraetorianScutum.png" ColorString="&amp;K" DetailColor="K" />
 	<part Name="Description" Short="Layers of midnight metal, drawn into a deflecting curve. A battle dented umbo is the epicentre of a tetrad of painted frozen wings." />
 
 </object>
 
 <object Name= "Aric Praetorian Shield 3" Inherits= "Flawless Crysteel Shield">
 
-    <part Name="Render" DisplayName="{{K|flawless{{crysteel|crysteel}} Scutum" Tile="AricPraetorianScutum.png" ColorString="&amp;g" DetailColor="K" />
+    <part Name="Render" DisplayName="{{K|flawless{{crysteel|crysteel}} Scutum" Tile="LymphPraetorianScutum2.png" ColorString="&amp;g" DetailColor="K" />
 
 	
 
@@ -134,7 +152,7 @@
  
  <object Name="Aric Sunbird Bow" Inherits="Compound Bow">
  
-	<part Name="Render" DisplayName="sunbird bow" ColorString="&amp;g" DetailColor="r" Tile="Items/sw_bow_2.bmp" />
+	<part Name="Render" DisplayName="sunbird bow" ColorString="&amp;W" DetailColor="r" Tile="LymphSunBow.png" />
 	<part Name="MissileWeapon" Skill="Rifle" AmmoChar="-" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="1" ProjectilePenetrationStat="Agility" />
 	<part Name="Description" Short="The Venomous Sunbird is revered by the people of Ekuemekiyye as a living incarnation of the sun. But when the moon rises and the hunters prowl through the jungles, not even the holy sun is safe. The feathers that adorn this bow were won in such a hunt. While difficult to wield to it's full effectiveness, in the hands of a master, this weapon is exceptionally lethal." />
     <tag Name="Tier" Value="5" />
@@ -144,7 +162,7 @@
  
   <object Name="Aric Ibis Bow" Inherits="Compound Bow">
  
-	<part Name="Render" DisplayName="ibis bow" ColorString="&amp;K" DetailColor="Y" Tile="Items/sw_bow_2.bmp" />
+	<part Name="Render" DisplayName="ibis bow" ColorString="&amp;K" DetailColor="Y" Tile="LymphIbisBow.png" />
 	<part Name="MissileWeapon" Skill="Rifle" AmmoChar="-" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="1" ProjectilePenetrationStat="Agility" />
 	<part Name="Description" Short="Along the banks of the Null River that runs through the Toxic Jungle, Mindrend Ibis psionically deal death from the sky. Those that wield this bow attempt to emulate their silent lethality. While exceptionally difficult to wield, in the hands of a master this weapon is an unparalelled dealer of death." />
     <part Name="MissilePerformance" PenetrationModifier="5" DamageDieModifier="6" DamageModifier="2" />
@@ -161,7 +179,7 @@
  </object>
  
  <object Name="Aric Mace of the Sun2" Inherits="Cudgel6">
-	<part Name="Render" DisplayName="{{sun|morningstar}} hammer" Tile="AricMorningstar.png" ColorString="&amp;O" DetailColor="W" />
+	<part Name="Render" DisplayName="{{sun|morningstar}} hammer" Tile="LymphMorningstar.png" ColorString="&amp;O" DetailColor="W" />
 	<part Name= "Description" Short= "The morning is a time of holy retrospection to the Ekuemekiyyens, to rest from the savagery of the Moon Hunts. But the spilled blood can never be forgotten."/>
   	<part Name="BleedingOnHit" Amount="1" SaveTarget="15" Stack="true" />
 		<tag Name="ExcludeFromDynamicEncounters"/>
@@ -176,7 +194,7 @@
  
   <object Name="Aric Sickle of the Moon1" Inherits="Battle Axe4">
  
-	<part Name="Render" DisplayName="sickle of the {{moon|moon}}" Tile="AricMoonSickle.png" ColorString="&amp;k" DetailColor="Y" />
+	<part Name="Render" DisplayName="sickle of the {{moon|moon}}" Tile="LymphMoonSickle.png" ColorString="&amp;k" DetailColor="Y" />
 	<part Name="BleedingOnHit" Amount="1" SaveTarget="20" Stack="false" />
 	<part Name="Description" Short="A slash of moonlight specks the night with scarlet. So the sun returns, and rest."/>
 	<tag Name="ExcludeFromDynamicEncounters"/>
@@ -185,7 +203,7 @@
  
  <object Name="Aric Sickle of the Moon2" Inherits="Battle Axe6">
  
-	<part Name="Render" DisplayName="{{moon|silver}} crescent" Tile="AricMoonSickle.png" ColorString="&amp;k" DetailColor="Y" />
+	<part Name="Render" DisplayName="{{moon|silver}} crescent" Tile="LymphMoonSickle.png" ColorString="&amp;k" DetailColor="Y" />
 	<part Name="BleedingOnHit" Amount="1d2" SaveTarget="22" Stack="false" />
 	<part Name="Description" Short="Each night the moon's light wanes, further enshrouding the atrocoties of night, encouraging her servants to acts of greater and greater savagery."/>
      <tag Name="ExcludeFromDynamicEncounters"/>
@@ -202,7 +220,7 @@
 <object Name="Aric Slumberling Cloak" Inherits="BaseCloak">
     <part Name="Armor" AV="1" DV="1" WornOn="Back" />
 	<part Name= "EquipStatBoost" Boosts="Strength:2"/>
-    <part Name="Render" DisplayName="slumberling cloak" RenderString="]" Tile="Items/sw_cloak_panther.bmp" ColorString="&amp;w" DetailColor="W" />
+    <part Name="Render" DisplayName="slumberling cloak" RenderString="]" Tile="LymphSlumberCloak.png" ColorString="&amp;w" DetailColor="W" />
     <part Name="Commerce" Value="80" />
     <part Name="Description" Short="Some among the Ekuemekiyye believe that to slay a foe and consume them is to absorb their strength. At least in the case of this Slumberling, it seems hard to disagree." />
     <part Name="Physics" Weight="6" Organic="true" />
@@ -241,6 +259,180 @@
 		<removepart Name="AddsRep" />
  
  </object>
+ 
+ <!-- Mecha equipment -->
+ 
+ <object Name="Aric Mecha Crushing Bands" Inherits="NaturalWeapon">
+ 
+	<part Name="Render" DisplayName="{{c|crushing bands}}" Tile="Items/sw_longblade_10.bmp" ColorString="&amp;c" />
+	<part Name="MeleeWeapon" BaseDamage="4d8" Skill="Cudgel" Stat="Strength" Slot="Body"/>
+	<part Name="LatchesOn" InitialSaveTarget="30" InitialSaveStat="Agility" InitialSaveDifficultyStat="Agility" MoveSaveTarget="35" MoveSaveStat="Strength" MoveSaveDifficultyStat="Strength" BreakSaveTarget="30" BreakSaveStat="Strength" BreakSaveDifficultyStat="Strength" Duration="3d4" AutoAttackOnMove="true" AutoAttackOnMoveAway="false" AutoAttackPerTurn="true" BloodSpatterOnLatch="false" />
+	
+	<part Name="Metal" />
+	<tag Name="Tier" Value="7" />
+	<tag Name="SwingSound" Value="Sounds/Melee/cudgels/sfx_melee_cudgel_crysteel_swing"/>
+	<tag Name="BlockedSound" Value="Sounds/Melee/multiUseBlock/sfx_melee_crysteel_blocked" />
+ </object>
+ 
+ <object Name="Aric Mecha Crushing Claw" Inherits="NaturalWeapon">
+ 
+	<part Name="Render" DisplayName="{{c|crushing claw}}" Tile="Items/sw_longblade_10.bmp" ColorString="&amp;c" />
+	<part Name="MeleeWeapon" BaseDamage="4d8" Skill="Cudgel" Stat="Strength"/>
+
+	<part Name="Metal" />
+	<tag Name="Tier" Value="7" />
+	<tag Name="SwingSound" Value="Sounds/Melee/cudgels/sfx_melee_cudgel_crysteel_swing"/>
+	<tag Name="BlockedSound" Value="Sounds/Melee/multiUseBlock/sfx_melee_crysteel_blocked" />
+ </object>
+ 
+ <object Name="Aric Mecha Drill" Inherits="NaturalWeapon">
+ 
+	<part Name="Render" DisplayName="{{r|drill arm}}" Tile="Items/sw_jackhammer.bmp" ColorString="&amp;r" />
+	<part Name="MeleeWeapon" BaseDamage="4d8" Skill="Cudgel" Stat="Strength"/>
+	<part Name="Drill" ChargeUse="0" PenetrationBonus="20" HitsRequired="1" IsBootSensitive="false" IsEMPSensitive="true" IsPowerSwitchSensitive="false" IsPowerLoadSensitive="false" IsTechScannable="false" Sound="sfx_melee_cudgel_nanopneumaticJackhammer_dig" />
+    <part Name="DiggingTool" />
+
+	<part Name="Metal" />
+	<tag Name="Tier" Value="7" />
+	<tag Name="SwingSound" Value="Sounds/Melee/cudgels/sfx_melee_cudgel_crysteel_swing"/>
+	<tag Name="BlockedSound" Value="Sounds/Melee/multiUseBlock/sfx_melee_crysteel_blocked" />
+
+ </object>
+ 
+ <object Name="Aric Caustic Launcher" Inherits="NaturalMissileWeapon">
+		<part Name="Render" DisplayName="high pressure acid ejection ports" ColorString="&amp;W" Tile="Items/sw_techrifle_3.bmp" />
+		<part Name="Physics" Weight="12" />
+		<part Name="MissileWeapon" Skill="Rifle" AmmoChar="&amp;Y-" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="2" />
+		<part Name="Commerce" Value="750" />
+		<part Name="EnergyAmmoLoader" ChargeUse="0" ProjectileObject="AricProjectileCausticGasStream" />
+		<part Name="EnergyCellSocket" SlotType="EnergyCell" ChanceSlotted="100" />
+		<part Name="Examiner" Alternate="UnknownRifle" Complexity="7" />
+		<part Name="TinkerItem" Bits="0007" CanDisassemble="true" CanBuild="false" />
+		<part Name="IntegratedPowerSystems" RequiresEvent="HasPowerConnectors" />
+		<part Name="Metal" />
+		<tag Name="NoDefaultBehavior" />
+		<part Name="AIShootCooldown" Cooldown="10" />
+		<tag Name="Mods" Value="MissileWeaponMods,FirearmMods,CommonMods,RifleMods,ElectronicsMods,BeamWeaponMods" />
+		<tag Name="Tier" Value="7" />
+		<tag Name="MissileFireSound" Value="Sounds/Missile/Fires/Heavy Weapons/sfx_missile_pump_fire" />
+		<tag Name="UsesSlots" Value="Face" />
+ </object>
+ 
+   <object Name="AricProjectileCausticGasStream" Inherits="TemporaryProjectile">
+		<part Name="Render" DisplayName="{{G|torrent of caustic spray}}" ColorString="&amp;G" />
+		<part Name="Projectile" BasePenetration="0" BaseDamage="0" Quiet="true" Attributes="Acid Gas" ColorString="&amp;G" PassByVerb="spurts" />
+		<part Name="GasOnHit" Blueprint="AcidGas" Density="20d10" OnWielderHit="true" />
+		<part Name="GasOnEntering" Blueprint="AcidGas" Density="10d10" />
+		<tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+  </object>
+ 
+   <object Name="Aric Lightning Launcher" Inherits="NaturalMissileWeapon">
+    <part Name="Render" DisplayName="lightning cannon" ColorString="&amp;W" Tile="Items/sw_techpistol_6.bmp" TileColor="&amp;c" DetailColor="W" />
+    <part Name="Physics" Weight="4" />
+    <part Name="MissileWeapon" Skill="Rifle" AmmoChar="&amp;W*" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="4" />
+	<part Name="EnergyAmmoLoader" ChargeUse="0" ProjectileObject="AricProjectileElectroCannon" />
+    <part Name="EnergyCellSocket" SlotType="EnergyCell" />
+    <part Name="Metal" />
+    <part Name="ItemElements" Elements="circuitry::4" />
+    <tag Name="Tier" Value="5" />
+    <tag Name="MissileFireSound" Value="Sounds/Missile/Fires/Pistols/sfx_missile_arcWinder_fire" />
+    <tag Name="ReloadSound" Value="Sounds/Missile/Reloads/sfx_missile_arcWinder_reload" />
+	<part Name="AIShootCooldown" Cooldown="4" />
+	<tag Name="UsesSlots" Value="Body" />
+  </object>
+  
+  <object Name="AricProjectileElectroCannon" Inherits="TemporaryEnergyProjectile">
+    <part Name="Render" DisplayName="{{W|ion matrix}}" ColorString="&amp;W" />
+    <part Name="Projectile" BasePenetration="0" BaseDamage="0" Attributes="Electric" ColorString="&amp;W" PassByVerb="fly" />
+    <part Name="DischargeOnHit" DamageRange="20d4" Voltage="20" />
+    <tag Name="ImpactSound" Value="Sounds/Missile/Hits/sfx_missile_directEnergy_hit" />
+  </object>
+ 
+  <object Name="Aric Cryo Beam" Inherits="NaturalMissileWeapon">
+		<part Name="Render" DisplayName="shoulder mounted cryo lances" ColorString="&amp;W" Tile="Items/sw_techrifle_3.bmp" />
+		<part Name="Physics" Weight="12" />
+		<part Name="MissileWeapon" Skill="Rifle" AmmoChar="&amp;Y-" ShotsPerAction="2" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="0" />
+		<part Name="Commerce" Value="750" />
+		<part Name="EnergyAmmoLoader" ChargeUse="0" ProjectileObject="AricProjectileCryoBeam" />
+		<part Name="EnergyCellSocket" SlotType="EnergyCell" ChanceSlotted="100" />
+		<part Name="Examiner" Alternate="UnknownRifle" Complexity="7" />
+		<part Name="TinkerItem" Bits="0007" CanDisassemble="true" CanBuild="false" />
+		<part Name="IntegratedPowerSystems" RequiresEvent="HasPowerConnectors" />
+		<part Name="Metal" />
+		<tag Name="NoDefaultBehavior" />
+		<part Name="AIShootCooldown" Cooldown="10" />
+		<tag Name="Mods" Value="MissileWeaponMods,FirearmMods,CommonMods,RifleMods,ElectronicsMods,BeamWeaponMods" />
+		<tag Name="Tier" Value="7" />
+		<tag Name="MissileFireSound" Value="Sounds/Missile/Fires/Rifles/sfx_missile_freezeRay_fire" />
+		<tag Name="UsesSlots" Value="Back" />
+ </object>
+ 
+   <object Name="AricProjectileCryoBeam" Inherits="TemporaryProjectile">
+    <part Name="Render" DisplayName="{{C|cryo beam}}" ColorString="&amp;C" />
+    <part Name="Projectile" BasePenetration="10" BaseDamage="1d8+2" Attributes="Cold" RenderChar="FR" ColorString="&amp;C" PassByVerb="streak" />
+    <part Name="TemperatureOnHit" Amount="1d8-22" Max="false" OnWielderHit="true" />
+    <part Name="TemperatureOnEntering" Amount="1d16-44" Max="false" OnWielderHit="true" />
+    <tag Name="ImpactSound" Value="Sounds/Damage/sfx_damage_elemental_cold"/>
+	<part Name="ThermalGrenade" TemperatureDelta="-400" />
+	 <tag Name="ProjectileVFX" Value="MissileWeaponsEffects/heavy_laser" />
+    <tag Name="ProjectileVFXConfiguration" Value="duration::0.25;;beamColor0::#77bfcf;;beamColor1::#40a4b9;;beamColor2::#FFFFFF" />
+  </object>
+  
+    <object Name="Aric Plasma Beam" Inherits="NaturalMissileWeapon">
+		<part Name="Render" DisplayName="shoulder mounted cryo lances" ColorString="&amp;W" Tile="Items/sw_techrifle_3.bmp" />
+		<part Name="Physics" Weight="12" />
+		<part Name="MissileWeapon" Skill="Rifle" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="0" />
+		<part Name="Commerce" Value="750" />
+		<part Name="EnergyAmmoLoader" ChargeUse="0" ProjectileObject="AricProjectilePlasmaBeam" />
+		<part Name="EnergyCellSocket" SlotType="EnergyCell" ChanceSlotted="100" />
+		<part Name="Examiner" Alternate="UnknownRifle" Complexity="7" />
+		<part Name="TinkerItem" Bits="0007" CanDisassemble="true" CanBuild="false" />
+		<part Name="IntegratedPowerSystems" RequiresEvent="HasPowerConnectors" />
+		<part Name="Metal" />
+		<tag Name="NoDefaultBehavior" />
+		<part Name="AIShootCooldown" Cooldown="5" />
+		<tag Name="Mods" Value="MissileWeaponMods,FirearmMods,CommonMods,RifleMods,ElectronicsMods,BeamWeaponMods" />
+		<tag Name="Tier" Value="7" />
+		<tag Name="MissileFireSound" Value="Sounds/Missile/Fires/Rifles/sfx_missile_spaserRifle_fire" />
+		<tag Name="UsesSlots" Value="Face" />
+ </object>
+ 
+   <object Name="AricProjectilePlasmaBeam" Inherits="TemporaryProjectile">
+    <part Name="Render" DisplayName="{{g|plasma beam}}" ColorString="&amp;G" />
+    <part Name="Projectile" BasePenetration="10" BaseDamage="3d8" Attributes="Plasma" RenderChar="FR" ColorString="&amp;G" PassByVerb="streak" />
+	<part Name="EmitGasOnHit" GasBlueprint="Plasma" CellDensity="10" AdjacentDensity="5" />
+    <tag Name="ImpactSound" Value="Sounds/Missile/Hits/sfx_missile_directEnergy_hit"/>
+	<tag Name="ProjectileVFX" Value="MissileWeaponsEffects/gradient_laser" />
+	<tag Name="ProjectileVFXConfiguration" Value="duration::0.5"/>
+
+  </object>
+  
+   <object Name="Aric Rubble Launcher" Inherits="NaturalMissileWeapon">
+		<part Name="Render" DisplayName="rubble ejection port" ColorString="&amp;W" Tile="Items/sw_techrifle_3.bmp" />
+		<part Name="Physics" Weight="12" />
+		<part Name="MissileWeapon" Skill="Rifle" AmmoChar="&amp;Y-" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="2" />
+		<part Name="Commerce" Value="750" />
+		<part Name="EnergyAmmoLoader" ChargeUse="0" ProjectileObject="AricProjectileRubbleStream" />
+		<part Name="EnergyCellSocket" SlotType="EnergyCell" ChanceSlotted="100" />
+		<part Name="Examiner" Alternate="UnknownRifle" Complexity="7" />
+		<part Name="TinkerItem" Bits="0007" CanDisassemble="true" CanBuild="false" />
+		<part Name="IntegratedPowerSystems" RequiresEvent="HasPowerConnectors" />
+		<part Name="Metal" />
+		<tag Name="NoDefaultBehavior" />
+		<part Name="AIShootCooldown" Cooldown="5" />
+		<tag Name="Mods" Value="MissileWeaponMods,FirearmMods,CommonMods,RifleMods,ElectronicsMods,BeamWeaponMods" />
+		<tag Name="Tier" Value="7" />
+		<tag Name="MissileFireSound" Value="Sounds/Missile/Fires/Heavy Weapons/sfx_missile_pump_fire" />
+		<tag Name="UsesSlots" Value="Face" />
+ </object>
+ 
+   <object Name="AricProjectileRubbleStream" Inherits="TemporaryProjectile">
+		<part Name="Render" DisplayName="torrent of rubble" ColorString="&amp;Y" />
+		<part Name="Projectile" BasePenetration="10" BaseDamage="6d6" ColorString="&amp;Y" PassByVerb="crashes" />
+		<part Name="CreateObjectOnHit" Blueprint="Rubble"/>
+		<part Name="AricObjectOnEntering" Blueprint="Rubble"/>
+		<tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+  </object>
  
  <!-- Arrows-->
  
@@ -429,7 +621,7 @@
   </object>
  
 	 <object Name="Aric Fuming Hand Cannon" Inherits="BaseMagazinePistol">
-    <part Name="Render" Tile="Items/sw_techpistol_3.bmp" DisplayName="fuming hand cannon" ColorString="&amp;r" DetailColor="O" />
+    <part Name="Render" Tile="LymphHandCannon.png" DisplayName="fuming hand cannon" ColorString="&amp;r" DetailColor="O" />
     <part Name="Physics" Weight="4" />
     <part Name="Commerce" Value="200" />
     <part Name="MissileWeapon" Skill="Pistol" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="1" />
@@ -448,7 +640,7 @@
   </object>
   
    <object Name="Aric Heavy Fuming Hand Cannon" Inherits="BaseMagazinePistol">
-    <part Name="Render" Tile= "Items/sw_techpistol_3.bmp" DisplayName="heavy fuming hand cannon" ColorString="&amp;r" DetailColor="o" />
+    <part Name="Render" Tile= "LymphHandCannon.png" DisplayName="heavy fuming hand cannon" ColorString="&amp;r" DetailColor="o" />
     <part Name="Physics" Weight="4" />
     <part Name="Commerce" Value="200" />
     <part Name="MissileWeapon" Skill="Pistol" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="1" />
@@ -467,7 +659,7 @@
   </object>
   
    <object Name="Aric Erupting Hand Cannon" Inherits="BaseMagazinePistol">
-    <part Name="Render" Tile="Items/sw_techpistol_3.bmp" DisplayName="erupting hand cannon" ColorString="&amp;r" DetailColor="o" />
+    <part Name="Render" Tile="LymphHandCannon.png" DisplayName="erupting hand cannon" ColorString="&amp;r" DetailColor="o" />
     <part Name="Physics" Weight="4" />
     <part Name="Commerce" Value="200" />
     <part Name="MissileWeapon" Skill="Pistol" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="1" />
@@ -488,7 +680,7 @@
   </object>
   
 	<object Name= "Aric Combat Jackhammer" Inherits="Nanopneumatic Jackhammer">
-		<part Name="Render" DisplayName="yawningmoon combat jackhammer" ColorString="&amp;C"/>
+		<part Name="Render" Tile="LymphJackhammer.png" DisplayName="yawningmoon combat jackhammer" ColorString="&amp;C"/>
 		<part Name="MeleeWeapon" PenBonus="1" MaxStrengthBonus="6" BaseDamage="4d4" Skill="Cudgel" />
 		<part Name="Commerce" Value="100" />
 		<tag Name="Tier" Value="5" />
@@ -500,7 +692,7 @@
 
 	<object Name="Aric Crysteel Pulveriser" Inherits= "Aric Combat Jackhammer">
 	
-		<part Name="Render" DisplayName="yawningmoon crysteel pulveriser" ColorString="&amp;g" DetailColor="G" Tile="Items/sw_jackhammer.bmp" />
+		<part Name="Render" DisplayName="yawningmoon crysteel pulveriser" ColorString="&amp;g" DetailColor="G" Tile="LymphJackhammer.png" />
 		<part Name="MeleeWeapon" PenBonus="1" MaxStrengthBonus="9" BaseDamage="6d4" Skill="Cudgel" />
 		<part Name="Commerce" Value="500" />
 		<tag Name="Tier" Value="7" />
@@ -607,7 +799,7 @@
 	<object Name="Aric GasTumbler" Inherits="BaseCyberneticsEquipment_4point">
 		<part Name="Physics" Weight="15" />
 		<part Name="Description" Short="Gravitational micromanipulators ensure optimal dispersal of gases, while largely shielding the operator from their negative effects." />
-		<part Name="Render" DisplayName="{{Y|industrial mixing unit}}" Tile="Items/sw_magnetic_core.bmp" TileColor="&amp;r" DetailColor="C" />
+		<part Name="Render" DisplayName="{{Y|industrial mixing unit}}" Tile="LymphIndustrialTumbler.png" TileColor="&amp;r" DetailColor="C" />
 		<part Name="CyberneticsBaseItem" Slots="Back" Cost="4" BehaviorDescription="Gases you generate are denser, disperse less readily and you are protected from some of their worse effects." />
 		<part Name="GasTumbler" ChargeUse="0" DispersalMultiplier="25" DensityMultiplier="200" />
 		<part Name="GasMask" Power="50"/>
@@ -626,4 +818,275 @@
 		<part Name="EmitGasOnHit" GasBlueprint="Plasma" CellDensity="20" AdjacentDensity="0" />
 	</object>
 	
+	
+	<!-- Encampment misc -->
+	
+  <object Name="AricIbulSign1" Inherits="Sign">
+    <part Name="Render" DisplayName="sign" Tile="Items/sw_sign_bombs.bmp" Occluding="false" />
+    <part Name="Chat" Says="Technology from across the blasted plain" ShowInShortDescription="true" />
+  </object>
+  
+   <object Name="Aric High powered charging station" Inherits="Universal Charging Station">
+		<part Name="UniversalCharger" ChargeRate="1000" />
+  </object>
+  
+  <object Name="Aric drone rack" Inherits="HighTechInstallation">
+  
+	<part Name="Render" DisplayName="ancient rack" RenderString="008" TileColor="&amp;B" DetailColor="b" Occluding="false" Tile="Items/sw_teleporter_pad.bmp" />
+  
+  </object>
+  
+    <object Name="Aric camo foamcrete" Inherits="Foamcrete">
+  
+	 <part Name="Render" DisplayName="{{camoflauge|camoflauged}} foamcrete" RenderString="176" ColorString="&amp;C^k" TileColor="&amp;g" DetailColor="k" Occluding="true" />
+  
+  </object>
+  
+  <object Name="Aric Ekuemekiyye Fortification" Inherits="Widget">
+    <part Name="MapChunkPlacement" Map="ekuemekiyye_fortification.rpm" Width="3" Height="3" />
+  </object>
+  
+  <object Name="AricEkuemekiyyeSign1" Inherits="Sign">
+    <part Name="Render" DisplayName="sign" Tile="Items/sw_sign_bombs.bmp" Occluding="false" />
+    <part Name="Chat" Says="Wares from beneath the vaulted ziggurats" ShowInShortDescription="true" />
+  </object>
+  
+  <object Name="AricYawningmoonSign1" Inherits="Sign">
+    <part Name="Render" DisplayName="sign" Tile="Items/sw_sign_bombs.bmp" Occluding="false" />
+    <part Name="Chat" Says="Fantastic wares from across the sea" ShowInShortDescription="true" />
+  </object>
+  
+  <object Name="AricEkuemekiyyeGoldenWall" Inherits="BrickWall">
+    <part Name="Render" DisplayName="miniature ziggurat wall" RenderString="177" Occluding="true" ColorString="&amp;r^w" TileColor="&amp;W" DetailColor="g" />
+    <part Name="Physics" Weight="10000" Takeable="false" Solid="true" />
+    <part Name="Description" Short="Golden stone ingots, flecked with emerald particulate are laid crosswise, rising to the bloody dais." />
+    <stat Name="AV" Value="7" />
+    <stat Name="Hitpoints" Value="200" />
+    <tag Name="ImmutableWhenUnexplored" Value="1" />
+
+  </object>
+  
+  <object Name="Aric Mecha Rack" Inherits="HighTechInstallation">
+  
+	<part Name="Render" DisplayName="Mecha recharging station" RenderString="008" TileColor="&amp;B" DetailColor="b" Occluding="false" Tile="Items/sw_teleporter_pad.bmp" />
+  
+  </object>
+  
+    <object Name="AricEkuemekiyyeGoldenPath" Inherits="Walkway">
+    <part Name="Render" DisplayName="dais" RenderString="." RenderLayer="0" RenderIfDark="true" ColorString="&amp;W" />
+    <part Name="Description" Short="Golden bricks, flecked with brown have been cut with channels that run to a deep void." />
+    <removepart Name="PickRandomTile" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="ExcludeFromDynamicEncounters" />    
+  </object>
+  
+   <object Name="AricEkuemekiyyeGoldenStair" Inherits="Walkway">
+    <part Name="Render" DisplayName="golden steps" ColorString="&amp;W" />
+    <part Name="Description" Short="Golden steps rise in a mirror to the sun. Each step, a reminder that the sacrifice shall herald the return of the holy sun, and with it, peace." />
+    <removepart Name="PickRandomTile" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  
+    <object Name="AricEkuemekiyyeGoldenStairN" Inherits="AricEkuemekiyyeGoldenStair">
+    <part Name="Render" Tile="Tiles2/sw_sunken_room_stairs_n.bmp" />
+  </object>
+  
+    <object Name="AricEkuemekiyyeGoldenStairS" Inherits="AricEkuemekiyyeGoldenStair">
+    <part Name="Render" Tile="Tiles2/sw_sunken_room_stairs_s.bmp" />
+  </object>
+  
+    <object Name="AricEkuemekiyyeGoldenStairE" Inherits="AricEkuemekiyyeGoldenStair">
+    <part Name="Render" Tile="Tiles2/sw_sunken_room_stairs_e.bmp" />
+  </object>
+  
+    <object Name="AricEkuemekiyyeGoldenStairW" Inherits="AricEkuemekiyyeGoldenStair">
+    <part Name="Render" Tile="Tiles2/sw_sunken_room_stairs_w.bmp" />
+  </object>
+  
+  
+  <!-- Quest Rewards -->
+  <object Name="Aric Toxic Dart Bracer">
+  
+  </object>
+  
+  <object Name="Aric Flawless Diamond" Inherits="Polished Gemstone">
+  
+      <part Name="Render" DisplayName="flawless {{Y|diamond}} gemstone" DetailColor="W" ColorString="&amp;Y" />
+    <part Name="Commerce" Value="1000" />
+    <part Name="Description" Short="In the depths of the Earth, under extreme heat and pressure, carbon was formed over chilliad millenia into a perfect lattice, only to be plucked from the ground by an Ibullian servitor." />
+    <tag Name="Gift" Value="*noinherit" />
+    <tag Name="Tier" Value="7" />
+  
+  </object>
+  
+    <!-- Zone terrain -->
+  
+    <object Name="Aric Nest Texture" Inherits="Floor">
+    <part Name="Render" DisplayName="primal grass" RenderString="." ColorString="&amp;w" Tile="Terrain/sw_grass1.bmp" TileColor="&amp;w" />
+    <removepart Name="Description" />
+    <builder Name="RandomTile" Tiles="Terrain/sw_grass1.bmp,Terrain/sw_grass2.bmp,Terrain/sw_grass3.bmp" />
+    <part Name="RandomRenderString" Strings="39,44,46,96" />
+    <stag Name="Plank" Value="thatch" />
+    <stag Name="Fiber" Value="blade" />
+    <stag Name="FiberMaterial" Value="grass" />
+  </object>
+  
+    <object Name="Aric False Wall" Inherits="EbonFulcrete">
+    <part Name="Render" DisplayName="grooved ebon fulrete"/>
+    <part Name="Door" ClosedTile="assets_content_textures_tiles_tile-0-13.png" OpenTile="terrain/sw_securitydoor_open.bmp" Locked="true" KeyObject="Aric CEO Key" />
+    <stat Name="AV" Value="40" />
+    <part Name="Description" Short="A barely perceptable groove marks a hidden portal." />
+    <tag Name="OpenSound" Value="Sounds/Interact/sfx_interact_door_metal_open" />
+    <tag Name="CloseSound" Value="Sounds/Interact/sfx_interact_door_metal_close" />
+    <tag Name="NotQuestable" />
+    <tag Name="Tier" Value="6" />
+
+  </object> 
+  
+  <object Name="Aric HoloConcrete" Inherits="Concrete">
+    <part Name="Render" DisplayName="concrete wall" RenderString="176" ColorString="&amp;Y^c" TileColor="&amp;c" DetailColor="Y" Occluding="false" />
+    <part Name="Physics" Weight="10000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false" Solid="true" />
+    <stat Name="Hitpoints" Value="20000" />
+    <part Name="Description" Short="Glinting light is sculpted in parallax to the illusion of a concrete wall: smooth grey stone hides its bonded pebbly innards and cement blood-paste. It's streaked with dirt." />
+
+    <tag Name="NoSparkingQuest" />
+    <tag Name="IgnoresGravity" />
+    <tag Name="Tier" Value="6" />
+    <part Name="HologramMaterial" />
+	<intproperty Name="Aric_HoloFurniture" Value="1" />
+	
+  </object>
+  
+  <object Name="Aric HoloPaintedFlowers" Inherits="PaintedFlowers">
+    <part Name="Render" DisplayName="flowers" RenderString="250" ColorString="&amp;Y" DetailColor="y" RenderLayer="1" />
+    <part Name="PaintedFlowers" />
+    <removepart Name="RandomTileOnMove" />
+	<part Name="HologramMaterial" />
+	<intproperty Name="Aric_HoloFurniture" Value="1" />
+  </object>
+  
+  <object Name="Aric Hardlight Swarmshade Tree" Inherits="Swarmshade Tree">
+	<!-- <part Name="Render" ColorString="&amp;Y^c" TileColor="&amp;c" DetailColor="Y"/> -->
+	<part Name="HologramMaterial" />
+	<intproperty Name="Aric_HoloFurniture" Value="1" />
+	
+  </object>
+  
+  <object Name="Aric Hardlight Ziv Bough" Inherits="Ziv Bough">
+	<part Name="Render" ColorString="&amp;Y^c" TileColor="&amp;c" DetailColor="Y"/>
+	<part Name="HologramMaterial" />
+	<intproperty Name="Aric_HoloFurniture" Value="1" />
+	
+  </object>
+  
+  <object Name="Aric Hardlight Shimscale Mangrove Tree" Inherits="Shimscale Mangrove Tree">
+	<part Name="Render" ColorString="&amp;Y^c" TileColor="&amp;c" DetailColor="Y"/>
+	<part Name="HologramMaterial" />
+	<intproperty Name="Aric_HoloFurniture" Value="1" />
+	
+  </object>  
+  
+  <object Name="Aric Hardlight Star Palm" Inherits="Star Palm">
+	<!-- <part Name="Render" ColorString="&amp;Y^c" TileColor="&amp;c" DetailColor="Y"/> -->
+	<part Name="HologramMaterial" />
+	<intproperty Name="Aric_HoloFurniture" Value="1" />
+	
+  </object>    
+  
+  <object Name="Aric Transparisteel" Inherits="GlassWall">
+    <part Name="Render" DisplayName="transparisteel wall" RenderString="215" ColorString="&amp;Y^k" DetailColor="y" Occluding="false" />
+    <part Name="Physics" FreezeTemperature="-9999" BrittleTemperature="-9999" Weight="10000" Takeable="false" Solid="true" />
+    <part Name="Description" Short="The metallic crystalline lattice was manipulated to channel photons throughout." />
+    <stat Name="AV" Value="40" />
+    <stat Name="Hitpoints" Value="2000" />
+    
+  </object>
+  
+   <object Name="Transparisteel Door" Inherits="Glass Door">
+    <part Name="Render" DisplayName="transparisteel door" RenderString="215" ColorString="&amp;Y^k" DetailColor="y" Occluding="false" />
+    <part Name="Description" Short="The metallic crystalline lattice was manipulated to channel photons throughout." />
+    <stat Name="AV" Value="40" />
+    <stat Name="Hitpoints" Value="1000" />
+
+    <tag Name="Tier" Value="5" />
+
+  </object>
+  
+  <object Name="Aric HP Console" Inherits="InorganicObject">
+    <part Name="Render" DisplayName="control panel" Tile="Items/sw_intercom.bmp" RenderLayer="6" RenderString="=" ColorString="&amp;Y^k" Occluding="true" />
+    <part Name="Physics" Weight="3000" Takeable="false" Solid="true" />
+    <part Name="Metal" />
+    <part Name="MentalShield" />
+    <stat Name="AV" Value="40" />
+    <stat Name="Hitpoints" Value="600" />
+    <part Name="Corpse" CorpseChance="100" CorpseBlueprint="Rubble" />
+    <part Name="ConversationScript" ConversationID="AricHPConsole"/>
+    <part Name="Description" Short="A humanoid holographic projection floats above a glowing touch interface." />
+    <part Name="Interesting" />
+    <part Name="Inventory" />
+    <tag Name="NoTrade" />
+	<tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+  </object>
+  
+    <object Name="MetalWalkway" Load="Merge">
+		<stat Name="HeatResistance" Value="100" />
+  </object>
+  
+	<object Name="Aric Pantry" Inherits="Bookshelf">
+		<part Name="Render" DisplayName="pantry shelf" Tile="Items/sw_bookshelf1.bmp" DetailColor="W" ColorString="&amp;w" />
+		<tag Name="NoSparkingQuest" />		
+		<tag Name="InventoryPopulationTable" Value="Aric_Pantry_Contents" />
+	</object>
+	
+	<object Name="Aric Plasma Dispenser" Inherits="Walltrap">
+		<part Name="Render" DisplayName="vents with sizzling residue" />
+		<part Name="Walltrap" WarmColor="^K&amp;g" ReadyColor="^K&amp;G" />
+		<part Name="WalltrapGas" GasBlueprint="Plasma" Density="2" PrimaryColor="G" SecondaryColor="g" />
+		<part Name="Description" Short="Fundamental particles jitter to a state of radiant matter, and sublimate to a sizzling condensate that stains vents of tarnished chrome." />
+		<tag Name="Gender" Value="plural" />
+		<tag Name="Tier" Value="6" />
+		<xtagGrammar massNoun="true" />
+  </object>
+  
+  <!-- generics -->
+  
+    <object Name="Aric Bolas" Inherits="Item">
+    <part Name="Render" DisplayName="bolas" RenderString="015" Tile="Items/sw_net.bmp" ColorString="&amp;y" TileColor="&amp;Y" DetailColor="y" Occluding="false" />
+    <part Name="Physics" Weight="10" Takeable="true" Solid="false" Organic="true" />
+    <part Name="Description" Short="Two carbide orbs, tethered together by a leather thong. " />
+    <part Name="ThrownWeapon" Damage="1d8" Penetration="7" Attributes="Cudgel" />
+    <part Name="StickyOnHit" Duration="10" SaveTarget="20" MaxWeight="1000" />
+    <part Name="Commerce" Value="45" />
+	  <tag Name="EquipSound" Value="sfx_equip_weapon_thrown_net" />
+    <tag Name="UnequipSound" Value="sfx_unequip_weapon_thrown" />
+    <tag Name="Mods" Value="CommonMods,ThrownWeaponMods" />
+        <stag Name="Thrown" />
+		<stag Name="Contemporary" />
+  </object>
+  
+    <object Name="Aric Sower Bush" Inherits="Plant">
+		<part Name="Render" DisplayName="sower's bounty" RenderString="005" Tile="Terrain/sw_urberry_bush_1.bmp" TileColor="&amp;G" DetailColor="W" Occluding="false" />
+		<part Name="Description" Short="Golden teardrops nestle within cages of thorny cane, lovingly tended by their goatfolk arborists. The fragmentary testa are warm to the touch, and heat or impact promise a volatile response. As one sower brought life, so the other deals in death." />
+		<part Name="Harvestable" OnSuccess="Sowers_Seed" StartRipeChance="1:3" RipeColor="&amp;W" RipeTileColor="&amp;g" RipeDetailColor="W" UnripeColor="&amp;g" UnripeTileColor="&amp;g" UnripeDetailColor="G" />
+		<tag Name="HangingSupport" />
+
+  </object>
+  
+    <object Name="Aric Jewelled Whip" Inherits="Leather Whip">
+    <part Name= "ModJewelEncrusted"/>
+	<tag Name="ExcludeFromDynamicEncounters" />
+  </object>	
+  
+   <object Name="Aric Katana6" Inherits="Long Sword6">
+    <part Name="Render" DisplayName="{{K|{{crysteel|crysteel}} katana}}" />
+	<part Name="ModSharp" />
+  </object>
+  
+  	<object Name="Aric Seed Rack" Inherits="BaseBookshelf">
+		<part Name="Render" DisplayName="seed rack" Tile="Items/sw_bookshelf1.bmp" DetailColor="W" ColorString="&amp;w" RenderString="182" />
+		<part Name="Description" Short="Wood planks are nailed at orthogonal angles, golden testa are arrayed, awaiting resowing." />
+		<part Name="Container" Preposition="on" OpenSound="Sounds/Interact/sfx_interact_open_bookshelf" />
+		<inventoryobject Blueprint="Sowers_Seed" Chance="30" Number="2d2" />
+		<tag Name="ExcludeFromDynamicEncounters" />
+	</object>
 </objects>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<objects>
+
+<!--heavenpiercer encounters-->
+
+	<object Name="Aric_Skycleave_Clanfire_placer" Inherits="Widget">
+		<part Name="PopulationSpawner" Specification="@Aric_Skycleave_Clanfire" Range="2" />
+	</object>
+	
+	<object Name="Aric_Skycleave_Patrol_placer" Inherits="Widget">
+		<part Name="PopulationSpawner" Specification="@Aric_Skycleave_Patrol" Range="2" />
+	</object>
+	
+	<object Name="Aric_Templar_Scout_placer" Inherits="Widget">
+		<part Name="PopulationSpawner" Specification="@Aric_Templar_Scouts" Range="2" />
+	</object>
+	
+	<object Name="Aric_Esper_custody_battle_placer" Inherits="Widget">
+		<part Name="PopulationSpawner" Specification="@Aric_Esper_custody_battle" Range="5" />
+	</object>
+	
+	<object Name="Aric_Seeker_hunters_placer" Inherits="Widget">
+		<part Name="PopulationSpawner" Specification="@Aric_Seeker_Party" Range="2" />
+	</object>
+	
+	<object Name="Aric_Juice_Sap_Nest_placer" Inherits="Widget">
+		<part Name="PopulationSpawner" Specification="@Aric_Juice_Sap_Nest" Range="2" />
+	</object>
+	
+	<object Name="Aric_Breathbeard_Nest_placer" Inherits="Widget">
+		<part Name="PopulationSpawner" Specification="@Aric_Breathbeard_Nest" Range="2" />
+	</object>
+	
+	<object Name="Aric_PistonPressController" Inherits="Widget">
+		<part Name="Render" Visible="false" RenderLayer="20" TileColor="&amp;y" DetailColor="Y" DisplayName="machine press" RenderString="0" ColorString="&amp;y" Occluding="false" RenderIfDark="true"/>
+		<part Name="Physics" Solid="false" IsReal="false"/>
+		<part Name="PistonPressController" Directions="NS" />
+	</object>
+	
+	<object Name="Aric_Corpse_placer" Inherits="Widget">
+		<part Name="PopulationSpawner" Specification="@Aric_Ekuemekiyye_Corpses" />
+	</object>
+  
+  
+  	<object Name="Aric_Grove_Guardian_placer" Inherits="Widget">
+		<part Name="PopulationSpawner" Specification="@Aric_Grove_Guardians" Range="20" />
+	</object>
+	
+	<object Name="Aric_Stockade_Visitor_placer" Inherits="Widget">
+		<part Name="PopulationSpawner" Specification="@GoatfolkParty" Range= "20" />
+	</object>
+	
+	<object Name="Aric_HoloJungle_placer" Inherits="Widget">
+		<part Name="PopulationSpawner" Specification="@Aric_HoloJungle" Range= "5"/>
+	</object>	
+	
+	
+	<!--Demonstration -->
+	<object Name="Aric_Drone_Patrol_placer" Inherits="Widget">
+		<part Name="PopulationSpawner" Specification="@Aric_security_deployment_standard" Range="3" />
+	</object>
+	
+	<object Name="Aric_Drone_Force_placer" Inherits="Widget">
+		<part Name="PopulationSpawner" Specification="@Aric_security_deployment_heavy" Range="3" />
+	</object>
+	
+	<object Name="Aric_Military_Drone_Patrol_placer" Inherits="Widget">
+		<part Name="PopulationSpawner" Specification="@Aric_military_deployment_standard" Range="3" />
+	</object>
+	
+	<object Name="Aric_Military_Drone_Force_placer" Inherits="Widget">
+		<part Name="PopulationSpawner" Specification="@Aric_military_deployment_heavy" Range="3" />
+	</object>
+	
+	<object Name="Aric_Jungle_Guerilla_placer" Inherits="Widget">
+		<part Name="PopulationSpawner" Specification="@Aric_jungle_radicals" Range="3" />
+	</object>
+	
+	<object Name="Aric_Miner_Radical_placer" Inherits="Widget">
+		<part Name="PopulationSpawner" Specification="@Aric_mining_radicals" Range="3" />
+	</object>
+	
+	<object Name="Aric_Corpo_Ninja_placer" Inherits="Widget">
+		<part Name="PopulationSpawner" Specification="@Aric_corpo_ninjas" Range="3" />
+	</object>
+	
+	
+  <!-- camps -->
+  
+    <object Name="Aric_Ziggurat_6x6_placer" Inherits="Widget">
+    <part Name="MapChunkPlacement" Map="Aric_ekuemekiyye_ziggurat_6x6.rpm" Width="6" Height="6" />
+	</object>
+     <object Name="Aric Ekuemekiyye Fortification" Inherits="Widget">
+    <part Name="MapChunkPlacement" Map="Aric_ekuemekiyye_fortification.rpm" Width="3" Height="3" />
+	</object>
+	
+	<object Name="Aric Ekuemekiyye Cage" Inherits="Widget">
+		<part Name="MapChunkPlacement" Map="Aric_ekuemekiyye_cage.rpm" Width="5" Height="4" />
+	</object>
+	
+	<object Name="Aric Holo Office" Inherits="Widget">
+		<part Name="MapChunkPlacement" Map="Aric_Office_Holo.rpm" Width="80" Height="25" />
+	</object>
+	
+	<object Name="Aric Holo Urban" Inherits="Widget">
+		<part Name="MapChunkPlacement" Map="Aric_Urban_Holo.rpm" Width="80" Height="25" />
+	</object>
+	
+<!-- testing-->
+
+	<object Name="horti" Inherits="Widget">
+		<part Name="PopulationSpawner" Specification="@Aric Hortis" Range="2" />
+	</object>
+
+	<object Name="suns" Inherits="Widget">
+		<part Name="PopulationSpawner" Specification="@Aric Sunpriests" Range="2" />
+	</object>
+
+	<object Name="moon" Inherits="Widget">
+		<part Name="PopulationSpawner" Specification="@Aric Moonpriests" Range="2" />
+	</object>
+
+	<object Name="syzgy" Inherits="Widget">
+		<part Name="PopulationSpawner" Specification="@Aric Syzgy" Range="2" />
+	</object>
+
+	<object Name="arti" Inherits="Widget">
+		<part Name="PopulationSpawner" Specification="@Aric Artis" Range="2" />
+	</object>
+
+	<object Name="consul" Inherits="Widget">
+		<part Name="PopulationSpawner" Specification="@Aric Consuls" Range="2" />
+	</object>
+
+	<object Name="prae" Inherits="Widget">
+		<part Name="PopulationSpawner" Specification="@Aric Praetorians" Range="2" />
+	</object>
+
+	<object Name="eunuch" Inherits="Widget">
+		<part Name="PopulationSpawner" Specification="@Aric Eunuchs" Range="2" />
+	</object>
+
+	<object Name="godchild" Inherits="Widget">
+		<part Name="PopulationSpawner" Specification="@Aric Godchild" Range="2" />
+	</object>
+
+	<object Name="hearth" Inherits="Widget">
+		<part Name="PopulationSpawner" Specification="@Aric Hearth" Range="2" />
+	</object>
+
+	<object Name="deep" Inherits="Widget">
+		<part Name="PopulationSpawner" Specification="@Aric Deep" Range="2" />
+	</object>
+
+	<object Name="wheel" Inherits="Widget">
+		<part Name="PopulationSpawner" Specification="@Aric Wheel" Range="2" />
+	</object>	
+</objects>

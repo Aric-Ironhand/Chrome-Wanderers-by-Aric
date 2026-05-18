@@ -117,7 +117,7 @@ namespace XRL.World.Parts
             {
                 return;
             }
-            string text = PopulationManager.GenerateOne("DynamicObjectsTable:AjiConch2")?.Blueprint;
+            string text = PopulationManager.GenerateOne("DynamicObjectsTable:AricAjiConch2")?.Blueprint;
             if (text.IsNullOrEmpty())
             {
                 return;

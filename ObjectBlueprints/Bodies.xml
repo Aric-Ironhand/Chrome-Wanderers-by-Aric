@@ -5,7 +5,9 @@
 	 <bodyparttypevariants>
 
 		<bodyparttypevariant VariantOf="Missile Weapon" Type="Holster" LimbBlueprintProperty="SeveredHardpointBlueprint" LimbBlueprintDefault="SeveredHardpoint" RequiresType="" Category="Cloth" Abstract="true" Appendage="false" UsuallyOn="Body" Branching="Lateral,Vertical,Stratal,Longitudinal" />   
-
+		
+		<bodyparttypevariant VariantOf="Tail" Type="Robotic Tail" Category="Mechanical" />
+		
 	 </bodyparttypevariants>
 
 	<anatomies>
@@ -28,6 +30,18 @@
 				  <part Type="Hands" DependsOn="Hands" />
 				  <part Type="Feet" />
 			  </anatomy>
+			  
+			<anatomy Name="Aric_Serpentine_Robot" Category="Mechanical" ThrownWeapon="Middle Hardpoint">
+				<part Type="Head Section">
+					<part Type="Faceplate" />
+				</part>
+				<part Type="Chassis" />
+				<part Type="Hardpoint" Laterality="Right" />
+				<part Type="Hardpoint" Laterality="Left" />
+				<part Type="Undercarriage" />
+				<part Type="Robotic Tail" />
+
+			</anatomy>			  
 
 
 	</anatomies>

@@ -291,7 +291,7 @@
 	<object Weight="1" Blueprint="Aric Priest of All Suns" Number="1"  />
 	<object Weight="1" Blueprint="Aric Priest of All Moons" Number="1"  />
 	<object Weight="2" Blueprint="Aric Horticulturalist" Number="1-2"  />
-	<table Weight="196" Name="Nothing" />
+	<table Weight="395" Name="Nothing" />
   </group>
 </population>
 
@@ -405,7 +405,780 @@
     
   </population>
   
+ <!-- Merchant wares -->
  
-	    
+   <population Name="Aric Ekuemekiyye Wares">
 	
+		<group Name="Arrows" Style="pickeach">
+		
+			<object Chance="25" Blueprint="Aric Barbed Arrow1" Number="4d6" />
+			<object Chance="25" Blueprint="Aric Barbed Arrow2" Number="2d6" />
+			<object Chance="25" Blueprint="Aric Rusting Arrow1" Number="4d6" />
+			<object Chance="25" Blueprint="Aric Rusting Arrow2" Number="2d6" />
+			<object Chance="25" Blueprint="Aric Toxin Arrow1" Number="4d6" />
+			<object Chance="25" Blueprint="Aric Toxin Arrow2" Number="2d6" />
+			<table Chance= "100" Name="Arrows 5"/>
+		</group>
+		
+		<table Name="Ingredients_MidTiers" Number="15-20"/>
+		<table Name="Aric Ekuemekiyye Proprietary" Number="3-4"/>
+		<table Name="Junk 5" Number="3-5" />
+		<table Name="Junk 6" Number="3-5" />
+		<table Name="Junk 7" Number="3-5" />		
+		
+  </population>
+  
+  <population Name="Aric Ekuemekiyye Proprietary">
+    
+	<group Name="Items" Style="pickone">
+	
+		<object Weight="2" Blueprint="Aric Camoflauged Flexivest" Number="1" />
+		<object Weight="1" Blueprint="Aric Sunbird Bow" Number="1" />
+		<object Weight="3" Blueprint="Aric Mace of the Sun1" Number="1" />
+		<object Weight="2" Blueprint="Aric Mace of the Sun2" Number="1" />
+		<object Weight="3" Blueprint="Aric Sickle of the Moon1" Number="1" />
+		<object Weight="2" Blueprint="Aric Sickle of the Moon2" Number="1" />
+		<object Weight="2" Blueprint="Aric Slumberling Cloak" Number="1" />
+		<object Weight="2" Blueprint="Aric Fanged Sun and Moon Mask" Number="1" />
+	
+	</group>
+	
+  </population>
+  
+    <population Name="Aric Ibul Wares">
+  
+  		<table Name="Aric Ibul Proprietary" Number="1"/>
+		<table Name="Junk 5" Number="2-4" />
+		<table Name="Junk 6" Number="2-4" />
+		<table Name="Village Tinker 5" />
+		<object Blueprint="Jewel-Encrusted Item" Number="2-3" />
+		<table Name="Gemstones" Number="3-4" />
+    
+  </population>
+  
+  <population Name="Aric Ibul Proprietary">
+ 
+	<group Name= "proprietary tech" Style="pickone">
+
+		<object Weight="1" Blueprint="Aric Artifex Floating Carbine" Number="1" />
+		<object Weight="1" Blueprint="Aric Artifex Floating Laser Pistol" Number="1" />
+		<object Weight="1" Blueprint="Aric Artifex Floating Sniper" Number="1" />
+    </group>
+	
+  </population>
+  
+  <population Name="Aric Ibul Wares2">
+  
+  		<table Name="Aric Ibul Proprietary Adv" Number="1"/>
+		<table Name="Junk 5" Number="2-4" />
+		<table Name="Junk 6" Number="2-4" />
+		<table Name="Junk 7" Number="2-4" />
+		<table Name="Village Tinker 6" />
+		<object Blueprint="Jewel-Encrusted Item" Number="2-3" />
+		<table Name="Gemstones" Number="3-4" />
+    
+  </population>
+  
+  <population Name="Aric Ibul Proprietary Adv">
+ 
+	<group Name= "proprietary tech" Style="pickone">
+		<object Weight="1" Blueprint="Aric Advanced Stun Rod" Number="1" />
+		<object Weight="1" Blueprint="Aric Eunuch ArmDagger6" Number="1" />
+		<object Weight="1" Blueprint="Aric Artifex Floating Hand Rail" Number="1" />
+		<object Weight="1" Blueprint="Aric Artifex Floating Spaser Pistol" Number="1" />
+    </group>
+	
+  </population>
+
+
+  <population Name="Aric Yawningmoon Wares">
+  
+  		<table Name="Junk 5" Number="3-5" />
+		<table Name="Junk 6" Number="3-5" />
+  		<table Name="Aric Yawningmoon Proprietary" Number="3-4"/>
+		<table Name="Gemstones" Number="3-4" />
+    
+  </population>
+  
+  <population Name="Aric Yawningmoon Proprietary">
+  
+  <group Name= "proprietary tech" Style="pickone">
+  		<object Weight="1" Blueprint="Aric Fuming Conch of the Aji" Number="1" />
+		<object Weight="3" Blueprint="Aric Fuming Hand Cannon" Number="1" />
+		<object Weight="1" Blueprint="Aric Heavy Fuming Hand Cannon" Number="1" />
+		<object Weight="2" Blueprint="Aric Combat Jackhammer" Number="1" />
+		<object Weight="3" Blueprint="Nanopneumatic Jackhammer" Number="1" />
+		<object Weight="3" Blueprint="Billowing Conch of the Aji" Number="1" />
+		<object Weight="1" Blueprint="Aric GasTumbler" Number="1" />
+	</group>	
+    
+  </population>
+  
+  <!-- Encampment tables -->
+  	  <population Name="Aric Ibul Specialist">
+	  
+			<group Name="Creatures" Style="pickone">
+			
+			  <object Weight="10" Blueprint="Aric Artifex home" />
+			  <object Weight="10" Blueprint="Aric Eunuch" />
+			  <object Weight="10" Blueprint="Aric Praetorian" />
+			
+			</group>
+		</population>
+  
+  <population Name="Aric_Ibul_building">
+		
+			<group Name="Contents" Style="pickeach">
+			
+				  <object Chance="100" Number="1-2" Blueprint="Aric Servitor" />
+				  <object Chance="25" Number="1" Blueprint="Chest2" />
+				  <object Chance="25" Number="1" Blueprint="Chest3" />
+				  <object Chance="75" Number="1" Blueprint="Table" />
+				  <object Chance="5" Number="1" Blueprint="Chest4" />
+				  
+			</group>
+
+			<group Chance="100" Name="Lieutenant" Style="pickone">
+			
+				  <object Weight="50" Number="1" Blueprint="Aric Artifex home" />
+				  <object Weight="50" Number="1" Blueprint="Aric Eunuch" />
+				  <object Weight="25" Number="1" Blueprint="Aric Praetorian" />
+				 
+			</group>
+		
+		</population>
+		
+		<population Name="Aric Ibul Expedition">
+			<group Name="Contents" Style="pickeach">
+			  <group Name="Group1" Style="pickone">
+				<table Weight="80" Name="Aric Ibul Specialist" />
+				<object Weight="20" Number="3" Blueprint="Aric Servitor" />
+			  </group>
+			  <group Name="Group2" Style="pickone">
+				<table Weight="80" Name="Aric Ibul Specialist" />
+				<object Weight="20" Number="3" Blueprint="Aric Servitor" />
+			  </group>
+			  <group Name="Group3" Style="pickone">
+				<table Weight="80" Name="Aric Ibul Specialist" />
+				<object Weight="20" Number="3" Blueprint="Aric Servitor" />
+			  </group>
+			  <group Name="Group4" Style="pickone">
+				<table Weight="80" Name="Aric Ibul Specialist" />
+				<object Weight="20" Number="3" Blueprint="Aric Servitor" />
+			  </group>
+
+			</group>
+		</population>
+		
+		<population Name="Aric_Ibul_HQ">
+		
+			<group Name="Contents" Style="pickeach">
+			
+				  <object Chance="100" Number="1" Blueprint="Aric Consul Commander" />
+				  <object Chance="100" Number="1" Blueprint="Ornate Table" />
+				  <object Chance="100" Number="1" Blueprint="Gravchair" />
+				  <object Chance="25" Number="1" Blueprint="Chest5"/>
+				  
+			</group>
+		</population>
+			
+		<population Name="Aric_Ibul_Trader_1">
+			<group Name="Contents" Style="pickeach">
+			
+				  <object Chance="100" Number="1" Blueprint="Aric Ibul Trader" />
+				  <object Chance="100" Number="1" Blueprint="Aric Servitor" />
+				  <object Chance="100" Number="1" Blueprint="Metal Workbench" />
+				  <object Chance="25" Number="1" Blueprint="Chest5"/>
+				  <object Chance="100" Number="1" Blueprint="AricIbulSign1"/>
+				  
+			</group>
+
+
+		
+		</population>
+		
+		<!-- Ekuemekiyye -->
+		
+		<population Name="Aric Ekuemekiyye Specialist">
+	  
+			<group Name="Creatures" Style="pickone">
+			
+			  <object Weight="10" Blueprint="Aric Horticulturalist" />
+			  <object Weight="10" Blueprint="Aric Priest of All Moons" />
+			  <object Weight="10" Blueprint="Aric Syzgyrior" />
+			
+			</group>
+		</population>
+		
+		  <population Name="Aric_Ekuemekiyye_building">
+		
+			<group Name="Contents" Style="pickeach">
+			
+				  <object Chance="100" Number="1-2" Blueprint="Aric Syzgyrior Initiate" />
+				  <object Chance="25" Number="1" Blueprint="Chest2" />
+				  <object Chance="25" Number="1" Blueprint="Chest3" />
+				  <object Chance="75" Number="1" Blueprint="Table" />
+				  <object Chance="5" Number="1" Blueprint="Chest4" />
+				  
+			</group>
+
+			<group Chance="100" Name="Lieutenant" Style="pickone">
+			
+			  <object Weight="10" Blueprint="Aric Horticulturalist" />
+			  <object Weight="10" Blueprint="Aric Priest of All Moons" />
+			  <object Weight="10" Blueprint="Aric Syzgyrior" />
+				 
+			</group>
+		
+		</population>
+		
+		<population Name="Aric Ekuemekiyye Expedition">
+			<group Name="Contents" Style="pickeach">
+			  <group Name="Group1" Style="pickone">
+				<table Weight="80" Name="Aric Ekuemekiyye Specialist" />
+				<object Weight="20" Number="3" Blueprint="Aric Syzgyrior Initiate" />
+			  </group>
+			  <group Name="Group2" Style="pickone">
+				<table Weight="80" Name="Aric Ekuemekiyye Specialist" />
+				<object Weight="20" Number="3" Blueprint="Aric Syzgyrior Initiate" />
+			  </group>
+			  <group Name="Group3" Style="pickone">
+				<table Weight="80" Name="Aric Ekuemekiyye Specialist" />
+				<object Weight="20" Number="3" Blueprint="Aric Syzgyrior Initiate" />
+			  </group>
+			  <group Name="Group4" Style="pickone">
+				<table Weight="80" Name="Aric Ekuemekiyye Specialist" />
+				<object Weight="20" Number="3" Blueprint="Aric Syzgyrior Initiate" />
+			  </group>
+
+			</group>
+		</population>
+		
+		<population Name="Aric_Ekuemekiyye_HQ">
+		
+			<group Name="Contents" Style="pickeach">
+			
+				  <object Chance="100" Number="1" Blueprint="Aric Priest of All Suns Commander" />
+				  <object Chance="100" Number="1" Blueprint="Ornate Table" />
+				  <object Chance="25" Number="1" Blueprint="Chest5"/>
+				  
+			</group>
+		</population>
+			
+		<population Name="Aric_Ekuemekiyye_Trader_1">
+		
+			<group Name="Contents" Style="pickeach">
+			
+				  <object Chance="100" Number="1" Blueprint="Aric Ekuemekiyye Trader" />
+				  <object Chance="100" Number="1" Blueprint="Aric Syzgyrior Initiate" />
+				  <object Chance="25" Number="1" Blueprint="Chest5"/>
+				  <object Chance="100" Number="1" Blueprint="AricEkuemekiyyeSign1"/>
+				  
+			</group>
+
+		</population>
+		
+		<population Name="Aric_Ekuemekiyye_Corpses">
+		
+			<group Name="Contents" Style="pickone">
+			
+				  <object Weight="60" Number="1" Blueprint="Goatfolk Corpse" />
+				  <object Weight="30" Number="1" Blueprint="Woodsprog Corpse" />
+				  <table Weight="10" Name="DynamicObjectsTable:Corpses" />
+				  
+			</group>
+
+		</population>
+		
+		
+		
+		<!-- Yawningmoon -->
+		
+		<population Name="Aric Yawningmoon Specialist">
+	  
+			<group Name="Creatures" Style="pickone">
+			
+			  <object Weight="10" Blueprint="Aric Child of the Hearth" />
+			  <object Weight="10" Blueprint="Aric Child of the Deep" />
+			  <object Weight="10" Blueprint="Aric Child of the Wheel" />
+			
+			</group>
+		</population>
+		
+		  <population Name="Aric_Yawningmoon_building">
+		
+			<group Name="Contents" Style="pickeach">
+			
+				  <object Chance="100" Number="1-2" Blueprint="Aric Child of the Wheel Apprentice" />
+				  <object Chance="25" Number="1" Blueprint="Chest2" />
+				  <object Chance="25" Number="1" Blueprint="Chest3" />
+				  <object Chance="75" Number="1" Blueprint="Table" />
+				  <object Chance="5" Number="1" Blueprint="Chest4" />
+				  
+			</group>
+
+			<group Chance="100" Name="Lieutenant" Style="pickone">
+			
+			  <object Weight="10" Blueprint="Aric Child of the Hearth" />
+			  <object Weight="10" Blueprint="Aric Child of the Deep" />
+			  <object Weight="10" Blueprint="Aric Child of the Wheel" />
+				 
+			</group>
+		
+		</population>
+		
+		<population Name="Aric Yawningmoon Expedition">
+			<group Name="Contents" Style="pickeach">
+			  <group Name="Group1" Style="pickone">
+				<table Weight="80" Name="Aric Yawningmoon Specialist" />
+				<object Weight="20" Number="3" Blueprint="Aric Child of the Wheel Apprentice" />
+			  </group>
+			  <group Name="Group2" Style="pickone">
+				<table Weight="80" Name="Aric Yawningmoon Specialist" />
+				<object Weight="20" Number="3" Blueprint="Aric Child of the Wheel Apprentice" />
+			  </group>
+			  <group Name="Group3" Style="pickone">
+				<table Weight="80" Name="Aric Yawningmoon Specialist" />
+				<object Weight="20" Number="3" Blueprint="Aric Child of the Wheel Apprentice" />
+			  </group>
+			  <group Name="Group4" Style="pickone">
+				<table Weight="80" Name="Aric Yawningmoon Specialist" />
+				<object Weight="20" Number="3" Blueprint="Aric Child of the Wheel Apprentice" />
+			  </group>
+
+			</group>
+		</population>
+		
+		<population Name="Aric_Yawningmoon_HQ">
+		
+			<group Name="Contents" Style="pickeach">
+			
+				  <object Chance="100" Number="1" Blueprint="Aric Fuming God-Child Commander" />
+				  <object Chance="100" Number="1" Blueprint="Ornate Table" />
+				  <object Chance="25" Number="1" Blueprint="Chest5"/>
+				  
+			</group>
+		</population>
+			
+		<population Name="Aric_Yawningmoon_Trader_1">
+		
+			<group Name="Contents" Style="pickeach">
+			
+				  <object Chance="100" Number="1" Blueprint="Aric Yawningmoon Trader" />
+				  <object Chance="100" Number="1" Blueprint="Aric Child of the Wheel Apprentice" />
+				  <object Chance="25" Number="1" Blueprint="Chest5"/>
+				  <object Chance="100" Number="1" Blueprint="AricYawningmoonSign1"/>
+				  
+			</group>
+
+		</population>
+		
+		<!-- Quest reward tables -->
+		
+		<population Name="Aric_HeavenpiercerRewards">
+			<group Name="Contents" Style="pickeach">
+			
+				  <object Number="3" Blueprint="Aric Flawless Diamond" />
+				  <object Number="1" Blueprint="Aric Toxic Dart Bracer" />
+
+				  
+			</group>
+			
+		</population>
+			
+	<population Name="AricEkuemekiyye_Rewards">
+		<group Name="Rewards" Style="pickeach">
+
+			<table Name="Aric Ekuemekiyye Proprietary" />
+			<table Name="Aric Ekuemekiyye Proprietary" />
+			<table Name="Aric Ekuemekiyye Proprietary" />
+			<table Name="Aric Ekuemekiyye Proprietary" />
+			<table Name="Aric Ekuemekiyye Proprietary" />
+			<table Name="Aric Ekuemekiyye Proprietary" />
+			<table Name="Aric Ekuemekiyye Proprietary" />
+			<table Name="Aric Ekuemekiyye Proprietary" />
+			<table Name="Aric Ekuemekiyye Proprietary" />
+		</group>
+	</population>
+		
+		<!-- Quest specific tables -->
+		<population Name="Aric Spidermaster Minions">
+			<group Name="Creatures" Style="pickone">
+
+				<object Blueprint ="Greater Voider" Number="2"/>
+		  
+			</group>
+	  </population>
+		
+		<!-- Quest encounter tables -->
+		<!-- Heavenpiercer -->
+		
+		<population Name="Aric_Skycleave_Patrol">
+			<group Name="Contents" Style="pickeach">
+			
+				  <object Number="1-3" Blueprint="Aric Marauder" />
+				  
+			</group>
+
+		</population>
+		
+		<population Name="Aric_Skycleave_Clanfire">
+			<group Name="Contents" Style="pickeach">
+			
+				  <object Number="1-3" Blueprint="Aric Marauder"/>
+				  <object Number="1" Blueprint="Aric MarshTaur"/>
+				  <object Number="3-5" Blueprint="Humanoid Corpse"/>
+				  <object Number="1-2" Blueprint="Brazier"/>
+				  <object Blueprint="Bloodsplatter" Number="4-8" Hint="AdjacentToEndsWith: Corpse"/>
+				  
+			</group>
+
+		</population>
+		
+		<population Name="Aric_Esper_custody_battle">
+			<group Name="Contents" Style="pickeach">
+			
+				  <object Number="3" Blueprint="Goatfolk Qlippoth" />
+				  <table Name="Aric_Seeker_Party"/>
+				  
+			</group>
+
+		</population>
+		
+		<population Name="Aric_Seeker_Party">
+			<group Name="Leader" Style="pickone">
+			
+				  <object Number="1" Blueprint="Aric Apostle of the Sightless Way" />
+				  <object Number="1" Blueprint="High Dervish of the Sightless Way" />
+				  
+			</group>
+			
+			<group Name="minion1" Style="pickone">
+			
+				  <object Weight="60" Blueprint="Disciple of the Sightless Way" />
+				  <object Weight="40" Blueprint="Dervish of the Sightless Way" />
+				  
+			</group>
+			
+			<group Name="minion2" Style="pickone">
+			
+				  <object Weight="60" Blueprint="Disciple of the Sightless Way" />
+				  <object Weight="40" Blueprint="Dervish of the Sightless Way" />
+				  
+			</group>
+			
+			<group Name="minion3" Style="pickone">
+			
+				  <object Weight="60" Blueprint="Disciple of the Sightless Way" />
+				  <object Weight="40" Blueprint="Dervish of the Sightless Way" />
+				  
+			</group>
+
+		</population>
+		
+		<population Name="Aric_Juice_Sap_Nest">
+			<group Name="Contents" Style="pickeach">
+			
+				  <object Number="5-8" Blueprint="Juice Sap" />
+				  <object Number="10" Blueprint="Aric Nest Texture" />
+				  
+			</group>
+
+		</population>
+		
+		<population Name="Aric_Templar_Scouts">
+			<group Name="Contents" Style="pickeach">
+			
+				  <table Number="3" Name="Templar" />
+				  
+			</group>
+
+		</population>
+		
+		<population Name="Aric_Breathbeard_Nest">
+			<group Name="Contents" Style="pickeach">
+			
+				  <object Number="2" Blueprint="Elder Breather" />
+				  <object Number="2" Blueprint="Breather" />
+				  <object Number="15" Blueprint="Aric Nest Texture" />
+				  
+			</group>
+
+		</population>
+		
+		<population Name="Aric_HoloJungle">
+			<group Name="Contents" Style="pickeach">
+			
+				<object Chance="95" Number="160-240" Blueprint="Aric Hardlight Swarmshade Tree" />
+				<object Chance="95" Number="160-240" Blueprint="Aric Hardlight Ziv Bough" />
+				<object Chance="95" Number="60-100" Blueprint="Aric Hardlight Shimscale Mangrove Tree" />
+				<object Chance="40" Number="15-30" Blueprint="Aric Hardlight Star Palm" />
+				  
+			</group>
+
+		</population>
+		
+		<population Name="Aric_security_deployment_standard">
+			<group Name="Contents" Style="pickeach">
+			
+				<object Blueprint="Aric Ancient Laser Drone" Number="3" />
+				  
+			</group>
+
+		</population>	
+
+		<population Name="Aric_security_deployment_heavy">
+			<group Name="Contents" Style="pickeach">
+			
+				<object Number="6" Blueprint="Aric Ancient Laser Drone" />
+				  
+			</group>
+
+		</population>	
+
+		<population Name="Aric_military_deployment_standard">
+			<group Name="Contents" Style="pickeach">
+			
+				<object Number="3" Blueprint="Aric Ancient Hand Rail Drone" />
+				  
+			</group>
+
+		</population>	
+
+		<population Name="Aric_military_deployment_heavy">
+			<group Name="Contents" Style="pickeach">
+			
+				<object Number="6" Blueprint="Aric Ancient Hand Rail Drone" />
+				  
+			</group>
+
+		</population>
+
+		<population Name="Aric_jungle_radicals">
+			<group Name="Contents" Style="pickeach">
+			
+				<object Number="4-6" Blueprint="Aric Hardlight Jungle Radical" />
+				<object Number="1-2" Blueprint="Aric Hardlight Sawhander" />
+				  
+			</group>
+
+		</population>	
+
+		<population Name="Aric_mining_radicals">
+			<group Name="Contents" Style="pickeach">
+			
+				<object Number="4-6" Blueprint="Aric Hardlight Mining Radical" />
+				<object Number="1-2" Blueprint="Aric Hardlight Drillbot" />
+				  
+			</group>
+
+		</population>	
+
+		<population Name="Aric_corpo_ninjas">
+			<group Name="Contents" Style="pickeach">
+			
+				<object Number="1" Blueprint="Aric Hardlight Commando" />
+				<object Number="2" Blueprint="Aric Hardlight Ninja" />
+				  
+			</group>
+
+		</population>			
+		
+		
+		<population Name="Aric_Pantry_Contents">
+			<group Name="Contents" Style="pickeach">
+			
+				  <table Number="3-5" Name="Ingredients" />
+				  
+			</group>
+
+		</population>
+		
+		<population Name="Aric_Pantry_Contents">
+			<group Name="Contents" Style="pickeach">
+			
+				  <table Number="3-5" Name="Ingredients" />
+				  
+			</group>
+
+		</population>
+		
+		<!--stockade-->
+		
+		<population Name="Aric_Sniper_Or_Bully">
+			<group Name="Contents" Style="pickone">
+			
+				  <object Number="1" Weight= "20" Blueprint="Aric Grovewarden" />
+				  <object Number="1" Weight= "10" Blueprint="Goatfolk Bully" />
+				  
+			</group>
+
+		</population>
+		
+		<population Name="Aric_Grove_Guardians">
+			<group Name="Contents" Style="pickeach">
+			
+				  <table Number="6" Name="Aric_Sniper_Or_Bully"/>
+				  
+			</group>
+
+		</population>
+		
+		<!-- Mecha pilots-->
+		
+		<population Name="Aric Ekuemekiyye Pilots">
+	  
+			<group Name="Creatures" Style="pickone">
+			
+			  <object Weight="10" Blueprint="Aric Priest of All Moons 3"/>
+			  <object Weight="10" Blueprint="Aric Syzgyrior 3"/>
+			
+			</group>
+			
+		</population>
+	
+<!-- testing -->	
+		<population Name="Aric Hortis">
+	  
+			<group Name="Creatures" Style="pickeach">
+			
+			  <object Blueprint="Aric Horticulturalist"/>
+			  <object Blueprint="Aric Horticulturalist 2"/>
+			  <object Blueprint="Aric Horticulturalist 3"/>
+			
+			</group>
+			
+		</population>
+		
+		<population Name="Aric Sunpriests">
+	  
+			<group Name="Creatures" Style="pickeach">
+			
+			  <object Blueprint="Aric Priest of All Suns"/>
+			  <object Blueprint="Aric Priest of All Suns 2"/>
+			  <object Blueprint="Aric Priest of All Suns 3"/>
+			
+			</group>
+			
+		</population>
+		
+		<population Name="Aric Moonpriests">
+	  
+			<group Name="Creatures" Style="pickeach">
+			
+			  <object Blueprint="Aric Priest of All Moons"/>
+			  <object Blueprint="Aric Priest of All Moons 2"/>
+			  <object Blueprint="Aric Priest of All Moons 3"/>
+			
+			</group>
+			
+		</population>
+
+		<population Name="Aric Syzgy">
+	  
+			<group Name="Creatures" Style="pickeach">
+			
+			  <object Blueprint="Aric Syzgyrior"/>
+			  <object Blueprint="Aric Syzgyrior 2"/>
+			  <object Blueprint="Aric Syzgyrior 3"/>
+			
+			</group>
+			
+		</population>
+		
+		<population Name="Aric Artis">
+	  
+			<group Name="Creatures" Style="pickeach">
+			
+			  <object Blueprint="Aric Artifex"/>
+			  <object Blueprint="Aric Artifex 2"/>
+			  <object Blueprint="Aric Artifex 3"/>
+			
+			</group>
+			
+		</population>
+
+		<population Name="Aric Consuls">
+	  
+			<group Name="Creatures" Style="pickeach">
+			
+			  <object Blueprint="Aric Consul"/>
+			  <object Blueprint="Aric Consul 3"/>
+			  <object Blueprint="Aric Consul 2"/>
+			
+			</group>
+			
+		</population>		
+
+		<population Name="Aric Praetorians">
+	  
+			<group Name="Creatures" Style="pickeach">
+			
+			  <object Blueprint="Aric Praetorian"/>
+			  <object Blueprint="Aric Praetorian 2"/>
+			  <object Blueprint="Aric Praetorian 3"/>
+			
+			</group>
+			
+		</population>	
+
+		<population Name="Aric Eunuchs">
+	  
+			<group Name="Creatures" Style="pickeach">
+			
+			  <object Blueprint="Aric Eunuch"/>
+			  <object Blueprint="Aric Eunuch 2"/>
+			  <object Blueprint="Aric Eunuch 3"/>
+			
+			</group>
+			
+		</population>	
+
+		<population Name="Aric Godchild">
+	  
+			<group Name="Creatures" Style="pickeach">
+			
+			  <object Blueprint="Aric Fuming God-Child"/>
+			  <object Blueprint="Aric Fuming God-Child 2"/>
+			  <object Blueprint="Aric Fuming God-Child 3"/>
+			
+			</group>
+			
+		</population>
+
+		<population Name="Aric Hearth">
+	  
+			<group Name="Creatures" Style="pickeach">
+			
+			  <object Blueprint="Aric Child of the Hearth"/>
+			  <object Blueprint="Aric Child of the Hearth 2"/>
+			  <object Blueprint="Aric Child of the Hearth 3"/>
+			
+			</group>
+			
+		</population>	
+
+		<population Name="Aric Deep">
+	  
+			<group Name="Creatures" Style="pickeach">
+			
+			  <object Blueprint="Aric Child of the Deep"/>
+			  <object Blueprint="Aric Child of the Deep 2"/>
+			  <object Blueprint="Aric Child of the Deep 3"/>
+			
+			</group>
+			
+		</population>	
+
+		<population Name="Aric Wheel">
+	  
+			<group Name="Creatures" Style="pickeach">
+			
+			  <object Blueprint="Aric Child of the Wheel"/>
+			  <object Blueprint="Aric Child of the Wheel 2"/>
+			  <object Blueprint="Aric Child of the Wheel 3"/>
+			
+			</group>
+			
+		</population>			
 </populations>

@@ -10,6 +10,7 @@
 	<inventoryobject Blueprint="Ekuemekiyyen Greens" Number="3-4" />
 	<inventoryobject Blueprint="SalveTonic" Number="0-1" />
 	
+	<tag Name="Culture" Value="Ekuemekiyyen" />
 	<tag Name="BaseObject" Value="*noinherit" />
 	<property Name="NoLoot" Value="true" />
 	<part Name="RandomLoot" LootCreated="false" />
@@ -24,6 +25,7 @@
 	
 	<inventoryobject Blueprint="SalveTonic" Number="0-1" />
 	
+	<tag Name="Culture" Value="Ibulian" />
 	<tag Name="BaseObject" Value="*noinherit" />
 	<property Name="NoLoot" Value="true" />
 	<part Name="RandomLoot" LootCreated="false" />
@@ -32,38 +34,20 @@
 	
 	<object Name= "AricBaseYawningMoon" Inherits= "BaseTrueKin">
 	
-	<part Name= "Render" DetailColor="R" ColorString="&amp;y" />
+	<part Name= "Render" DetailColor="r" ColorString="&amp;y" />
 	<part Name="Brain" Factions="Aric YawningMoon-100" />
 	<part Name="Corpse" CorpseChance="100" CorpseBlueprint="Human Corpse" />
 	<part Name="CyberneticsHasImplants" Implants="AirCurrentMicrosensor@head" />
 	<inventoryobject Blueprint="Smoldered Mushroom" Number= "1-2" />
 	<inventoryobject Blueprint="SalveTonic" Number="0-2" />
 	
+	<tag Name="Culture" Value="Yawningmoon" />
 	<tag Name="BaseObject" Value="*noinherit" />
 	<property Name="NoLoot" Value="true" />
 	<part Name="RandomLoot" LootCreated="false" />
 	
 	</object>
-<!-- <anatomies>	
-	<anatomy Name= "HumanoidBelt">
-	 <part Type="Head">
-        <part Type="Face" />
-      </part>
-      <part Type="Back" />
-      <part Type="Arm" Laterality="Right">
-        <part Type="Hand" Laterality="Right" SupportsDependent="Hands" />
-      </part>
-      <part Type="Arm" Laterality="Left">
-        <part Type="Hand" Laterality="Left" SupportsDependent="Hands" />
-      </part>
-      <part Type="Missile Weapon" Laterality="Upper Right" />
-      <part Type="Missile Weapon" Laterality="Upper Left" />
-	  <part Type="Missile Weapon" Laterality="Lower Right" />
-      <part Type="Missile Weapon" Laterality="Lower Left" />
-      <part Type="Hands" DependsOn="Hands" />
-      <part Type="Feet" />
-	</anatomy>
-</anatomies>	 -->
+
 	
 	<!-- Ekuemekiyye Creatures -->
 	
@@ -141,7 +125,7 @@
 	
 	<object Name="Aric Horticulturalist 2" Inherits= "AricBaseEkuemekiyye">
 
-<part Name= "Render" Tile="creatures/caste_1.bmp" DisplayName="Horticulturalist Arborist" />
+<part Name= "Render" Tile="LymphHorticulturalist2.png" DisplayName="Horticulturalist Arborist" />
 	<part Name = "Description" Short="Arborists are responsible for maintaining the great trees that make up the toxic Ekuemekiyyen jungle, and discovering new specimens throughout the world. Unique among the Truekin, they are known to consume the plants of qud to temporarily manifest psychic powers of plant growth." />
 	
 	<stat Name="Level" Value="35" />
@@ -216,7 +200,7 @@
 	
 	<object Name="Aric Horticulturalist 3" Inherits= "AricBaseEkuemekiyye">
 
-<part Name= "Render" Tile="creatures/caste_1.bmp" DisplayName="Horticulturalist Jungleshaper" />
+<part Name= "Render" Tile="LymphHorticulturalist3.png" DisplayName="Horticulturalist Jungleshaper" />
 	<part Name = "Description" Short="Jungleshapers gather, grow and protect the toxic Jungle that encompasses the River Null on both sides. Unique among the Truekin, they are known to consume the plants of qud to temporarily manifest psychic powers of plant growth." />
 	
 	<stat Name="Level" Value="45" />
@@ -337,7 +321,7 @@
 	</object>
 
 	<object Name="Aric Priest of All Suns 2" Inherits= "AricBaseEkuemekiyye">
-<part Name= "Render" Tile="creatures/caste_2.bmp" DisplayName="High Priest of All Suns" />
+<part Name= "Render" Tile="LymphPriestSun2.png" DisplayName="High Priest of All Suns" />
 	<part Name = "Description" Short="It is said that a willing sacrifice pleases the sun most highly. It is thus that the Priests of all Suns are extremely persuasive. One way or another." />
 	
 	<stat Name="Level" Value="35" />
@@ -382,7 +366,7 @@
 	</object>
 	
 	<object Name="Aric Priest of All Suns 3" Inherits= "AricBaseEkuemekiyye">
-<part Name= "Render" Tile="creatures/caste_2.bmp" DisplayName="Arch Priest of All Suns" />
+<part Name= "Render" Tile="LymphPriestSun3.png" DisplayName="Arch Priest of All Suns" />
 	<part Name = "Description" Short="Archpriests are among the high leadership of Ekuemekiyye, responsible for the peaceful day, and the preparation of sacrifices for the priesthood of the Moon." />
 	
 	<stat Name="Level" Value="45" />
@@ -430,7 +414,7 @@
 	</object>
 	
 	<object Name="Aric Priest of All Moons" Inherits= "AricBaseEkuemekiyye">
-	<part Name= "Render" Tile="creatures/caste_3.bmp" DetailColor="Y" DisplayName="Aric Priest of All Moons" />
+	<part Name= "Render" Tile="creatures/caste_3.bmp" DetailColor="Y" DisplayName="Priest of All Moons" />
 	<part Name = "Description" Short="The priesthood of the Toxic Arboretum is a dual one- worshipping the dual aspects of the Syzgy. These priests lead during the night, when the savage moon rules, and are responsible for the sacrificial rites that cause the new sun to be born with each coming dawn." />
 	
 	<stat Name="Level" Value="25" />
@@ -472,7 +456,7 @@
 	</object>
 	
 	<object Name="Aric Priest of All Moons 2" Inherits= "AricBaseEkuemekiyye">
-	<part Name= "Render" Tile="creatures/caste_3.bmp" DetailColor="Y" DisplayName="High Priest of All Moons" />
+	<part Name= "Render" Tile="LymphPriestMoon2.png" DetailColor="Y" DisplayName="High Priest of All Moons" />
 	<part Name = "Description" Short="These warrior-priests lead hunting parties throughout the Arboretum and beyond. The responsibility of ensuring the Dawn is a great one." />
 	
 	<stat Name="Level" Value="35" />
@@ -513,7 +497,7 @@
 	</object>
 	
 	<object Name="Aric Priest of All Moons 3" Inherits= "AricBaseEkuemekiyye">
-	<part Name= "Render" Tile="creatures/caste_3.bmp" DetailColor="Y" DisplayName="Arch Priest of All Moons" />
+	<part Name= "Render" Tile="LymphPriestMoon3.png" DetailColor="Y" DisplayName="Arch Priest of All Moons" />
 	<part Name = "Description" Short="Archpriests lead only the most savage hunts on the Night of the Black Moon, where none that are caught survive to the altar." />
 	
 	<stat Name="Level" Value="45" />
@@ -615,7 +599,7 @@
 	</object>
 	
 	<object Name="Aric Syzgyrior 2" Inherits= "AricBaseEkuemekiyye">
-<part Name= "Render" Tile="creatures/caste_4.bmp" DisplayName="Syzgyrior Sacrifice Hunter" />
+<part Name= "Render" Tile="LymphSyzgyrior2.png" DisplayName="Syzgyrior Sacrifice Hunter" />
 	<part Name = "Description" Short="The twin souls of the Syzgyrior serve the sun and moon equally, prowling through the jungle for sacrifice, and guarding the cities through the day of rest." />
 	
 	<stat Name="Level" Value="35" />
@@ -689,7 +673,7 @@
 	
 	
 	<object Name="Aric Syzgyrior 3" Inherits= "AricBaseEkuemekiyye">
-		<part Name= "Render" Tile="creatures/caste_4.bmp" DisplayName="Syzgyrior Arachnowarrior" />
+		<part Name= "Render" Tile="Arachnawarrior.png" DisplayName="Syzgyrior Arachnowarrior" />
 		<part Name="Description" Short="The greatest of the Syzgyrior eschew the cloaks of their brethren in favour of emulating a beast. Most terrifying of all is the arachnowarrior, the many blades and toxic fangs wearing down the defences of any foe."/>
 		<stat Name="Level" Value="45" />
 		<stat Name="Hitpoints" Value="220" />
@@ -757,6 +741,89 @@
 		
 	</object>
 	
+		<object Name="Aric Syzgyrior Initiate" Inherits= "AricBaseEkuemekiyye">
+	
+<part Name= "Render" Tile="creatures/caste_4.bmp" DisplayName="Syzgyrior Initiate" />
+	<part Name = "Description" Short="The pelt-caped Syzgyrior serve the dual priesthood of Ekuemekiyye as warriors, servants and hunters of sacrifice. The youngest of this caste, yet to be selected by a master, serve the Ziggurat to which they were born." />
+	
+	<stat Name="Level" Value="10" />
+    <stat Name="Hitpoints" Value="30" />
+    <stat Name="Strength" sValue="24" />
+    <stat Name="Toughness" sValue="20" />
+    <stat Name="Willpower" sValue="20" />
+	<stat Name="Ego" sValue= "20"/>
+	<stat Name="Agility" sValue= "24"/>
+	<stat Name="Intelligence" sValue = "20"/>
+	<stat Name="Speed" Value="125" />
+	<stat Name="AV" Value="5"/>
+	<stat Name="DV" Value="-8" />
+	
+	<tag Name="Tier" Value="3" /> 
+	
+	<inventoryobject Blueprint="Panther's Cloak" />
+    <inventoryobject Blueprint="Aric Camoflauged Flexivest" />
+    
+	
+	<inventoryobject Blueprint="Aric Mace of the Sun1" />
+	<inventoryobject Blueprint="Aric Sickle of the Moon1" />
+	<inventoryobject Blueprint= "Sun and Moon Mask"/>
+	
+		<skill Name="Axe" />
+		<skill Name="Axe_Expertise" />
+		
+		<skill Name="Cudgel" />
+		<skill Name="Cudgel_Expertise" />
+		
+		<skill Name="Multiweapon_Fighting" />
+		<skill Name="Multiweapon_Flurry" />
+		<skill Name="Multiweapon_Proficiency"/>
+
+	</object>
+	
+	
+	<object Name="Aric VehicleEkuemekiyyeSerpentMecha" Inherits="VehicleTemplarMech">
+		<part Name="Body" Anatomy="Aric_Serpentine_Robot" />
+		<part Name="Render" DisplayName="ekuemekiyyen slitherfang mecha" Tile="com_aric_snakemech.png" DetailColor="W" ColorString="&amp;g" TileColor="&amp;g" />
+		<part Name="Description" Short="In the deepest forges beneath the great shrouded Ziggurats, crushing crysteel plates were layered over a serpentine frame of machine muscle. Caustic reagents were combined and injected into tumbling units and fed into facsimile salivary glands. The chromewrights actualised the greatest defender of the people of the Syzgy; the greatest terror to it's enemies." />
+		<part Name="Vehicle" Type="TemplarSwordMech" />
+		<part Name="VehiclePilotPopulation" Blueprint="Aric Priest of All Moons 3,Aric Syzgyrior 3" Table="Aric Ekuemekiyye Pilots" />
+		<inventoryobject Blueprint="Aric Mecha Crushing Bands" Number="1" />
+		<inventoryobject Blueprint="Aric Caustic Launcher" Number="1" />
+		<skill Name="Cudgel" />
+		<skill Name="Cudgel_Bludgeon" />
+		<skill Name="Cudgel_Expertise" />
+		
+		<skill Name="Tactics_Charge" />
+		<intproperty Name="ChargeRangeModifier" Value="3" />
+		
+		<part Name="EnergyCellSocket" ChanceFullCell="100"/>
+		<tag Name="AssociatedFactions" Value="Aric Ekuemekiyye" />
+		<tag Name="NamingTag" Value="TemplarMecha" />
+
+		<stat Name="AcidResistance" Value="100" />
+	</object>
+	
+		<object Name="Aric VehicleEkuemekiyyeStormbirdMecha" Inherits="VehicleTemplarMech">
+		<part Name="Body" Anatomy="HoverRobot" />
+		<part Name="Render" DisplayName="ekuemekiyyen stormbird mecha" Tile="com_aric_birdmech.png" DetailColor="W" ColorString="&amp;g" TileColor="&amp;g" />
+		<part Name="Description" Short="Far to the east of the Null river, behind the shield mountains of the Nubai Shelf, is the lofty Ziggurat of the Cat, set upon the foundations of an ancient monastery. There, the chromewrights forged their greatest weapon- the power of the storm, captured within a crysteel frame." />
+		<mutation Name="Wings" Level="10" />
+		<part Name="Vehicle" Type="TemplarSwordMech" />
+		<part Name="VehiclePilotPopulation" Blueprint="Aric Priest of All Moons 3,Aric Syzgyrior 3" Table="Aric Ekuemekiyye Pilots" />
+		<inventoryobject Blueprint="Aric Mecha Crushing Claw" Number="1" />
+		<inventoryobject Blueprint="Aric Lightning Launcher" Number="1" />
+		<skill Name="Cudgel" />
+		<skill Name="Cudgel_Bludgeon" />
+		<skill Name="Cudgel_Expertise" />
+		
+		<skill Name="Tactics_Charge" />
+		
+		<part Name="EnergyCellSocket" ChanceFullCell="100"/>
+		<tag Name="AssociatedFactions" Value="Aric Ekuemekiyye" />
+		<tag Name="NamingTag" Value="TemplarMecha" />
+
+		<stat Name="AcidResistance" Value="100" />
+	</object>
 	
 	<!-- Ibul creatures -->
 	<object Name="Aric Artifex" Inherits= "AricBaseIbul">
@@ -811,7 +878,7 @@
 	
 	<object Name="Aric Artifex 2" Inherits= "AricBaseIbul">
 
-<part Name= "Render" Tile="creatures/caste_5.bmp" DisplayName="Artifex Savant" />
+<part Name= "Render" Tile="LymphArtifex2.png" DisplayName="Artifex Savant" />
 	<part Name = "Description" Short="Ibul Savants lead their studios in the manufacture of and development of new cybernetics, servitors and other such technology. On such wonders, is the military and economic might of the Ice Sheathed Arcology built. " />
 	
 	<stat Name="Level" Value="35" />
@@ -861,7 +928,7 @@
 	
 	<object Name="Aric Artifex 3" Inherits= "AricBaseIbul">
 
-	<part Name= "Render" Tile="creatures/caste_5.bmp" DisplayName="Artifex Ingenium" />
+	<part Name= "Render" Tile="LymphArtifex3.png" DisplayName="Artifex Ingenium" />
 	<part Name = "Description" Short="Ingenium is the highest rank an Artifex can hope to reach. In incredible demand, they are the pride of whichever tower is able to command their allegiance." />
 	
 	<stat Name="Level" Value="35" />
@@ -967,7 +1034,7 @@
 	
 	<object Name="Aric Consul 2" Inherits= "AricBaseIbul">
 
-	<part Name= "Render" Tile="creatures/caste_6.bmp" DisplayName="Consul Magister" />
+	<part Name= "Render" Tile="LymphConsul2.png" DisplayName="Consul Magister" />
 	<part Name = "Description" Short="The Magisters hold the sacred duty of management. They are responsible for ensuring the productivity of their myriad subdivisions, from nutrient production to diplomatic relations " />
 
 	<stat Name="Level" Value="35" />
@@ -1013,8 +1080,8 @@
 	</object>
 	
 	<object Name="Aric Consul 3" Inherits= "AricBaseIbul">
-	<part Name= "Render" Tile="creatures/caste_6.bmp" DisplayName="Consul Princeps" />
-	<part Name = "Description" Short="Princeps often have the great honour of becoming Directors of the various divisions within each tower. Some even gain that most esteemd positon of Assistant to the Executor." />
+	<part Name= "Render" Tile="LymphConsul3.png" DisplayName="Consul Princeps" />
+	<part Name = "Description" Short="Princeps often have the great honour of becoming Directors of the various divisions within each tower. Some even gain that most esteemed positon of Assistant to the Executor." />
 
 	<stat Name="Level" Value="45" />
     <stat Name="Hitpoints" Value="250" />
@@ -1115,7 +1182,7 @@
 	
 	<object Name="Aric Praetorian 2" Inherits= "AricBaseIbul">
 
-	<part Name= "Render" Tile="creatures/caste_7.bmp" DisplayName="Praetorian Tribune" />
+	<part Name= "Render" Tile="LymphPraetorian2.png" DisplayName="Praetorian Tribune" />
 	<part Name = "Description" Short="Bodyguards and warriors for the great and true, Tribunes are drawn from the lower ranks by grading their indicators of key performance. In spite of such a method, they are extremely competent." />
 	
 	<stat Name="Level" Value="35" />
@@ -1176,7 +1243,7 @@
 	
 	<object Name="Aric Praetorian 3" Inherits= "AricBaseIbul">
 	
-	<part Name= "Render" Tile="creatures/caste_7.bmp" DisplayName="Praetorian Prefect" />
+	<part Name= "Render" Tile="LymphPraetorian3.png" DisplayName="Praetorian Prefect" />
 	<part Name = "Description" Short="Praetorian Prefects are the only warriors trusted to protect the lives and personal assets of the Chief Executors of the various towers of Ibul. A lifetime of surpassing annual targets and meeting indicators has left them well equipped for a hostile world." />
 	
 	<stat Name="Level" Value="45" />
@@ -1272,7 +1339,7 @@
 	
 	<object Name="Aric Eunuch" Inherits= "AricBaseIbul">
 	<part Name= "Render" Tile="creatures/caste_8.bmp" DisplayName="Eunuch" />
-	<part Name = "Description" Short="Without loyalty to their progeny, members of the Eunuch caste are trusted to serve in all manner of position within the Ibul hierarchy. With all emotion stunted and by powerful chemical processes, they carry out their grim duties with dispassionate efficiency." />
+	<part Name = "Description" Short="Without loyalty to their progeny, members of the Eunuch caste are trusted to serve in all manner of position within the Ibul hierarchy. With all emotion stunted by powerful chemical processes, they carry out their grim duties with dispassionate efficiency." />
 	
 	<stat Name="Level" Value="25" />
     <stat Name="Hitpoints" Value="80" />
@@ -1332,7 +1399,7 @@
 	</object>
 	
 	<object Name="Aric Eunuch 2" Inherits= "AricBaseIbul">
-<part Name= "Render" Tile="creatures/caste_8.bmp" DisplayName="Eunuch Praepositus" />
+<part Name= "Render" Tile="LymphEunuch2.png" DisplayName="Eunuch Praepositus" />
 	<part Name = "Description" Short="There are many routes to power for the Consuls of Ibul's many spires. Assassination is but one tool in their arsenal, though one at which the Eunuchs excel. While officially existing outside the jurisdiction of any individual tower, consuls have been known to keep particularly able Eunuchs on retainer, keeping a valuable tool to hand as needed, and depriving it of their rivals. " />
 	
 	
@@ -1407,8 +1474,8 @@
 	
 	<object Name="Aric Eunuch 3" Inherits= "AricBaseIbul">
 
-<part Name= "Render" Tile="creatures/caste_8.bmp" DisplayName="Eunuch Manus Mortis" />
-	<part Name = "Description" Short="The Manus Mortis deals death with a cybernetically fixed smile. No longer permitted by the Eunuch Patriarch to subcontract, they serve only the instituation that created them. " />
+<part Name= "Render" Tile="LymphEunuch3.png" DisplayName="Eunuch Manus Mortis" />
+	<part Name = "Description" Short="The Manus Mortis deal death with a cybernetically fixed smile. No longer permitted by the Eunuch Patriarch to subcontract, they serve only the instituation that created them. " />
 	
 	<stat Name="Level" Value="45" />
     <stat Name="Hitpoints" Value="220" />
@@ -1476,7 +1543,67 @@
 
 	</object>
 	
-	<!-- Yawning Moon creatures -->
+	<object Name="Aric Servitor" Inherits="BaseRobot">
+    <part Name="Brain" Factions="Aric Ibul-100" />
+    <part Name="Render" DisplayName="{{c|Servitor}}" Tile="Creatures/sw_chromeling.bmp" RenderString="1" ColorString="&amp;c" DetailColor="y" />
+    <stat Name="AV" Value="5" />
+    <stat Name="Level" Value="5" />
+    <stat Name="Hitpoints" Value="20" />
+    <inventoryobject Blueprint="Aric Servitor Welding Torch"/>
+    <part Name = "Description" Short="A chromium shell approximates a human form. At the very bottom of the executorial hierarchy, these androids are used to fulfil the base needs of a society otherwise hyper focused on specialised productivity." />
+    <tag Name="Species" Value="humanoid robot" />
+  </object>
+  
+  <object Name="Aric Servitor Welding Torch" Inherits="MetalManipulator">
+	<part Name="Render" DisplayName="integrated welding torch"/>
+
+	
+	<part Name="ElementalDamage" Damage="1d8+2" Attributes="Heat" />
+	<part Name="TemperatureOnHit" Amount="20-30" Max="false" OnWielderHit="true" />
+  </object>
+  
+  <object Name= "Aric Artifex home" Inherits="Aric Artifex">
+  
+	<removepart Name="Leader"/>
+  
+  </object>
+  
+    <object Name= "Aric Artifex 2 home" Inherits="Aric Artifex 2">
+  
+	<removepart Name="Leader"/>
+  
+  </object>
+  
+  	<object Name="Aric VehicleIbulTortoiseMecha" Inherits="VehicleTemplarMech">
+		<part Name="Body" Anatomy="QuadrupedalRobot" />
+		<part Name="Render" DisplayName="ibulian testudo mecha" Tile="com_aric_tortoisemech.png" DetailColor="C" ColorString="&amp;c" TileColor="&amp;c" />
+		<part Name="Description" Short="When the screaming hordes of Uutut the Boorish clashed with the 2nd Praetorian Legion on blasted Arthax, the vast numbers of flesh eating screamers threatened to overwhelm the far smaller force. The victory of the legion that day is ascribed to superior firepower of their spaser weaponry, and the novel shield locking formation inspired by the beast their standard bore.
+
+And so did the great artifices of the tower emulate this victory, through the rime encrusted shoulder cannon of the tundra, the kaleidoscopic churn of it's plasmatic artillery and it's impregnable crysteel carapace."/>
+		<part Name="Vehicle" Type="TemplarSwordMech" />
+		<part Name="VehiclePilotPopulation" Blueprint="Aric Praetorian 3" Table="Aric Ibul Pilots" />
+		<inventoryobject Blueprint="Aric Mecha Crushing Claw" Number="1" />
+		<inventoryobject Blueprint="Aric Cryo Beam" Number="1" />
+		<inventoryobject Blueprint="Aric Plasma Beam" Number="1" />
+		<stat Name="Agility" sValue= "28"/>
+		<skill Name="Cudgel" />
+		<skill Name="Cudgel_Bludgeon" />
+		<skill Name="Cudgel_Expertise" />
+		<skill Name="Cudgel_Slam" />
+		<mutation Name="Carapace" Level="10" />
+		
+		<intproperty Name="JumpRangeModifier" Value="10" />
+		
+		<part Name="EnergyCellSocket" ChanceFullCell="100"/>
+		<tag Name="AssociatedFactions" Value="Aric Ekuemekiyye" />
+		<tag Name="NamingTag" Value="TemplarMecha" />
+
+		<stat Name="ColdResistance" Value="100" />
+	</object>
+	
+	
+	
+	<!-- Yawningmoon creatures -->
 	<object Name= "Aric Child of the Hearth" Inherits= "AricBaseYawningMoon">`
 	<part Name= "Render" Tile="creatures/caste_9.bmp" DisplayName="Child of the Hearth" />
 	<part Name = "Description" Short="Deep beneath the earth and across the pale sea, the cannons and hammers of the Children of the Hearth defend their subterranean cities against the threats of the deep. " />
@@ -1530,7 +1657,7 @@
 	</object>
 	
 	<object Name= "Aric Child of the Hearth 2" Inherits= "AricBaseYawningMoon">`
-	<part Name= "Render" Tile="creatures/caste_9.bmp" DisplayName="Child of the Hearth Bulwark" />
+	<part Name= "Render" Tile="LymphHearth2.png" DisplayName="Child of the Hearth Bulwark" />
 	<part Name = "Description" Short="Against the might of the Bulwarks, all manner of threat has broken. The fortresses of the Yawning Moon are renowned as unassailable, and for good reason." />
 	
 	<stat Name="Level" Value="35" />
@@ -1586,7 +1713,7 @@
 	</object>
 	
 	<object Name= "Aric Child of the Hearth 3" Inherits= "AricBaseYawningMoon">`
-	<part Name= "Render" Tile="creatures/caste_9.bmp" DetailColor="G" ColorString="&amp;g" DisplayName="Child of the Hearth Praesidium" />
+	<part Name= "Render" Tile="LymphHearth3.png" DisplayName="Child of the Hearth Praesidium" />
 	<part Name = "Description" Short="The armour, and indeed the warriors of the Crustal Mortars are forged in the fires beneath the earth. Against their might, none can hope to stand." />
 	
 	<stat Name="Level" Value="45" />
@@ -1702,7 +1829,7 @@
 	</object>
 	
 	<object Name= "Aric Child of the Deep 2" Inherits= "AricBaseYawningMoon">`
-	<part Name= "Render" Tile="creatures/caste_11.bmp" DisplayName="Child of the Deep Pitboss" />
+	<part Name= "Render" Tile="LymphDeep2.png" DisplayName="Child of the Deep Pitboss" />
 	<part Name = "Description" Short="The lives of Children of the Deep are often nasty, brutish and short. Those that survive a number of years may eventually find their way to promotion, and are called to lead the most dangerous expeditions." />
 	
 	<stat Name="Level" Value="35" />
@@ -1760,7 +1887,7 @@
 	</object>
 	
 	<object Name= "Aric Child of the Deep 3" Inherits= "AricBaseYawningMoon">`
-	<part Name= "Render" Tile="creatures/caste_11.bmp" ColorString="&amp;g" DisplayName="Child of the Deep Thane" />
+	<part Name= "Render" Tile="LymphDeep3.png" ColorString="&amp;g" DisplayName="Child of the Deep Thane" />
 	<part Name = "Description" Short="The greatest honour a Child of the Deep can be awarded is that of Thaneship. They are sent into the infinite black beyond their home to carve a new colony. Few survive their ordeal, but those that do will be remembered eternally, and found a new great house." />
 	
 	<stat Name="Level" Value="45" />
@@ -1837,9 +1964,6 @@
 	<part Name="CyberneticsHasRandomImplants" ImplantChance="75" ImplantTable="Aric YM Cybernetics" LicensesAtLeast="2" />
 	
 	<inventoryobject Blueprint="Flexivest" />
-<!--     <inventoryobject Blueprint="Flexarmour Boots" />
-	<inventoryobject Blueprint="Flexarmour Gloves" />
-	<inventoryobject Blueprint="Flexarmour Cap" /> -->
 	
 	<inventoryobject Blueprint="Battle Axe4" />
 	<inventoryobject Blueprint="Dagger4" />
@@ -1875,7 +1999,7 @@
 	</object>
 	
 	<object Name= "Aric Child of the Wheel 2" Inherits= "AricBaseYawningMoon">`
-	<part Name= "Render" Tile="creatures/caste_10.bmp" DisplayName="Child of the Wheel Marine" />
+	<part Name= "Render" Tile="LymphWheel2.png" DisplayName="Child of the Wheel Marine" />
 	<part Name = "Description" Short="The fire and fumes are not the only dangers that threaten Yawningmoon expeditions. It is the duty of the Marine to throw these threats back to the Fuming Gods below. When the great ships make landing in the savage east, Marines defend their captains, their ships and their goods with their lives." />
 	
 	<stat Name="Level" Value="35" />
@@ -1946,7 +2070,7 @@
 	</object>
 	
 	<object Name= "Aric Child of the Wheel 3" Inherits= "AricBaseYawningMoon">`
-	<part Name= "Render" Tile="creatures/caste_10.bmp" DisplayName="Child of the Wheel Forsworn" />
+	<part Name= "Render" Tile="LymphWheel3.png" DisplayName="Child of the Wheel Forsworn" />
 	<part Name = "Description" Short=" Children of the Wheel who are offered ascension to the divine rank of Fuming God-Child, but choose to eschew their divine duty are named forsworn. Forever to be the point of the vanguard, the first to board an enemy vessel or scout an unknown ruin. If they will not give their lives to the Fuming Gods, then they must give their deaths." />
 	
 	<stat Name="Level" Value="45" />
@@ -2025,7 +2149,7 @@
 	</object>
 
 	<object Name="Aric Fuming God-Child" Inherits= "AricBaseYawningMoon">
-		<part Name= "Render" Tile="creatures/caste_12.bmp" ColorString="&amp;r" DisplayName="Fuming God-Child" />
+		<part Name= "Render" Tile="creatures/caste_12.bmp" DetailColor="R" DisplayName="Fuming God-Child" />
 		<part Name = "Description" Short="When the black stair fell upon the earth and the Fuming God claimed their sea, only the brave or the foolish dared cast off in search of vital trade. Those that returned were named Fuming God-child, and in time, became the sole masters of those waves." />
 		<part Name="Body" Anatomy="AricHumanoidBelt" />		
 	<stat Name="Level" Value="25" />
@@ -2078,7 +2202,7 @@
 	</object>
 
 	<object Name="Aric Fuming God-Child 2" Inherits= "AricBaseYawningMoon">
-		<part Name= "Render" Tile="creatures/caste_12.bmp" DetailColor="r" DisplayName="Aric Fuming God-Child Seer" />
+		<part Name= "Render" Tile="LymphGodChild2.png" DetailColor="R" DisplayName="Aric Fuming God-Child Seer" />
 		<part Name = "Description" Short="Atop their black glass spires, the nine Gas Eaters dwell. Consuming the fumes of the deep that rise through their domains, they see visions of the past, the present and the future. They are served by the Seers, who will one day replace them, when the toxic nature of acting as divine conduit takes it's toll. In the wider world, they act as divine instruments- enforcing the divine will across the Archipelago.   " />
 		<part Name="Body" Anatomy="AricHumanoidBelt" />						
 				
@@ -2141,7 +2265,7 @@
 	</object>
 
 	<object Name="Aric Fuming God-Child 3" Inherits= "AricBaseYawningMoon">
-		<part Name= "Render" Tile="creatures/caste_12.bmp" DetailColor="r" DisplayName="Fuming God-Child Avatar of the Aji" />
+		<part Name= "Render" Tile="LymphGodChild3.png" DetailColor="R" DisplayName="Fuming God-Child Avatar of the Aji" />
 		<part Name = "Description" Short="The Fuming Gods protect and humble the people of the Crustal Mortars with their pyroclast. When A Fuming God-Child gains such mastery over that same power, how can they be anything but divine?" />
 		<part Name="Body" Anatomy="AricHumanoidBelt" />		
 	
@@ -2207,6 +2331,66 @@
 	
 	</object>
 	
+	<object Name= "Aric Child of the Wheel Apprentice" Inherits= "AricBaseYawningMoon">`
+		<part Name= "Render" Tile="creatures/caste_10.bmp" DisplayName="Child of the Wheel apprentice" />
+		<part Name = "Description" Short="The Children of the Wheel keep the great society of the Yawningmoon turning. They are the workers, the builders, the mariners. Before a young Child of the wheel specialises, and is accepted into one of the great guilds, they serve as apprentices- to family, to acquaintances, or to captains in dire need of hands- or perhaps on unscrupulous voyages that may meet with the disapproval of the guilds." />
+		
+		<stat Name="Level" Value="10" />
+		<stat Name="Hitpoints" Value="30" />
+		<stat Name="Strength" sValue="22" />
+		<stat Name="Toughness" sValue="20" />
+		<stat Name="Willpower" sValue="20" />
+		<stat Name="Ego" sValue= "20"/>
+		<stat Name="Agility" sValue= "24"/>
+		<stat Name="Intelligence" sValue = "20"/>
+		<stat Name="Speed" Value="125" />
+		<stat Name="AV" Value= "4"/>
+		<stat Name="DV" Value="-2" />
+		
+		<tag Name="Tier" Value="3" /> 
+		
+
+		<inventoryobject Blueprint="Flexivest" />
+		
+		<inventoryobject Blueprint="Battle Axe4" />
+		<inventoryobject Blueprint="Dagger4" />
+		<inventoryobject Blueprint="Aric ThrowingDagger4" Number ="1-3" />
+
+			<skill Name="ShortBlades" />
+			<skill Name="ShortBlades_Expertise" />
+
+			<skill Name="Tactics_Throwing"/>
+			
+			<skill Name="Axe" />
+			<skill Name="Axe_Expertise" />
+
+			
+			<skill Name="Multiweapon_Fighting" />
+			<skill Name="Multiweapon_Flurry" />
+	
+	</object>
+	
+	  	<object Name="Aric VehicleYawningmoonMoleMecha" Inherits="VehicleTemplarMech">
+		<part Name="Body" Anatomy="HumanoidRobot" />
+		<part Name="Render" DisplayName="yawningmoon rockbreaker mecha" Tile="com_aric_molemech.png" DetailColor="y" ColorString="&amp;R" TileColor="&amp;R" />
+		<part Name="Description" Short="Equal parts mining unit, combat machine and scout- the rockbreaker is employed by the most elite members of the Children of the Deep caste to search for valuable gem and mineral deposits, slay the dangerous deep dwellers that threaten the subterranean connections between the islands of the black stair, and to carve out their new cavernous homes deep beneath the seafloor."/>
+		<part Name="Vehicle" Type="TemplarSwordMech" />
+		<part Name="VehiclePilotPopulation" Blueprint="Aric Child of the Deep 3" Table="Aric Yawningmoon Pilots" />
+		<inventoryobject Blueprint="Aric Mecha Drill" Number="1" />
+		<inventoryobject Blueprint="Aric Rubble Launcher" Number="1" />
+
+		<skill Name="Cudgel" />
+		<skill Name="Cudgel_Bludgeon" />
+		<skill Name="Cudgel_Expertise" />
+		<skill Name="Cudgel_Slam" />
+		
+		<part Name="EnergyCellSocket" ChanceFullCell="100"/>
+		<tag Name="AssociatedFactions" Value="Aric Yawningmoon" />
+		<tag Name="NamingTag" Value="TemplarMecha" />
+
+		<stat Name="ColdResistance" Value="100" />
+	</object>
+	
 	 <object Name="Punching Bag" Inherits="NPC">
     <part Name="Render" DisplayName="Punching Bag" ColorString="&amp;y" RenderString="p" Tile="Creatures/sw_farmer1.bmp" />
     <part Name="Brain" Hostile="false" Calm="true" />
@@ -2220,6 +2404,707 @@
     <tag Name="ExcludeFromDynamicEncounters" />
   </object>
 
+<!-- Commanders -->
+
+	<object Name="Aric Consul Commander" Inherits= "Aric Consul 2">
+	
+		<part Name="Uplift"/>
+		<part Name="Brain" Wanders="false" />	
+		<tag Name="ExcludeFromDynamicEncounters"/>
+		<tag Name="NoTrade" />
+		
+		<part Name="ConversationScript" ConversationID="Aric Ibul Commander Consul" />		
+		<tag Name="NamingTag" Value="IbulCommander" />
+		<tag Name="AIAbilityIgnoreCon" />
+
+	</object>
+	
+	<object Name="Aric Fuming God-Child Commander" Inherits= "Aric Fuming God-Child 2">
+	
+		<part Name="Uplift"/>
+		<part Name="Brain" Wanders="false" />	
+		<tag Name="ExcludeFromDynamicEncounters"/>
+		<tag Name="NoTrade" />
+		
+		<part Name="ConversationScript" ConversationID="YawningmoonCommander" />
+		<tag Name="NamingTag" Value="YawningmoonCommander" />
+		<tag Name="AIAbilityIgnoreCon" />
+
+	</object>
+	
+	<object Name="Aric Priest of All Suns Commander" Inherits= "Aric Priest of All Suns 2">
+	
+		<part Name="Uplift"/>
+		<part Name="Brain" Wanders="false" />	
+		<tag Name="ExcludeFromDynamicEncounters"/>
+		<tag Name="NoTrade" />
+		
+		<part Name="ConversationScript" ConversationID="EkuemekiyyeCommander" />
+		<tag Name="NamingTag" Value="EkuemekiyyeCommander" />
+		<tag Name="AIAbilityIgnoreCon" />
+<!-- 		<part Name="FinishQuestStepWhenSlain" Quest="" Step="Destroy an Ekuemekiyyen Outpost"  GameState="Aric_EncampmentDestroyed"/> -->
+
+	</object>
+	
+	
+
+<!-- Merchants -->
+
+	<object Name="Aric Ekuemekiyye Trader" Inherits= "Aric Horticulturalist">
+
+		<part Name= "Render" DisplayName="Ekuemekiyyen trader" />
+
+		<stat Name="Hitpoints" Value="250" />
+		<stat Name="Willpower" Value="40" />
+		<stat Name="Ego" Value="40" />
+		<stat Name="Level" Value="35" />
+		
+		<part Name="GenericInventoryRestocker" Table="Aric Ekuemekiyye Wares" />
+		<part Name="Interesting" />
+		<tag Name="Merchant" />
+		<tag Name="Unenslavable" />	
+		<part Name="ConversationScript" ConversationID="Aric Ekuemekiyye Trader" />	
+		<part Name="Brain" Wanders="false" />		
+		
+		<tag Name="Tier" Value="5" />    
+		<tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+		
+<!-- 		<inventoryobject Blueprint="Grassy Yurtmat" MerchantPersonalItem="true" />
+		<inventoryobject Blueprint="Aric Camoflauged Flexivest"MerchantPersonalItem="true" />
+		<inventoryobject Blueprint="Aric Sunbird Bow" Number ="1" MerchantPersonalItem="true" />
+		<inventoryobject Blueprint="Battle Axe4th" Number ="1" MerchantPersonalItem="true" />
+		<inventoryobject Blueprint="Horticulturalist Bio-Scanning Bracelet" MerchantPersonalItem="true" />
+		<inventoryobject Blueprint="Gas Mask" MerchantPersonalItem="true" />
+		<inventoryobject Blueprint="Crushed Grave Moss" Number="1-2" MerchantPersonalItem="true"/> -->
+
+	</object>
+	
+	<object Name= "Aric Yawningmoon Trader" Inherits= "Aric Child of the Wheel">`
+		<part Name= "Render" DisplayName="Yawningmoon quartermaster" />
+		
+		<stat Name="Level" Value="35" />
+		<stat Name="Hitpoints" Value="250" />>
+		<stat Name="Willpower" sValue="40" />
+		<stat Name="Ego" sValue= "40"/>
+		
+		<part Name="GenericInventoryRestocker" Table="Aric Yawningmoon Wares" />
+		<part Name="Interesting" />
+		<tag Name="Merchant" />
+		<tag Name="Unenslavable" />	
+		<part Name="ConversationScript" ConversationID="Aric Yawningmoon Trader" />	
+		<part Name="Brain" Wanders="false" />	
+		<tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+		<tag Name="Tier" Value="5" /> 
+		
+		
+<!-- 		<inventoryobject Blueprint="Flexivest" MerchantPersonalItem="true" />	
+		<inventoryobject Blueprint="Battle Axe4" MerchantPersonalItem="true" />
+		<inventoryobject Blueprint="Dagger4" MerchantPersonalItem="true" />
+		<inventoryobject Blueprint="Aric ThrowingDagger4" Number ="1-3" MerchantPersonalItem="true" />
+		<inventoryobject Blueprint="SkulkTonic" MerchantPersonalItem="true"/>
+		<inventoryobject Blueprint="ShadeOilTonic" MerchantPersonalItem="true"/> -->
+	
+	</object>
+	
+		<object Name= "Aric Ibul Trader" Inherits= "Aric Artifex">`
+		<part Name= "Render" DisplayName="Ibulian merchant" />
+
+		<stat Name="Level" Value="35" />
+		<stat Name="Hitpoints" Value="250" />>
+		<stat Name="Willpower" sValue="40" />
+		<stat Name="Ego" sValue= "40"/>
+		
+		<part Name="GenericInventoryRestocker" Table="Aric Ibul Wares" />
+		<part Name="Interesting" />
+		<tag Name="Merchant" />
+		<tag Name="Unenslavable" />	
+		<part Name="ConversationScript" ConversationID="Aric Ibul Trader" />	
+		<part Name="Brain" Wanders="false" />	
+		<tag Name="ExcludeFromDynamicEncounters"/>
+		<tag Name="Tier" Value="5" /> 
+		
+		<removepart Name="Leader"/>
+		
+	
+	</object>
+	
+		<object Name= "Aric Ibul Trader Adv" Inherits= "Aric Artifex">`
+
+		<part Name="ConversationScript" ConversationID="Aric Ibul Trader Adv" />	
+		<part Name="GenericInventoryRestocker" Table="Aric Ibul Wares2" />
+		<tag Name="ExcludeFromDynamicEncounters"/>
+	
+	</object>
 
 
+	
+<!-- Ibul Defences -->
+
+	<object Name="Aric Ibul Floating Arc Turret" Inherits= "WeaponEmplacement">
+	
+	<!-- edit sprite for float -->
+	<part Name= "Render" ColorString="&amp;B" Tile="Creatures/sw_laser_turret.bmp" DetailColor="c" DisplayName="floating arc cannon emplacement" />
+	
+	<part Name="Brain" Factions="Aric Ibul-100" Wanders="false" />
+	<!-- <part Name="CyberneticsPhaseAdaptiveScope" /> -->
+	
+	<inventoryobject Blueprint="Arc Cannon" />
+	<inventoryobject Blueprint="Aric Ibul Antigrav module" />
+    <stat Name="Hitpoints" Value="65" />
+    <stat Name="AV" Value="8" />
+	<part Name="Description" Short="A hemisphere inverts the mass of the emplacement, defying the gravitonic pull of the world above which it floats." />
+	
+	</object>
+	
+	<object Name="Aric Ibul Antigrav module" Inherits= "Item">
+	
+		<part Name= "Render" DisplayName="anti-gravity module" />
+		<part Name="Description" Short="" />
+		<part Name="NoBreak" />
+		<part Name="NoDamage" />
+
+		<part Name="Physics" IsReal="false" Solid="false" Takeable="true" Organic="true" Weight="0" Category="Natural Weapons" FreezeTemperature="-99999" BrittleTemperature="-99999" FlameTemperature="99999" VaporTemperature="99999" />
+		<part Name="NaturalEquipment" />
+		<intproperty Name="Natural" Value="1" />
+		<tag Name="NaturalGear" />
+		<tag Name="NeverStack" />
+
+		<tag Name="ShowAsPhysicalFeature" />
+		<part Name="Armor" AV="0" DV="0" WornOn="Body" />
+		<part Name="MechanicalWings" ChargeUse="0" Level="6" IsBootSensitive="true" IsRealityDistortionBased="true" RequiresOngoingEffort="false" CrashBreakChance="1" Type="AntigravityBoots" FlightSourceDescription="Anti-Gravity Boots" NameForStatus="AntiGravitySystem" />
+		<tag Name="ExcludeFromDynamicEncounters"/>
+	</object>
+	
+	<!-- Ekuemekiyye defences -->
+	
+	<object Name="Aric Ekuemekiyye Strangler" Inherits= "Tongue Tyrant">
+		
+		<part Name= "Render" ColorString="&amp;G"  DetailColor="g" DisplayName="ekuemekiyyen strangler vine" />
+		<part Name="Brain" Wanders="false" Mobile="false" Hostile="false" Factions="Aric Ekuemekiyye-100,Flowers-99" />
+		<stat Name="Level" Value="20" />
+		<stat Name="AV" Value="6" />
+		<stat Name="Hitpoints" Value="100" />
+		<part Name="Description" Short="Genetically modifed strain of the terrible Tongue Tyrant flower. Crafted in the black vaults below the Ziggurats of the Arboreta, these plants trade some of their indiviudal deadliness for a tolerance to poison that is particularly advantageous in the toxic, cultivated jungles they now call home. When transplanted to Qud, they make for excellent organic fortifications." />
+		<part Name="EngulfingBleeding" Damage="1-2" />
+		<mutation Name="StickyTongue" Level="5" PullSameCreatureType="false" PullHostileOnly="true" />
+		<stat Name="HeatResistance" Value="50" />
+		<stat Name="ColdResistance" Value="50" />
+		<stat Name="ElectricResistance" Value="50" />
+		<stat Name="AcidResistance" Value="50" />
+		<part Name="EffectResistance" Values="Poison,PoisonGasPoison" />
+		
+	</object>
+	
+	<object Name="Aric Ekuemekiyye Poisonbloom" Inherits= "MutatedFlower">
+		
+		<part Name= "Render" Tile="Creatures/sw_feral_lah.bmp" ColorString="&amp;R"  DetailColor="g" DisplayName="ekuemekiyyen poisonbloom" />
+		<part Name="Brain" Wanders="false" Mobile="false" Hostile="false" Factions="Aric Ekuemekiyye-100,Flowers-99" />
+		<stat Name="Level" Value="20" />
+		<stat Name="AV" Value="4" />
+		<stat Name="Hitpoints" Value="60" />
+		<part Name="Description" Short="The smell of rotting flesh clings to the air around the large fleshy petals of the the Poisonbloom of the Arboreta. One of the many creations from the Ziggurat vaults that give the toxic Arboreta their deadly reputation. The cloying stench that attracts it's insectoid prey is the remains of the many living beings it has ingested, their proteins repurposed to create a deadly toxic mist- hence it's common name: The Ekuemekiyyen Corpse Flower." />
+		<mutation Name="PoisonGasGeneration" Level="5"/>
+		<stat Name="HeatResistance" Value="50" />
+		<stat Name="ColdResistance" Value="50" />
+		<stat Name="ElectricResistance" Value="50" />
+		<stat Name="AcidResistance" Value="50" />
+		
+	</object>
+	
+
+<!-- 	Quests -->
+<!-- 	Heavenpiercer mobs -->
+
+<!-- Hardlight projections -->
+
+		<object Name="Aric Hardlight Humanoid Base" Inherits="BaseHumanoid">
+		
+			<part Name="Render" RenderIfDark="true" Tile="Creatures/Issachari_convert.bmp" RenderString="011" ColorString="&amp;y" DetailColor="Y" />
+			<part Name="Brain" Hostile="true" Hibernating="true" Factions="AricHostile-100" />
+			<part Name="Unreplicable" AllowTemporary="true" />
+			<part Name="CannotBeInfluenced" Messages="Beguiling::The place where a mind should be is blank and smooth in =subject.t=.;;Persuasion_Proselytize::=subject.T's= commitment to =pronouns.possessive= cause is unwavering.;;LoveTonicApplicator::The tonic has no effect on =subject.t=.;;default::=subject.T= =verb:are= insensible to your blandishments." />
+			<part Name="HologramMaterial" />
+			<part Name="Corpse" CorpseChance="0" />
+			
+			<tag Name="NoDropOnDeath" />
+			<property Name="NoLoot" Value="true" />
+			<intproperty Name="Aric_HoloFighter" Value="1" />
+
+		</object>
+		
+		<object Name="Aric Hardlight Robot Base" Inherits="BaseRobot">
+		
+			<part Name="Render" RenderIfDark="true" Tile="Creatures/Issachari_convert.bmp" RenderString="011" ColorString="&amp;y" DetailColor="Y" />
+			<part Name="Brain" Hostile="true" Hibernating="true" Factions="AricHostile-100" />
+			<part Name="Unreplicable" AllowTemporary="true" />
+			<part Name="CannotBeInfluenced" Messages="Beguiling::The place where a mind should be is blank and smooth in =subject.t=.;;Persuasion_Proselytize::=subject.T's= commitment to =pronouns.possessive= cause is unwavering.;;LoveTonicApplicator::The tonic has no effect on =subject.t=.;;default::=subject.T= =verb:are= insensible to your blandishments." />
+			<part Name="HologramMaterial" />
+
+			<tag Name="NoDropOnDeath" />
+			<property Name="NoLoot" Value="true" />
+			<intproperty Name="Aric_HoloFighter" Value="1" />
+		</object>
+		
+		<object Name="Aric Hardlight Ninja" Inherits="Aric Hardlight Humanoid Base">
+			<part Name= "Render" DisplayName="{{hologram|hardlight}} corporate ninja" />
+		    <part Name="Description" Short="" />
+			<stat Name="Level" Value="30" />
+			<stat Name="Hitpoints" Value="150" />
+			<stat Name="Strength" Boost="2" />
+			<stat Name="Toughness" Boost="1" />
+			<stat Name="Willpower" Boost="1" />
+			<stat Name="HeatResistance" Value="25" />
+			<stat Name="ColdResistance" Value="25" />
+			<stat Name="ElectricResistance" Value="25" />
+			<stat Name="AV" Value="9" />
+			<stat Name="DV" Value="7" />
+			
+			<skill Name="SingleWeaponFighting" />
+			<skill Name="SingleWeaponFighting_WeaponExpertise" />
+			<skill Name="SingleWeaponFighting_PenetratingStrikes" />
+			
+			<skill Name="LongBlades" />
+			<skill Name="LongBladesProficiency" />
+			<skill Name="LongBladesLunge" />
+			<skill Name="LongBladesSwipe" />
+			<skill Name="LongBladesDuelingStance" />
+			
+			<inventoryobject Blueprint="Aric Katana6" Number="1" />
+
+			<part Name="CyberneticsHasRandomImplants" ImplantChance="100" ImplantTable="Cybernetics4" LicensesAtLeast="6" />
+
+		</object>
+		
+		<object Name="Aric Hardlight Commando" Inherits="Aric Hardlight Humanoid Base">
+		
+			<part Name= "Render" DisplayName="{{hologram|hardlight}} corporate commando" />
+			<part Name="Description" Short="" />
+			<stat Name="Level" Value="30" />
+			<stat Name="Hitpoints" Value="120" />
+			<stat Name="Agility" Boost="2" />
+			<stat Name="Toughness" Boost="1" />
+			<stat Name="Willpower" Boost="1" />
+			<stat Name="HeatResistance" Value="25" />
+			<stat Name="ColdResistance" Value="25" />
+			<stat Name="ElectricResistance" Value="25" />
+			<stat Name="AV" Value="7" />
+			<stat Name="DV" Value="7" />
+
+			
+			<inventoryobject Blueprint="Eigenpistol" Number="2" />
+			<inventoryobject Blueprint="Dagger6" Number="1" />
+			
+			<skill Name="Pistol_SteadyHands" />
+			<skill Name="Pistol_Akimbo" />
+			<skill Name="Pistol_WeakSpotter" />
+			<skill Name="Pistol_EmptyTheClips" />
+				
+			<skill Name="ShortBlades" />
+			<skill Name="ShortBlades_Expertise" />
+			<skill Name="ShortBlades_Bloodletter" />
+
+			<part Name="CyberneticsHasRandomImplants" ImplantChance="25" ImplantTable="Cybernetics4" LicensesAtLeast="6" />
+
+		</object>		
+		
+		<object Name="Aric Hardlight Jungle Radical" Inherits="Aric Hardlight Humanoid Base">
+		
+			<part Name= "Render" DisplayName="{{hologram|hardlight}} guerilla" />
+			<part Name="Description" Short="" />
+			<stat Name="Level" Value="10" />
+			<stat Name="Hitpoints" Value="40" />
+			<stat Name="Agility" Boost="2" />
+			<stat Name="Willpower" Boost="1" />
+			<stat Name="HeatResistance" Value="25" />
+			<stat Name="ColdResistance" Value="25" />
+			<stat Name="ElectricResistance" Value="25" />
+			<stat Name="AV" Value="4" />
+			<stat Name="DV" Value="5" />
+			
+			<inventoryobject Blueprint="Carbine" Number="1" />
+			<inventoryobject Blueprint="Grassy Yurtmat" Number="1" />
+			<inventoryobject Blueprint="Lead Slug" Number="30" />
+			<inventoryobject Blueprint="Steel Kukri" Number="1" />
+			
+			<skill Name="Rifles" />
+			<skill Name="Rifle_SteadyHands" />
+			<skill Name="Rifle_DrawABead" />
+			<skill Name="Rifle_SuppressiveFire" />
+			
+			<skill Name="ShortBlades" /> 
+
+
+		</object>
+		
+		
+		
+		<object Name="Aric Hardlight Mining Radical" Inherits="Aric Hardlight Humanoid Base">
+		
+			<part Name= "Render" DisplayName="{{hologram|hardlight}} radical miner" />
+			<part Name="Description" Short="" />
+			<stat Name="Level" Value="20" />
+			<stat Name="Hitpoints" Value="50" />
+			<stat Name="Strength" Boost="2" />
+			<stat Name="Willpower" Boost="1" />
+			<stat Name="HeatResistance" Value="25" />
+			<stat Name="ColdResistance" Value="25" />
+			<stat Name="ElectricResistance" Value="25" />
+			<stat Name="AV" Value="6" />
+			
+			
+			<inventoryobject Blueprint="Nanopneumatic Jackhammer" Number="1" />
+			<inventoryobject Blueprint="Miner's Helmet" Number="1" />
+			<inventoryobject Blueprint="SunderGrenade1" Number="1" />
+
+
+			<skill Name="Cudgel" />
+			<skill Name="Cudgel_Expertise" />
+			<skill Name="Cudgel_Bludgeon" />
+			<skill Name="Cudgel_ChargingStrike" />
+			
+			<skill Name="Tactics_Charge" />
+		
+		</object>
+		
+		<object Name="Aric Hardlight Sawhander" Inherits="Aric Hardlight Robot Base">
+
+			<part Name="Body" Anatomy="TreadedRobot" />
+			<part Name="Render" DisplayName="{{hologram|hardlight}}{{W|saw-hander}}" RenderString="5" ColorString="&amp;W" Tile="Creatures/sw_sawhander.bmp" DetailColor="w" />
+			<stat Name="Level" Value="15" />
+			<stat Name="Agility" Boost="1" />
+			<stat Name="AV" Value="5" />
+			<stat Name="Hitpoints" Value="50" />
+			<part Name="Description" Short="Steel treads turn around a drive sprocket, toting a chrome spine and featureless sensor array. Stuck on =pronouns.possessive= grooved, steel arms are two big rotary saws, rust-dulled." />
+			<inventoryobject Blueprint="Sawhander_Saw" Number="2" />
+			<inventoryobject Chance="4" Blueprint="Chem Cell" />
+			<skill Name="Axe" />
+			<skill Name="Axe_Dismember" />
+			<skill Name="Axe_Cleave" />
+			<tag Name="Species" Value="wheeled robot" />
+			<tag Name="Role" Value="Brute" />
+			<tag Name="SeveredHeadBlueprint" Value="RobotHead3" />
+			
+		</object>
+
+		<object Name="Aric Hardlight Drillbot" Inherits="Aric Hardlight Robot Base">
+			<part Name="Body" Anatomy="QuadrupedalRobot" />
+			<part Name="Render" DisplayName="{{hologram|hardlight}}{{c|drillbot}}" RenderString="5" ColorString="&amp;c" Tile="Creatures/sw_drillbot.bmp" DetailColor="W" />
+			<stat Name="Level" Value="12" />
+			<stat Name="AV" Value="1" />
+			<stat Name="Hitpoints" Value="30" />
+			<part Name="Description" Short="Shing burls spin across =pronouns.possessive= plate-metal back and, out the back of =pronouns.possessive= neck, silver antennae lick and taste the air. Attached to =pronouns.possessive= arm stumps is a pair of monstrous cone drill pins, spinning, to pulverize and dig out stone or bone." />
+			<inventoryobject Blueprint="Drillbot_Drill" Number="2" />
+			<inventoryobject Chance="4" Blueprint="Chem Cell" />
+			<skill Name="ShortBlades" />
+			<skill Name="ShortBlades_Bloodletter" />
+			<mutation Name="HeightenedHearing" />
+			<tag Name="Species" Value="hexapedal robot" />
+			<tag Name="Role" Value="Brute" />
+			<tag Name="SeveredHeadBlueprint" Value="RobotHead2" />
+		</object>
+
+
+	<object Name="Aric MarshTaur" Inherits="BaseHindren">
+		
+		<part Name="Brain" Hostile="true" Factions="Cannibals-100"/>
+		<part Name="Description" Short="Deer legs threateningly paw the ground, preparing to charge. The characteristic anxiety of the Hindren has metamorphosed into an explosive fury, bubbling barely beneath the surface. Wild eyes show a bloodlust that has propelled this hindren to Chieftain." />
+		<part Name="ConversationScript" ConversationID="Cannibal" />
+		<part Name="Render" DisplayName="Marsh Taur" RenderString="h" DetailColor="g" ColorString="&amp;y" Tile="creatures/sw_marsh_taur.bmp" />
+		<stat Name="Strength" Boost="2"/>
+		<stat Name="Toughness" Boost="2"/>
+		<stat Name="Hitpoints" Value="150" />
+		<stat Name="Level" Value="35" />
+		<stat Name="AV" Value="6"/>
+		<tag Name="Tier" Value="6" />
+		
+		<mutation Name="FreezingRay" Level="10" BodyPartType="Hands" />
+		<mutation Name="Horns" Level="10" Variant="Horns Antlers" />
+		<inventoryobject Blueprint="Battle Axe6" Number="2" />
+		<inventoryobject Blueprint="Turbow" Number="1" />
+		<inventoryobject Blueprint="Crysteel Arrow" Chance="75" Number="11-15" />
+		<inventoryobject Blueprint="Flawless Crysteel Arrow" Chance="100" Number="11-15" />
+		<inventoryobject Blueprint="Zetachrome Arrow" Chance="75" Number="5-8" />
+		
+		<skill Name="ShortBlades" />
+		<skill Name="ShortBlades_Expertise" />
+		<skill Name="ShortBlades_Bloodletter" />
+		<skill Name="ShortBlades_Jab" />
+		<skill Name="ShortBlades_Hobble" />
+		<skill Name="ShortBlades_Rejoinder" />
+		
+		<skill Name="Tactics_Charge" />
+		
+		<skill Name="Axe" />
+		<skill Name="Axe_Expertise" />
+		<skill Name="Axe_Cleave" />
+		<skill Name="Axe_Dismember" />
+		
+		<skill Name="Cudgel_ChargingStrike" />
+		
+		<skill Name="Multiweapon_Fighting" />
+		<skill Name="Multiweapon_Flurry" />
+		<skill Name="Multiweapon_Proficiency"/>
+		<skill Name="Multiweapon_Expertise"/>
+		
+		<part Name="Uplift"/>
+		<tag Name="NamingTag" Value="AricChief" />
+		<tag Name="staticFaction1" Value="Hindren,hate,challenging societal norms and kinslaying" />	
+				
+	</object>
+	
+	<object Name="Aric Marauder" Inherits="BaseCannibal">
+		
+		<part Name="Brain" Hostile="true"/>
+		<part Name="Render" DisplayName="marauder of the Skycleave Clan" RenderString="h" DetailColor="g" ColorString="&amp;y" Tile="creatures/caste_17.bmp" />
+		<part Name="Description" Short="Bulging muscles and teeth sharpened to a point. Bloodcrazed eyes hungrily stare out on a world of meat. The warriors of the skycleave clan inspire fear across the jungle, renowned for their ravenous ferocity." />
+		<stat Name="Strength" Boost="1"/>
+		<stat Name="Toughness" Boost="1"/>
+		<stat Name="Hitpoints" Value="100" />
+		<stat Name="Level" Value="25" />
+		<stat Name="AV" Value="6"/>
+		<tag Name="Tier" Value="5" />
+		
+		<inventoryobject Blueprint="Battle Axe5" Number="2" />
+		<inventoryobject Blueprint="Turbow" Number="1" />
+		<inventoryobject Blueprint="Crysteel Arrow" Chance="100" Number="11-15" />
+		<inventoryobject Blueprint="Flawless Crysteel Arrow" Chance="100" Number="11-15" />
+		
+		<skill Name="Tactics_Charge" />
+		
+		<skill Name="Axe" />
+		<skill Name="Axe_Expertise" />
+		<skill Name="Axe_Cleave" />
+		
+		<skill Name="Cudgel_ChargingStrike" />
+		
+		<skill Name="Multiweapon_Fighting" />
+		<skill Name="Multiweapon_Flurry" />
+		<skill Name="Multiweapon_Proficiency"/>
+		<skill Name="Multiweapon_Expertise"/>
+				
+	</object>
+	
+	<object Name="Aric StarEsper" Inherits="BaseSightless">
+		
+		<part Name="Brain" Hostile="true" Factions="Humanoids-100"/>
+		<part Name="Render" DisplayName="star-eye esper" RenderString="h" DetailColor="m" ColorString="&amp;y" Tile="creatures/sw_stareye_esper.bmp" />
+		<part Name="Description" Short="Celestial knowledge and psychic power attract a ceaseless procession of hunters, seeking to bring one into the fold. Espers that trust in strangers rarely grow old." />
+		
+		<stat Name="Ego" Boost="2"/>
+		<stat Name="Willpower" Boost="2"/>
+		    <stat Name="Toughness" Boost="0" />
+		<stat Name="Hitpoints" Value="150" />
+		<stat Name="Level" Value="35" />
+		<stat Name="AV" Value="6"/>
+		<tag Name="Tier" Value="6" />
+		<part Name="RandomMutations" Mental="2" MentalLevel="2-10"/>
+		<mutation Name="LightManipulation" Level="8" />
+		<mutation Name="StunningForce" Level="6" />
+		<mutation Name="SunderMind" Level="10" />
+		
+		<tag Name="ExcludeFromDynamicEncounters" />
+				
+	</object>
+	
+	<object Name="Aric Spidermaster" Inherits="PsychicSeekerHunter">
+		<part Name="Brain" Hostile="true" Factions="Arachnid-100" />
+		<stat Name="Level" Value="35" />
+		<stat Name="Intelligence" Boost="1" />
+		<stat Name="Ego" Boost="1" />
+		<stat Name="Willpower" Boost="1" />
+		<stat Name="Toughness" Boost="0" />
+		<part Name="Render" ColorString="&amp;R" RenderString="e" DisplayName="Kimuukat-once-more, spidermaster" Tile="Creatures/sw_sightless_disciple.bmp" DetailColor="b" />
+		<stat Name="Hitpoints" Value="150" />
+		<part Name="RandomMutations" Mental="4" MentalLevel="2-10"/>
+		<part Name="Description" Short="At the moribund instant, with the mindvenom of the voider coursing through their veins, Kimuukat-no-longer ceased to be, and Kimuukat-one-more became. Seizing that final breath, with a new promise of life, the predator became servant and the spidermaster assumed their mantle." />
+		<mutation Name="SpiderWebs" Level="1" />
+		<part Name="Leader" popTable="Aric Spidermaster Minions" />
+		<tag Name="ExcludeFromDynamicEncounters"/>
+  </object>
+  
+  <object Name="Aric Apostle of the Sightless Way" Inherits="BaseSightless">
+    <part Name="Render" ColorString="&amp;R" RenderString="e" DisplayName="apostle of the Sightless Way" Tile="Creatures/sw_sightless_disciple.bmp" DetailColor="W" />
+    <part Name="Description" Short="The muscles knit across =pronouns.possessive= spine have shrunken to near-nothing, and the pleats in =pronouns.possessive= ornamental kittel sag in their absence. =pronouns.Subjective= vibrates to the frequency of another timeplace." />
+    <part Name="Brain" Hostile="false" Factions="Seekers-100" />
+    <stat Name="Level" Value="25" />    
+    <stat Name="Ego" sValue="34" Boost="0"/>
+    <stat Name="Willpower" Boost="2" />
+    <stat Name="Toughness" Boost="-1" />
+    <stat Name="Hitpoints" Value="50" />
+    <stat Name="Speed" Value="100" />
+    <mutation Name="Confusion" Level="2" />
+    <mutation Name="MentalMirror" Level="1" />
+	<mutation Name="SunderMind" Level="10" />
+    <part Name="RandomMutations" Mental="1d2" MentalLevel="2d4" Physical="0" PhysicalLevel="0" />
+    <tag Name="TitleIfNamed" Value="apostle of the Sightless Way" />
+    <tag Name="InventoryPopulationTable" Value="HumanoidEquipment" />
+  </object>	
+	
+	<object Name="Aric Ancient Laser Drone" Inherits= "WeaponEmplacement">
+		
+		<!-- edit sprite for float -->
+		<part Name= "Render" ColorString="&amp;B" Tile="Creatures/sw_laser_turret.bmp" DetailColor="c" DisplayName="ancient security drone" />
+		<part Name="Body" Anatomy="HoverRobot" />
+		<part Name="Brain" Factions="Robots-100" Wanders="true" />
+		<part Name="AIShootAndScoot" Duration="1d2" />
+		<!-- <part Name="CyberneticsPhaseAdaptiveScope" /> -->
+		
+		<inventoryobject Blueprint="Laser Rifle" />
+		<inventoryobject Blueprint="Aric Ibul Antigrav module" />
+		<stat Name="Hitpoints" Value="65" />
+		<stat Name="AV" Value="6" />
+		<stat Name="Speed" Value="150" />
+		<part Name="Description" Short="An artifact of the eaters allows the defiance of gravity. These ancient pillars of chrome still hold watch over the halls of their long departed masters." />
+		<intproperty Name="Aric_Drone" Value="1" />
+	
+	</object>
+	
+	<object Name="Aric Ancient Hand Rail Drone" Inherits= "Aric Ancient Laser Drone">
+		
+		<!-- edit sprite for float -->
+		<part Name= "Render" ColorString="&amp;w" Tile="Creatures/sw_laser_turret.bmp" DetailColor="W" DisplayName="ancient combat drone" />
+		
+		<inventoryobject Blueprint="Hand Rail" />
+		<removeinventoryobject Blueprint="Laser Rifle" />
+		<stat Name="Hitpoints" Value="80" />
+		<stat Name="AV" Value="8" />
+		<stat Name="Speed" Value="150" />
+		<part Name="Description" Short="An artifact of the eaters allows the defiance of gravity. These ancient pillars of chrome still seek out programmed foes long since reduced to dust by the passing of millenia." />
+	
+	</object>
+	
+	
+<!-- 	Stockade mobs -->
+
+  <object Name="Aric Goatfolk Commander" Inherits="Goatfolk Bully">
+  
+		<part Name="Render" DisplayName="Baraaraaaah Heartbiter, Chief Gaolwarden" ColorString="&amp;M"/>
+		<part Name="ConversationScript" ConversationID="Aric Goatfolk Gaoler" />
+
+		<part Name="RandomMutations" Physical="1-3" PhysicalLevel="2-4"/>		
+		<tag Name="ExcludeFromDynamicEncounters" />
+		<inventoryobject Blueprint="Aric Jewelled Whip" />
+		
+		<stat Name="Level" Value="25" />
+		<stat Name="AV" Value="7" />
+		<stat Name="Hitpoints" Value="150" />
+		<stat Name="Strength" Boost="2" />
+		<stat Name="Toughness" Boost="1" />
+		<stat Name="Willpower" Boost="1" />
+		<stat Name="Ego" Boost= "1"/>
+		<stat Name="Agility" Boost= "1"/>
+		<stat Name="Intelligence" Boost = "1"/>
+  </object>
+  
+  
+    <object Name="Aric Goatfolk Gaolwarden" Inherits="Goatfolk Bully">
+		<part Name="Render" DisplayName="goatfolk gaolwarden" ColorString="&amp;C"/>
+		<part Name="Description" Short="Dextrous fingers play along the leather of their bolas, and muscles twitch in expectation of violence. Under their watch, none will escape the stockade." />
+		<inventoryobject Blueprint="Aric Bolas" />
+		<inventoryobject Blueprint="Cudgel4" />			
+		<tag Name="ExcludeFromDynamicEncounters" />
+		
+		<skill Name="Cudgel" />
+		<skill Name="Cudgel_Expertise" />
+		<skill Name="Cudgel_Bludgeon" />
+		<skill Name="Cudgel_ChargingStrike" />
+		<skill Name="Cudgel_Slam" />
+		<skill Name="Tactics_Charge" />
+	</object>
+  
+	<object Name="Aric Grovewarden" Inherits="Goatfolk Yurtwarden">
+		<part Name="Render" DisplayName="goatfolk grovewarden" Tile="creatures/sw_goatfolk_hunter.bmp" ColorString="&amp;g" />
+
+		<stat Name="Agility" Boost="3" />
+		
+		<removeinventoryobject Blueprint="Desert Rifle" Number="1" />
+		<inventoryobject Blueprint="Sniper Rifle" Number="1" />
+
+		<tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  
+    <object Name="Aric Sower Hero" Inherits="Goatfolk Sower">
+		<part Name="Render" DisplayName="Naraah Stargazer, Abramite of the Goatfolk Clans" ColorString="&amp;M"/>
+		
+		<stat Name="Level" Value="25" />
+		<stat Name="AV" Value="6" />
+		<stat Name="Hitpoints" Value="150" />
+		<stat Name="Strength" Boost="1" />
+		<stat Name="Toughness" Boost="1" />
+		<stat Name="Willpower" Boost="1" />
+		<stat Name="Ego" Boost= "1"/>
+		<stat Name="Agility" Boost= "3"/>
+		<stat Name="Intelligence" Boost = "1"/>
+		
+		<mutation Name="PhotosyntheticSkin" Level="4" />
+		<mutation Name="LightManipulation" Level="4" />
+
+		<tag Name="ExcludeFromDynamicEncounters" />
+		<inventoryobject Blueprint="Sowers_Seed" Number="4d2" />
+
+		<xtagGrammar Proper="true" />
+	</object>
+    <object Name="Aric Ekuemekiyye Prisoner" Inherits="Aric Priest of All Moons">
+		<part Name="Brain" Factions="Playerneutral-100" Hostile="false" Mobile="false"/>
+		<part Name="Render" DisplayName="Zutule Ka, Priest of the Moon"/>
+		<part Name="ConversationScript" ConversationID="Aric Prisoner Priest" />
+		<part Name="Description" Short="Tattered, bloodstained ceremonial robes hang from the thin shoulders of the captured priest. From beneath the bone white mask, hatred stares out at those that would have been sacrifices. In spite of their defeat, pride still stirs within the breast, and the priest prowls the cage like a caged beast." />
+		
+		<removeinventoryobject Blueprint="Aric Sickle of the Moon1" />
+		<tag Name="ExcludeFromDynamicEncounters" />
+		
+		<part Name="FinishQuestStepWhenSlain" Quest="" Step="" GameState="AricEkPrisonerSlain" />
+  </object>
+  
+	<object Name="Aric Ekuemekiyye Prisoner Free" Inherits="Aric Priest of All Moons">
+		<part Name="Brain" Factions="Aric Ekuemekiyye-100"/>
+		<part Name="Render" DisplayName="Zutule Ka, Priest of the Moon"/>
+		<part Name="ConversationScript" ConversationID="Aric Prisoner Priest Free" />
+		<part Name="Description" Short="Tattered, bloodstained ceremonial robes have been replaced by pristine emerald silks. A blade of moonlight hangs carelessly from a waistbound slash of white. Even from beneath a mask that entirely obscures the face, a proud sneer can be felt pouring from the eyeslits." />
+		
+		<removeinventoryobject Blueprint="Aric Sickle of the Moon1" />
+		<tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  
+    <object Name="Aric Cannibal Hero" Inherits="Cannibal">
+		<part Name="Uplift"/>
+		<tag Name="ExcludeFromDynamicEncounters" />
+	</object>
+	
+    <object Name="Aric Imprisoned Napthaali" Inherits="BaseNaphtaali">
+		<part Name="Brain" Factions="Aricneutral-100" Hostile="false" Wanders="false" Mobile="false"/>
+		<stat Name="Level" Value="7" />
+		
+		<skill Name="CookingAndGathering" />
+		<skill Name="CookingAndGathering_Harvestry" />
+		<skill Name="ShortBlades" />
+		<part Name="ConversationScript" ConversationID="AricCapturedSprog" />
+		
+		<part Name="Description" Short="A body time-fit to living in the smalls of spiral roots is kept warm by a layer of symbiotic moss-fur. Once bright eyes, deadened by the inevitability of oblivion, stare blankly from beneath the selfsame mask of =pronouns.possessive= minyan. The portrait of togetherness now twisted with wrenching irony- agony is now their only shared experience." />
+		<tag Name="ExcludeFromDynamicEncounters" />
+		<builder Name="RandomTile" Tiles="Creatures/naphtaali_forager.bmp,Creatures/naphtaali_tinker.bmp,Creatures/naphtaali_nimrod.bmp,Creatures/naphtaali_jeer.bmp" />
+	</object>
+	
+    <object Name="Aric Imprisoned Ape" Inherits="Albino ape">
+		<part Name="Brain" Factions="Aricneutral-100" Hostile="false" Wanders="false" Mobile="false"/>
+		<tag Name="ExcludeFromDynamicEncounters" />
+		<part Name="Description" Short="A snow white slumping head is beset with keen and soft red eyes. =pronouns.Possessive= once powdery fur is now crossed with seeping weltss and scars on =pronouns.possessive= hulking ape-frame, and  the instinct to chest-beat is savagely prevented by chafing bonds." />
+	</object>
+	
+	<object Name="Aric Captured Sower" Inherits="Goatfolk Sower">
+		<part Name="Render" DisplayName="captured goatfolk" Tile="creatures/sw_goatfolk_sower.bmp" ColorString="&amp;r" />
+		<builder Name="RandomTile" Tiles="creatures/sw_goatfolk_sower.bmp,creatures/sw_goatfolk.bmp"/>
+		<part Name="Description" Short="A braid of roasted frogskin stretches taut over =pronouns.possessive= swollen pectorals and fastens a satchel to =pronouns.possessive= hip. =pronouns.Possessive= hooves are stained with an unclassified mixture of blood, and spittle flies from =pronouns.possessive= bleating mouth into a tuft of scraggle chin-hair. Their hands have been bound with thick rope, and the inevitability of their impending offering to the Syzgy has dulled the fire behind their eyes." />
+		<part Name="ConversationScript" ConversationID="AricCapturedGoatfolk" ClearLost="false" />
+		<removetag Name="InventoryPopulationTable" Value="HumanoidEquipment" />
+		<removepart Name="AIPilgrim" Chance="10" MapNoteAttributes="goatfolk" />
+		<removeinventoryobject Blueprint="Sowers_Seed" Number="4" />
+		<removetag Name="DynamicObjectsTable:Goatfolk" />
+		<tag Name="ExcludeFromDynamicEncounters" />
+		<part Name="Brain" Hostile="false" Wanders="false" Factions="Playerneutral-100" Feelings="Aric Ekuemekiyye:0" />
+		<removetag Name="DynamicObjectsTable:Jungle_Creatures" />
+		<removetag Name="DynamicObjectsTable:Ruins_Creatures" />		
+  </object>
+		
 	</objects>
+	
